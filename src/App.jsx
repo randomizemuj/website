@@ -1,13 +1,13 @@
-import Events from "./pages/Events"
 import './App.css';
+import Projects from './pages/Projects';
 
 
 function App() {
 
   return (
-    <>
-    <Events></Events>
-    </>
+    <div>
+      <Projects/>
+    </div>
     
   )
 }
