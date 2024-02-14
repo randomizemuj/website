@@ -4,6 +4,7 @@ import Footer from './Components/Footer.jsx'
 import Events from './Components/Events.jsx'
 import Navbar from './Components/Navbar.jsx'
 import Objective from './Components/Objective.jsx'
+import Projects from './pages/Projects';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
     <Planofaction/>
     <Objective/>
     <Events/>
+    <Projects/>
     <Footer/>
     </>
   )
