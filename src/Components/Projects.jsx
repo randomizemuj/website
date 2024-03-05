@@ -1,6 +1,6 @@
-import React from 'react';
-import LiveProjectsData from '../data/LiveProjectsData.jsx'
-import PassionProjectsData from '../data/PassionProjectsData.jsx'
+//import React from 'react';
+import LiveProjectsData from '../Data/LiveProjectsData.jsx'
+import PassionProjectsData from '../Data/PassionProjectsData.jsx'
 
 export default function Projects() {
   return (

@@ -1,5 +1,5 @@
-import Executive from "../data/Exec.jsx"
-import Core from "../data/Core.jsx"
+import Executive from "../Data/Exec.jsx"
+import Core from "../Data/Core.jsx"
 
 
 export default function Teams() {
