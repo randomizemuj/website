@@ -1,20 +1,20 @@
 import React from 'react';
-import LiveProjectsData from '../Data/LiveProjectsData'
-import PassionProjectsData from '../Data/PassionPeojectsData'
+import LiveProjectsData from '../data/LiveProjectsData.jsx'
+import PassionProjectsData from '../data/PassionProjectsData.jsx'
 
 export default function Projects() {
   return (
-    <div className="bg-white py-24 sm:py-32">
-      <div className="max-w-7xl px-6 lg:px-8">
+    <div className="bg-black py-24 sm:py-32">
+      <div className="max-w-7xl px-6 lg:px-10">
         <div className="max-w-2xl text-left mx-auto mb-8">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            From the blog
+          <h2 className="text-3xl font-bold tracking-tight text-gray-400 sm:text-4xl">
+            Live Projects
           </h2>
-          <p className="mt-2 text-lg leading-8 text-gray-600">
-            Learn how to grow your business with our expert advice.
-          </p>
+          {/* <p className="mt-2 text-lg leading-8 text-gray-500">
+            Some info about live projects
+          </p> */}
         </div>
-        <div className="mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <div className="mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-4">
           {LiveProjectsData.map((post) => (
             <article
               key={post.id}
@@ -28,11 +28,11 @@ export default function Projects() {
               <div className="absolute inset-0 z-10 bg-gradient-to-t from-gray-900 via-gray-900/40" />
               <div className="absolute inset-0 z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
 
-              <div className="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
+              <div className="flex flex-wrap z-10 items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
                 <time dateTime={post.datetime} className="mr-8">
                   {post.date}
                 </time>
-                <div className="-ml-4 flex items-center gap-x-4">
+                {/* <div className="-ml-4 flex items-center gap-x-4">
                   <svg
                     viewBox="0 0 2 2"
                     className="-ml-0.5 h-0.5 w-0.5 flex-none fill-white/50"
@@ -47,9 +47,9 @@ export default function Projects() {
                     />
                     {post.author.name}
                   </div>
-                </div>
+                </div> */}
               </div>
-              <h3 className="mt-3 text-lg font-semibold leading-6 text-white">
+              <h3 className="mt-3 text-lg  z-10 font-semibold leading-6 text-white">
                 <a href={post.href}>
                   <span className="absolute inset-0" />
                   {post.title}
@@ -60,15 +60,15 @@ export default function Projects() {
         </div>
       </div>
       <div className="max-w-7xl px-6 lg:px-8">
-        <div className="max-w-2xl text-left mx-auto">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            From the blog
+        <div className="max-w-2xl text-left mx-auto mt-8">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-400 sm:text-4xl">
+            Passion Project
           </h2>
-          <p className="mt-2 text-lg leading-8 text-gray-600">
-            Learn how to grow your business with our expert advice.
-          </p>
+          {/* <p className="mt-2 text-lg leading-8 text-gray-500">
+            Some info about live projects
+          </p> */}
         </div>
-        <div className="mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <div className="mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-4">
           {PassionProjectsData.map((post) => (
             <article
               key={post.id}
@@ -82,11 +82,11 @@ export default function Projects() {
               <div className="absolute inset-0 z-10 bg-gradient-to-t from-gray-900 via-gray-900/40" />
               <div className="absolute inset-0 z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
 
-              <div className="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
+              <div className="flex flex-wrap z-10 items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
                 <time dateTime={post.datetime} className="mr-8">
                   {post.date}
                 </time>
-                <div className="-ml-4 flex items-center gap-x-4">
+                {/* <div className="-ml-4 flex items-center gap-x-4">
                   <svg
                     viewBox="0 0 2 2"
                     className="-ml-0.5 h-0.5 w-0.5 flex-none fill-white/50"
@@ -101,9 +101,9 @@ export default function Projects() {
                     />
                     {post.author.name}
                   </div>
-                </div>
+                </div> */}
               </div>
-              <h3 className="mt-3 text-lg font-semibold leading-6 text-white">
+              <h3 className="mt-3 text-lg z-10 font-semibold leading-6 text-white">
                 <a href={post.href}>
                   <span className="absolute inset-0" />
                   {post.title}

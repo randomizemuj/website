@@ -21,10 +21,10 @@ const Navbar = () => {
   }, []);
 
   const navactive =
-    "fixed top-0 left-0 right-0 z-10 bg-black text-white font-sans px-4 py-4 md:px-6 md:py-6 opacity-100 backdrop-blur bg-transparent shadow-md border-b border-gray-900";
+    "fixed top-0 left-0 right-0 z-10 bg-black text-white font-sans px-4 py-4 md:px-6 md:py-6 opacity-100 backdrop-blur bg-transparent shadow-md border-b border-gray-900 ml-6";
 
   const nav =
-    " fixed top-0 left-0 right-0 z-10 text-white font-sans px-4 py-4 md:px-6 md:py-6 bg-black backdrop-blur bg-transparent shadow-md border-b border-gray-900";
+    " fixed top-0 left-0 right-0 z-10 text-white font-sans px-4 py-4 md:px-6 md:py-6 bg-black backdrop-blur bg-transparent shadow-md border-b border-gray-900 ml-6";
 
   // fixed top-0 left-0 right-0 z-10 bg-black text-white font-sans px-4 py-4 md:px-6 md:py-6 backdrop-filter backdrop-blur-3xl opacity-80
 
@@ -54,10 +54,22 @@ const Navbar = () => {
             </a>
             <span className="px-1.5"></span>
             <a
-              href="/team"
+              href="/"
               className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-xl"
             >
-              Team
+              Projects
+            </a>
+            <a
+              href="/events"
+              className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-xl"
+            >
+              Events 
+            </a>
+            <a
+              href="/teams"
+              className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-xl"
+            >
+              Teams
             </a>
 
             {/* <a href="/resources" className="text-white hover:text-gray-300 px-3 py-2 rounded-md">
@@ -93,12 +105,24 @@ const Navbar = () => {
             >
               Home
             </a>
-            <span className="px-1.5"></span>
+           
             <a
               href="/team"
               className="block text-white hover:text-gray-300 px-3 py-2 rounded-md"
             >
-              Team
+              Projects
+            </a>
+            <a
+              href="/"
+              className="block text-white hover:text-gray-300 px-3 py-2 rounded-md"
+            >
+              Events
+            </a>
+            <a
+              href="/"
+              className="block text-white hover:text-gray-300 px-3 py-2 rounded-md"
+            >
+              Teams
             </a>
             {/*<a href="/resources" className="block text-white hover:text-gray-300 px-3 py-2 rounded-md">*/}
             {/*  Resources*/}
