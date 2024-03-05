@@ -1,18 +1,29 @@
-import './App.css'
-import Planofaction from './Components/Planofaction.jsx'
+import "./App.css"
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+
 import Footer from './Components/Footer.jsx'
-import Events from './Components/Events.jsx'
 import Navbar from './Components/Navbar.jsx'
-import Projects from './Components/Projects.jsx'
+import Home from './pages/Home.jsx'
+import Events from './pages/Events.jsx'
+import Teams from './pages/Teams.jsx'
+import Pathaan from './pages/PathaanProject.jsx'
 
 function App() {
   return (
     <>
-    <Navbar/>
-    <Planofaction/>
-    <Events/>
-    <Projects/>
-    <Footer/>
+      <BrowserRouter>
+        <Navbar />
+        <div>
+          <Routes>
+            <Route path="/" element={<Home/>} />
+            <Route path="events" element={<Events/>} />
+            <Route path="teams" element={<Teams/>} />
+            <Route path="pathaan" element={<Pathaan/>} />
+            <Route path="/*" element={<Home />} />
+          </Routes>
+        </div>
+        <Footer />
+      </BrowserRouter>
     </>
   )
 }
