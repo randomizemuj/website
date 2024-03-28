@@ -2,7 +2,7 @@
 
 export default function Landing() {
   return (
-    <div className="relative isolate overflow-hidden bg-black"> /* " bg-gray-900 " default one */
+    <div className="relative isolate overflow-hidden bg-black"> 
       <svg
         className="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
         aria-hidden="true"
@@ -44,23 +44,23 @@ export default function Landing() {
           }}
         />
       </div>
-      <div className="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 flex md:flex-row xxsm:flex-col sm:flex-col lg:px-8 md:py-40 md:px-8 ">
-        <div className="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl lg:pt-8 ">
-          <h1 className="mt-10  ml-0 text-center font-bold tracking-tight text-white lg:text-7xl text-7xl  sm:text-7xl xxsm:text-7xl ">
-           RANDOMIZE();
+      <div className="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 flex  lg:flex-row flex-col-reverse lg:px-8  lg:py-40 md:px-8 ">
+        <div className=" mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl lg:pt-8 ">
+          <h1 className="mt-10  ml-0 text-center font-bold tracking-tight text-white  text-[15vw] md:text-[10vw] lg:text-8xl ">
+           RANDOMIZE
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-300">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam natus mollitia accusamus. Provident, reprehenderit totam.
           </p>
         </div>
       
-        <div className="mx-auto max-w-7xl px-6 pb-24  xxsm:pb-4   sm:pb-4 flex-row  lg:px-8 lg:pt-10 sm:pt-10 mt-3 md:mt-0 xxsm:order-first md:order-last lg:ml-20">
-          <div className="lg:w-1/2 lg:pr-10 mx-2 ">
-          <h1 className=" lg:text-9xl  text-8xl text-center sm:text-8xl leading-none select-none tracking-tightest font-extrabold  ">
-                            <span data-content="Ideate." className="relative block before:content-[attr(data-content)] before:w-full before:z-0 before:block before:absolute before:top-0 before:px-2 before:bottom-0 before:left-0 before:text-center before:text-white before:animate-gradient-background-1 flex-row lg:left-14 ">
+        <div className="mx-auto  max-w-7xl px-4 pb-4 md:pb-4 flex-row  lg:px-8 lg:pt-10  lg:mt-0  ">
+          <div className="  mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl  lg:pt-0 ">
+          <h1 className=" text-[20vw] text-center md:text-[15vw] lg:text-8xl leading-none select-none tracking-tightest font-extrabold pr-4">
+                            <span data-content="Ideate." className=" relative block before:content-[attr(data-content)] before:w-full before:z-0 before:block before:absolute before:top-0 before:px-2 before:bottom-0 before:left-0 before:text-center before:text-white before:animate-gradient-background-1 flex-row lg:right-5 ">
                                 <span className="px-2 text-transparent bg-clip-text bg-gradient-to-r from-gradient-1-start to-gradient-1-end animate-gradient-foreground-1 "> Ideate.</span>
                             </span>
-                            <span data-content="Commit." className="relative block before:content-[attr(data-content)] before:w-full before:z-0 before:block before:absolute before:top-0 before:px-2 before:bottom-0 before:left-0 before:text-center before:text-white before:animate-gradient-background-2 flex-row lg:left-5">
+                            <span data-content="Commit." className="relative block before:content-[attr(data-content)] before:w-full before:z-0 before:block before:absolute before:top-0 before:px-2 before:bottom-0 before:left-0 before:text-center before:text-white before:animate-gradient-background-2 flex-row lg-right-7">
                                 <span className="px-2 text-transparent bg-clip-text bg-gradient-to-r from-gradient-2-start to-gradient-2-end animate-gradient-foreground-2 "> Commit.</span>
                             </span>
                             <span data-content="Succeed." className="relative block before:content-[attr(data-content)] before:w-full before:z-0 before:block before:absolute before:top-0 before:px-2 before:bottom-0 before:left-0 before:text-center before:text-white before:animate-gradient-background-3 flex-row ">

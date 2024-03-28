@@ -54,7 +54,7 @@ const Navbar = () => {
             </a>
             <span className="px-1.5"></span>
             <a
-              href="/"
+              href="#our-projects"
               className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-xl"
             >
               Projects
@@ -107,19 +107,19 @@ const Navbar = () => {
             </a>
            
             <a
-              href="/team"
+              href="#our-projects"
               className="block text-white hover:text-gray-300 px-3 py-2 rounded-md"
             >
               Projects
             </a>
             <a
-              href="/"
+              href="/events"
               className="block text-white hover:text-gray-300 px-3 py-2 rounded-md"
             >
               Events
             </a>
             <a
-              href="/"
+              href="/teams"
               className="block text-white hover:text-gray-300 px-3 py-2 rounded-md"
             >
               Teams

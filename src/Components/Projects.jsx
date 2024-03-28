@@ -4,7 +4,7 @@ import PassionProjectsData from '../Data/PassionProjectsData.jsx'
 
 export default function Projects() {
   return (
-    <div className="bg-black py-24 sm:py-32">
+    <div className="bg-black py-24 sm:py-32" id="our-projects">
       <div className="max-w-7xl px-6 lg:px-10">
         <div className="max-w-2xl text-left mx-auto mb-8">
           <h2 className="text-3xl font-bold tracking-tight text-gray-400 sm:text-4xl">

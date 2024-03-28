@@ -1,17 +1,16 @@
-// import event2Image from "src/assets/Gradient-2.png"; // Import event 2 image
-// import event3Image from "src/assets/Gradient-2.png"; // Import event 3 image
-// import event1Image from "src/assets/Gradient-2.png"; // Import event 1 image
-// import event4Image from "src/assets/Gradient-2.png"; // Import event 4 image
+import eventData from '../Data/Events.json';
+
 
 export default function Events() {
+  
   // Sample event data with images
-  const events = [
-    { id: 1, title: "Event 1", link: "#", image: "src/assets/Gradient-2.png" },
-    { id: 2, title: "Event 2", link: "#", image: "src/assets/Gradient-2.png" },
-    { id: 3, title: "Event 3", link: "#", image: "src/assets/Gradient-2.png" },
-    { id: 4, title: "Event 4", link: "#", image: "src/assets/Gradient-2.png" },
-    // Add more events as needed
-  ];
+  // const events = [
+  //   { id: 1, title: "Event 1", link: "#", image: "src/assets/Gradient-2.png" },
+  //   { id: 2, title: "Event 2", link: "#", image: "src/assets/Gradient-2.png" },
+  //   { id: 3, title: "Event 3", link: "#", image: "src/assets/Gradient-2.png" },
+  //   { id: 4, title: "Event 4", link: "#", image: "src/assets/Gradient-2.png" },
+  //   // Add more events as needed
+  // ];
 
   return (
     <div
@@ -32,22 +31,22 @@ export default function Events() {
           </a>
         </h1>
         <nav>
-          <a href="#" className="text-white hover:underline" style={{ marginLeft: "auto" }}>
-            All events
+          <a href="/events" className="text-white hover:underline" style={{ marginLeft: "auto" }}>
+            View all →
           </a>
         </nav>
       </header>
 
       <div className="container mx-auto mt-10">
         <div className="grid grid-cols-4 gap-4 w-full">
-          {events.slice(0, 4).map((event) => (
+          {eventData.slice(0, 4).map((eventData) => (
             <div
-              key={event.id}
+              key={eventData.id}
               className="bg-white p-6 rounded shadow-md hover:shadow-lg transition duration-300 h-full"
-              style={{ backgroundImage: `url(${event.image})`, backgroundSize: "cover", backgroundPosition: "center" }}
+              style={{ backgroundImage: `url(${eventData.image})`, backgroundSize: "cover", backgroundPosition: "center" }}
             >
-              <a href={event.link} className="text-xl font-bold hover:underline text-white">
-                {event.title}
+              <a href={eventData.link} className="text-xl font-bold hover:underline text-white">
+                {eventData.title}
               </a>
             </div>
           ))}
