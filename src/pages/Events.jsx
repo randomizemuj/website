@@ -13,7 +13,7 @@ export default function Events() {
           {eventData.map((post) => (
             <article
               key={post.id}
-              className="flex flex-col items-center justify-between bg-gray-800 rounded-lg overflow-hidden w-full max-w-md mx-auto"
+              className="flex flex-col items-center justify-between bg-gray-900 rounded-lg overflow-hidden w-full max-w-md mx-auto"
             >
               <div className="relative w-full">
                 <img

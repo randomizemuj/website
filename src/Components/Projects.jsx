@@ -4,9 +4,9 @@ import PassionProjectsData from '../Data/PassionProjectsData.jsx'
 
 export default function Projects() {
   return (
-    <div className="bg-black py-24 sm:py-32" id="our-projects">
+    <div className="bg-black py-10 sm:py-14" id="our-projects">
       <div className="max-w-7xl px-6 lg:px-10">
-        <div className="max-w-2xl text-left mx-auto mb-8">
+        <div className="max-w-2xl text-left  mb-6">
           <h2 className="text-3xl font-bold tracking-tight text-gray-400 sm:text-4xl">
             Live Projects
           </h2>
@@ -14,7 +14,7 @@ export default function Projects() {
             Some info about live projects
           </p> */}
         </div>
-        <div className="mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-4">
+        <div className="mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-4 px-2">
           {LiveProjectsData.map((post) => (
             <article
               key={post.id}
@@ -60,7 +60,7 @@ export default function Projects() {
         </div>
       </div>
       <div className="max-w-7xl px-6 lg:px-8">
-        <div className="max-w-2xl text-left mx-auto mt-8">
+        <div className="max-w-2xl text-left  mt-14">
           <h2 className="text-3xl font-bold tracking-tight text-gray-400 sm:text-4xl">
             Passion Project
           </h2>
@@ -68,7 +68,7 @@ export default function Projects() {
             Some info about live projects
           </p> */}
         </div>
-        <div className="mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-4">
+        <div className=" grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 mt-10 lg:mx-0 lg:max-w-none lg:grid-cols-4 px-2">
           {PassionProjectsData.map((post) => (
             <article
               key={post.id}

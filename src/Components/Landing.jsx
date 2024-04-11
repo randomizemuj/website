@@ -46,15 +46,15 @@ export default function Landing() {
       </div>
       <div className="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 flex  lg:flex-row flex-col-reverse lg:px-8  lg:py-40 md:px-8 ">
         <div className=" mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl lg:pt-8 ">
-          <h1 className="mt-10  ml-0 text-center font-bold tracking-tight text-white  text-[15vw] md:text-[10vw] lg:text-8xl ">
+          <h1 className="mt-10  ml-0 text-center font-bold tracking-tight text-white  text-[15vw] md:text-[10vw] lg:text-8xl text-2xl">
            RANDOMIZE
-          </h1>
-          <p className="mt-6 text-lg leading-8 text-gray-300">
+           </h1>
+          <p className="mt-6 text-lg leading-8 text-gray-300 px-2">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam natus mollitia accusamus. Provident, reprehenderit totam.
           </p>
         </div>
       
-        <div className="mx-auto  max-w-7xl px-4 pb-4 md:pb-4 flex-row  lg:px-8 lg:pt-10  lg:mt-0  ">
+        <div className="mx-auto  max-w-7xl px-4 pb-4 md:pb-4 flex-row  lg:px-8 lg:pt-10  lg:mt-0   pt-10">
           <div className="  mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl  lg:pt-0 ">
           <h1 className=" text-[20vw] text-center md:text-[15vw] lg:text-8xl leading-none select-none tracking-tightest font-extrabold pr-4">
                             <span data-content="Ideate." className=" relative block before:content-[attr(data-content)] before:w-full before:z-0 before:block before:absolute before:top-0 before:px-2 before:bottom-0 before:left-0 before:text-center before:text-white before:animate-gradient-background-1 flex-row lg:right-5 ">

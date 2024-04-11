@@ -2,7 +2,7 @@ import eventData from '../Data/Events.json';
 
 
 export default function Events() {
-  
+
   // Sample event data with images
   // const events = [
   //   { id: 1, title: "Event 1", link: "#", image: "src/assets/Gradient-2.png" },
@@ -38,21 +38,36 @@ export default function Events() {
       </header>
 
       <div className="container mx-auto mt-10">
-        <div className="grid grid-cols-4 gap-4 w-full">
+        <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 gap-4 w-full">
           {eventData.slice(0, 4).map((eventData) => (
+
             <div
               key={eventData.id}
-              className="bg-white p-6 rounded shadow-md hover:shadow-lg transition duration-300 h-full"
+              className="  rounded shadow-md hover:shadow-lg transition duration-300 h-full"
               style={{ backgroundImage: `url(${eventData.image})`, backgroundSize: "cover", backgroundPosition: "center" }}
             >
-              <a href={eventData.link} className="text-xl font-bold hover:underline text-white">
-                {eventData.title}
-              </a>
+
+              <div className="relative w-full">
+
+                <img
+                  src={eventData.imageUrl}
+                  alt=""
+                  className=" w-full h-48 rounded-lg object-cover"
+                />
+                <a href={eventData.link} className="text-xl font-bold hover:underline text-black">
+                  <div className="absolute inset-0 rounded-t-lg bg-gray-900/40" />
+                </a>
+              </div>
+
+
+              {/* {eventData.title} */}
+
             </div>
+
           ))}
         </div>
       </div>
-    </div>
+    </div >
   );
 }
 

@@ -185,7 +185,7 @@ const people = [
   // More people...
 ];
 
-export default function Pathaan() {
+export default function Odysseus() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     return (
