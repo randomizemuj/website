@@ -5,9 +5,9 @@ const links = [
   { name: "Meet our leadership", href: "#" },
 ];
 const stats = [
-  { name: "Offices worldwide", value: "12" },
-  { name: "Full-time colleagues", value: "300+" },
-  { name: "Hours per week", value: "40" },
+  { name: "Current Members", value: "12" },
+  { name: "Events conducted", value: "300+" },
+  { name: "Participants", value: "40" },
   { name: "Paid time off", value: "Unlimited" },
 ];
 
@@ -15,7 +15,7 @@ export default function About() {
   return (
     <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
       <img
-        src="src\assets\Gradient-1.png" //keep changing with copy relative path and upload to main folder i.e. websit master//
+        src="/Gradient-1.png" //keep changing with copy relative path and upload to main folder i.e. websit master//
         alt="gradient background"
         className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
       />
