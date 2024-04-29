@@ -52,7 +52,7 @@ export default function Landing() {
            RANDOMIZE
            </h1>
           <p className="mt-6 text-lg leading-8 text-gray-300 px-2">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam natus mollitia accusamus. Provident, reprehenderit totam.
+          Randomize();, the computing club of Manipal University, Jaipur, has strong backing from the Department of Computer Science and Engineering. We've been a vibrant part of campus life for quite some time now!
           </p>
         </div>
       
