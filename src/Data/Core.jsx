@@ -29,15 +29,6 @@ const Core = [
 },
 {
     id: 4,
-    name: "Shikhar Maheshwari",
-    role: "Competitive Lead",
-    imageUrl: "https://ucarecdn.com/17926aac-2ceb-486c-b1ab-44240f1ba0f6/-/preview/",
-    github: "https://github.com/shikhar-sm",
-    linkedinUrl: "https://www.linkedin.com/in/shikhar-maheshwari-19a328222/",
-    web: ""
-},
-{
-    id: 5,
     name: "Pranit Khandelwal",
     role: "Head Of Videography",
     imageUrl: "https://ucarecdn.com/e9669310-0763-4c71-b711-86d83201d868/-/preview/",
@@ -46,7 +37,7 @@ const Core = [
     web: ""
 },
 {
-    id: 6,
+    id: 5,
     name: "Vedic Varma",
     role: "Head Of Finance",
     imageUrl: "https://ucarecdn.com/9393a86e-dd13-40aa-87e0-ad23925cfc47/-/preview/",
@@ -55,7 +46,7 @@ const Core = [
     web: "https://www.vedicvarma.com"
 },
 {
-    id: 7,
+    id: 6,
     name: "Ishan Jain",
     role: "Head Of Curations",
     imageUrl: "https://ucarecdn.com/0944a3be-dc0f-4da5-b8a9-3007b7653978/-/preview/",
@@ -64,7 +55,7 @@ const Core = [
     web: ""
 },
 {
-    id: 8,
+    id: 7,
     name: "Dhruvi Bahety",
     role: "Head of Outreach and Publicity ",
     imageUrl: "https://ucarecdn.com/5ca49db9-51ee-4938-bf49-556ee2893b45/-/preview/",
@@ -73,7 +64,7 @@ const Core = [
     web:""
 },
 {
-    id: 9,
+    id: 8,
     name: "Maansi Gupta",
     role: "Head of IT and Operations",
     imageUrl: "https://ucarecdn.com/49181bea-afb2-4e3b-9b81-b5d6dca51db5/-/preview/",
@@ -82,7 +73,7 @@ const Core = [
     web: ""
 },
 {
-    id: 10,
+    id: 9,
     name: "Kondapaturi Ram Chandra ",
     role: "Head Of Analytics",
     imageUrl: "https://ucarecdn.com/193d6d18-9ebf-486d-b698-54ab3ce35946/-/preview/",
@@ -92,7 +83,7 @@ const Core = [
 },
 
 {
-    id: 11,
+    id: 10,
     name: "Tvisha Khanna",
     role: "Head Of Content",
     imageUrl: "https://ucarecdn.com/aaed52cd-8e78-49c1-9a89-9e28f0f5e2d3/-/preview/",
@@ -101,7 +92,7 @@ const Core = [
     web:""
 },
 {
-    id: 12,
+    id: 11,
     name: "Riya Mishra",
     role: "Head Of Content",
     imageUrl: "https://ucarecdn.com/9d6fee23-9559-46ae-874a-612d0047e0b6/-/preview/",
@@ -111,7 +102,7 @@ const Core = [
 },
 
 {
-    id: 13,
+    id: 12,
     name: "Devyani Ghildiyal",
     role: "Head Of Events",
     imageUrl: "https://ucarecdn.com/2d7ae67c-c3dd-45e8-89ae-73470b5c3864/-/preview/",
@@ -121,7 +112,7 @@ const Core = [
 },
 
 {
-    id: 14,
+    id: 13,
     name: "Harsh Kumar",
     role: "Head of IT and Operations",
     imageUrl: "https://ucarecdn.com/ab4516f0-421b-4cb7-af5e-f71869f7171b/-/preview/",
