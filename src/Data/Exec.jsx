@@ -45,6 +45,15 @@ const Executive = [
     linkedinUrl: "https://www.linkedin.com/in/mahirrohatgi/",
     web:""
 },
+  {
+    id: 6,
+    name: "Shikhar Maheshwari",
+    role: "Managing Director",
+    imageUrl: "https://ucarecdn.com/17926aac-2ceb-486c-b1ab-44240f1ba0f6/-/preview/",
+    github: "https://github.com/shikhar-sm",
+    linkedinUrl: "https://www.linkedin.com/in/shikhar-maheshwari-19a328222/",
+    web: ""
+},
 ]
 
 export default Executive;
