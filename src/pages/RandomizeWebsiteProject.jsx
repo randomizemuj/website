@@ -39,7 +39,7 @@ const team = [
   },
 ];
 
-export default function Pathaan() {
+export default function RandomizeWebsite() {
 
   return (
     <div className="bg-black">
@@ -60,11 +60,10 @@ export default function Pathaan() {
                 <div className="hidden sm:mb-10 sm:flex">
                 </div>
                 <h1 className="text-4xl font-bold tracking-tight text-[#F4EFE8] sm:text-6xl">
-                  Pathaan
+                  Randomize Website
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-[#BCD3E8]">
-                Introducing our next live project: Pathaan. A Wireless Brain-Controlled Robot with a Turret.
-                </p>
+                Randomize();, the computing club of Manipal University, Jaipur, has strong backing from the Department of Computer Science and Engineering. </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
                     href="/"
@@ -81,7 +80,7 @@ export default function Pathaan() {
         <div className="bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
           <img
             className="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
-            src="\pathaan.jpg"
+            src="\website.jpg"
             alt=""
           />
         </div>
@@ -123,16 +122,16 @@ export default function Pathaan() {
               <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                 <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
                   <h1 className="text-4xl font-bold tracking-tight text-[#F4EFE8] sm:text-6xl">
-                    What is Pathaan?
+                    What is Randomize Website?
                   </h1>
                   <p className="relative mt-6 text-lg leading-8 text-[#BCD3E8] sm:max-w-md lg:max-w-none">
-                  Introducing our next live project: Pathaan. A Wireless Brain-Controlled Robot with a Turret. This project combines Cyber Physical Systems with EEG Mapping and Physics, and we could not be more stoked to build it.                  </p>
+                  Randomize();, the computing club of Manipal University, Jaipur, has strong backing from the Department of Computer Science and Engineering. We've been a vibrant part of campus life for quite some time now!                  </p>
                 </div>
                 <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
                   <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
                     <div className="relative">
                       <img
-                        src="\pathaan.jpg"
+                        src="\website.jpg"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -142,7 +141,7 @@ export default function Pathaan() {
                   <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
                     <div className="relative">
                       <img
-                        src="\pathaan.jpg"
+                        src="\website.jpg"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -150,7 +149,7 @@ export default function Pathaan() {
                     </div>
                     <div className="relative">
                       <img
-                        src="\pathaan.jpg"
+                        src="\website.jpg"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -160,7 +159,7 @@ export default function Pathaan() {
                   <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                     <div className="relative">
                       <img
-                        src="\pathaan.jpg"
+                        src="\website.jpg"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -168,7 +167,7 @@ export default function Pathaan() {
                     </div>
                     <div className="relative">
                       <img
-                        src="\pathaan.jpg"
+                        src="\website.jpg"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />

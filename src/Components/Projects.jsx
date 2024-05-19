@@ -29,9 +29,9 @@ export default function Projects() {
               <div className="absolute inset-0 z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
 
               <div className="flex flex-wrap z-10 items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
-                <time dateTime={post.datetime} className="mr-8">
+                {/* <time dateTime={post.datetime} className="mr-8">
                   {post.date}
-                </time>
+                </time> */}
                 {/* <div className="-ml-4 flex items-center gap-x-4">
                   <svg
                     viewBox="0 0 2 2"
@@ -83,9 +83,9 @@ export default function Projects() {
               <div className="absolute inset-0 z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
 
               <div className="flex flex-wrap z-10 items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
-                <time dateTime={post.datetime} className="mr-8">
+                {/* <time dateTime={post.datetime} className="mr-8">
                   {post.date}
-                </time>
+                </time> */}
                 {/* <div className="-ml-4 flex items-center gap-x-4">
                   <svg
                     viewBox="0 0 2 2"

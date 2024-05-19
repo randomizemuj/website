@@ -12,14 +12,14 @@ export default function Events() {
 
   return (
     <div
-      className="flex flex-col justify-center items-center bg-cover bg-no-repeat"
+      className="flex flex-col justify-center items-center bg-cover bg-no-repeat w-full h-fit p-5"
       style={{
         background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${"/Gradient.png"})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        height: "75vh", // Limiting the section to 75% of the viewport height
-        width: "100%", // Ensuring full width
-        padding: "0 25px", // Adding left and right padding
+        // height: "75vh", 
+        // width: "100%", 
+        // padding: "0 25px", 
       }}
     >
       <header
@@ -45,7 +45,7 @@ export default function Events() {
         </nav>
       </header>
 
-      <div className="container mx-auto mt-10">
+      <div className="container mx-auto mt-10 p-10">
         <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 gap-4 w-full">
           {eventData.slice(0, 4).map((eventData) => (
             <div
@@ -58,17 +58,14 @@ export default function Events() {
               }}
             >
               <div className="relative w-full">
+              <a href={eventData.link}>
                 <img
                   src={eventData.imageUrl}
                   alt=""
-                  className=" w-full h-48 rounded-lg object-cover"
+                  className=" w-full h-auto rounded-lg object-cover"
                 />
-                <a
-                  href={eventData.link}
-                  className="text-xl font-bold hover:underline text-black"
-                >
-                  <div className="absolute inset-0 rounded-t-lg bg-gray-900/40" />
                 </a>
+               
               </div>
 
               {/* {eventData.title} */}
