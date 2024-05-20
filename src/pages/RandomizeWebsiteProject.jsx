@@ -1,42 +1,100 @@
 
 
 const team = [
-  {
-    name: "Michael Foster",
-    role: "Co-Founder / CTO",
-    imageUrl:
-      "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-  },
-  {
-    name: "Michael Foster",
-    role: "Co-Founder / CTO",
-    imageUrl:
-      "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-  },
-  {
-    name: "Michael Foster",
-    role: "Co-Founder / CTO",
-    imageUrl:
-      "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-  },
-  {
-    name: "Michael Foster",
-    role: "Co-Founder / CTO",
-    imageUrl:
-      "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-  },
-  {
-    name: "Michael Foster",
-    role: "Co-Founder / CTO",
-    imageUrl:
-      "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-  },
-  {
-    name: "Michael Foster",
-    role: "Co-Founder / CTO",
-    imageUrl:
-      "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-  },
+
+
+{
+  name: "Siddharth Singhal",
+  role: "Project Lead",
+  imageUrl: "/team/Siddharth.jpg",
+},
+{
+  name: "Krish Goel",
+  role: "Technical Advisor",
+  imageUrl:
+    "/team/Krish-Goel.jpeg",
+},
+{
+  name: "Aditya Punmiya",
+  role: "Technical Advisor",
+  imageUrl:
+    "/team/Aditya.webp",
+},
+{
+  name: "KASHIKA BHARDWAJ",
+  role: "Frontend Developer/Content Team",
+  imageUrl: "/team/Kashika.jpg",
+},
+{
+  name: "Kanishk Valechha",
+  role: "Frontend Developer",
+  imageUrl:
+    "/team/Kanishk.jpg",
+},
+{
+  name: "Harshada Chandel ",
+  role: "Frontend Developer",
+  imageUrl:
+    "/team/Harshada.jpg",
+},
+{
+  name: "ROHIT GANGULY",
+  role: "Frontend Developer",
+  imageUrl:
+    "/team/ROHIT.jpg",
+},
+{
+  name: "Shubh Shrivastava",
+  role: "Frontend Developer",
+  imageUrl:
+    "/team/Shubh.jpg",
+},
+{
+  name: "Mohammed Iqbal Khan",
+  role: "Frontend Developer",
+  imageUrl:
+    "/team/Mohd-Iqbal.jpg",
+},
+{
+  name: "Gayathri Ravindran",
+  role: "Frontend Developer",
+  imageUrl:
+    "/team/Gayathri.jpg",
+},
+
+{
+  name: "Sia asrani",
+  role: "Content/Frontend Developer",
+  imageUrl:
+    "/team/Sia.jpg",
+},
+{
+  name: "Garv Kundnani",
+  role: "Frontend Developer",
+  imageUrl:
+    "/team/Garv.jpg",
+},
+{
+  name: "Meenakshi Kumar ",
+  role: "Frontend Developer",
+  imageUrl:
+    "/team/meenakshi.jpg",
+},
+{
+  name: "Vishesh Khadaria",
+  role: "Content Team",
+  imageUrl:
+    "/team/Vishesh.jpg",
+},
+{
+  name: "Vedica saini",
+  role: "Content Team",
+  imageUrl:
+    "/team/Vedica.jpg",
+},
+
+
+
 ];
 
 export default function RandomizeWebsite() {
@@ -69,7 +127,7 @@ export default function RandomizeWebsite() {
                     href="/"
                     className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   >
-                    View Source Code
+                    View Website
                   </a>
                  
                 </div>
@@ -80,7 +138,7 @@ export default function RandomizeWebsite() {
         <div className="bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
           <img
             className="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
-            src="\website.jpg"
+            src="/website.jpg"
             alt=""
           />
         </div>
@@ -131,7 +189,7 @@ export default function RandomizeWebsite() {
                   <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
                     <div className="relative">
                       <img
-                        src="\website.jpg"
+                        src="/website.jpg"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -141,7 +199,7 @@ export default function RandomizeWebsite() {
                   <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
                     <div className="relative">
                       <img
-                        src="\website.jpg"
+                        src="/website.jpg"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -149,7 +207,7 @@ export default function RandomizeWebsite() {
                     </div>
                     <div className="relative">
                       <img
-                        src="\website.jpg"
+                        src="/website.jpg"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -159,7 +217,7 @@ export default function RandomizeWebsite() {
                   <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                     <div className="relative">
                       <img
-                        src="\website.jpg"
+                        src="/website.jpg"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -167,7 +225,7 @@ export default function RandomizeWebsite() {
                     </div>
                     <div className="relative">
                       <img
-                        src="\website.jpg"
+                        src="/website.jpg"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -188,28 +246,14 @@ export default function RandomizeWebsite() {
             <div className="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
               <div className="lg:w-full lg:max-w-2xl lg:flex-auto">
                 <p className="text-xl leading-8 text-[#BCD3E8]">
-                  Aliquet nec orci mattis amet quisque ullamcorper neque, nibh
-                  sem. At arcu, sit dui mi, nibh dui, diam eget aliquam.
-                  Quisque id at vitae feugiat egestas ac. Diam nulla orci at
-                  in viverra scelerisque eget. Eleifend egestas fringilla
-                  sapien.
+                At Randomize();, our mission is to foster a dynamic and inclusive environment where students can explore and excel in the ever-evolving field of computer science and engineering. We strive to provide a platform for hands-on learning, collaboration, and innovation, allowing our members to apply theoretical knowledge to real-world problems. By organizing workshops, hackathons, coding competitions, and guest lectures, we aim to equip students with the skills and experiences necessary to thrive in the tech industry and academia alike.
                 </p>
                 <div className="mt-10  mx-auto max-w-xl text-base leading-7 text-[#BCD3E8]">
                   <p>
-                    Faucibus commodo massa rhoncus, volutpat. Dignissim sed
-                    eget risus enim. Mattis mauris semper sed amet vitae sed
-                    turpis id. Id dolor praesent donec est. Odio penatibus
-                    risus viverra tellus varius sit neque erat velit. Faucibus
-                    commodo massa rhoncus, volutpat. Dignissim sed eget risus
-                    enim. Mattis mauris semper sed amet vitae sed turpis id.
+                  We are committed to nurturing a community where creativity and curiosity are celebrated. Our club encourages students to push the boundaries of their technical capabilities and think outside the box. Through peer-to-peer learning and mentorship programs, we help students develop not only their technical skills but also their problem-solving abilities, teamwork, and leadership qualities. We believe that by fostering a collaborative and supportive environment, we can inspire our members to achieve excellence and contribute meaningfully to the technological advancements of the future.
                   </p>
                   <p className="mt-10">
-                    Et vitae blandit facilisi magna lacus commodo. Vitae
-                    sapien duis odio id et. Id blandit molestie auctor
-                    fermentum dignissim. Lacus diam tincidunt ac cursus in
-                    vel. Mauris varius vulputate et ultrices hac adipiscing
-                    egestas. Iaculis convallis ac tempor et ut. Ac lorem vel
-                    integer orci.
+                  Moreover, Randomize(); is dedicated to bridging the gap between academia and industry. By maintaining strong connections with the Department of Computer Science and Engineering at Manipal University, Jaipur, and partnering with industry leaders, we provide our members with valuable insights into the latest trends and technologies. This symbiotic relationship ensures that our activities are aligned with both academic objectives and industry demands, preparing our members to become well-rounded professionals who are ready to tackle the challenges of a rapidly changing technological landscape.
                   </p>
                 </div>
               </div>

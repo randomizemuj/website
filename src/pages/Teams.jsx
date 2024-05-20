@@ -23,7 +23,7 @@ export default function Teams() {
           >
             {Executive.map((person) => (
               <li key={person.name}>
-                <img className="aspect-[3/2] w-full rounded-2xl object-cover" src={person.imageUrl} alt="" />
+                <img className="aspect-[2/2] w-full rounded-2xl " src={person.imageUrl} alt="" />
                 <h3 className="mt-6 text-lg font-semibold leading-8 tracking-tight text-white">{person.name}</h3>
                 <p className="text-base leading-7 text-gray-300">{person.role}</p>
                 <ul
@@ -77,20 +77,12 @@ export default function Teams() {
         >
           {Core.map((person) => (
             <li key={person.name}>
-              <img className="aspect-[3/2] w-full rounded-2xl object-cover" src={person.imageUrl} alt="" />
+              <img className="aspect-[2/2] w-full rounded-2xl " src={person.imageUrl} alt="" />
               <h3 className="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-100">{person.name}</h3>
               <p className="text-base leading-7 text-gray-400">{person.role}</p>
               <ul
                role="list" 
               className="mt-2 mx-auto flex justify-center gap-x-6">
-                {/* <li>
-                  <a href={person.xUrl} className="text-gray-400 hover:text-gray-500 ">
-                    <span className="sr-only">X</span>
-                    <svg className="h-5 w-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
-                    </svg>
-                  </a>
-                </li> */}
                 <li>
                   <a href={person.linkedinUrl} className="text-gray-400 hover:text-gray-500">
                     <span className="sr-only">LinkedIn</span>

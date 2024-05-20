@@ -2,41 +2,71 @@
 
 const team = [
   {
-    name: "Michael Foster",
-    role: "Co-Founder / CTO",
-    imageUrl:
-      "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+    name: "Krish Goel",
+    role: "Project Lead/Founder",
+    imageUrl: "/team/Krish-Goel.jpeg",
   },
   {
-    name: "Michael Foster",
-    role: "Co-Founder / CTO",
+    name: "Aditya Punmiya",
+    role: "Project Co-Lead",
     imageUrl:
-      "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+      "/team/Aditya.webp",
   },
   {
-    name: "Michael Foster",
-    role: "Co-Founder / CTO",
-    imageUrl:
-      "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+    name: "Dhruv Bansal",
+    role: "Team Head",
+    imageUrl: "/team/Dhruv.jpg",
   },
   {
-    name: "Michael Foster",
-    role: "Co-Founder / CTO",
+    name: "Aviral Gupta",
+    role: "Team Leader",
     imageUrl:
-      "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+      "/team/Aviral.jpg",
   },
   {
-    name: "Michael Foster",
-    role: "Co-Founder / CTO",
+    name: "GARVIT ARORA",
+    role: "Hardware and robotics",
     imageUrl:
-      "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+      "/team/Garvit.png",
   },
   {
-    name: "Michael Foster",
-    role: "Co-Founder / CTO",
+    name: "Shresth Shroff ",
+    role: "Electrical and Mechanical Head",
     imageUrl:
-      "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+      "/team/Shresth.jpg",
   },
+  {
+    name: "Siddharth Singhal",
+    role: "Circuitry and Robotics ",
+    imageUrl:
+      "/team/Siddharth.jpg",
+  },
+  {
+    name: "Savir Sharma ",
+    role: "Software Team Lead",
+    imageUrl:
+      "/team/Savir.JPG",
+  },
+  {
+    name: "Mahadevan K S",
+    role: "Circuitry, Robotics, Maze Building",
+    imageUrl:
+      "/team/Mahadevan.jpg",
+  },
+  {
+    name: "Garv Kundnani",
+    role: "Algorithms & AI, Documentation & Logistics",
+    imageUrl:
+      "/team/Garv.jpg",
+  },
+  {
+    name: "Sudiksha Mathpal",
+    role: "Algorithms team, Logistics team",
+    imageUrl:
+      "/team/Sudiksha.jpg",
+  },
+  
+
 ];
 
 export default function Odysseus() {
@@ -47,7 +77,7 @@ export default function Odysseus() {
           <div className="mx-auto max-w-7xl">
             <div className="relative z-10 pt-14 lg:w-full lg:max-w-2xl">
               <svg
-                className="absolute inset-y-0 right-8 hidden h-full w-80 translate-x-1/2 transform fill-black lg:block"
+                className="absolute inset-y-0 right-8 hidden h-full w-80 translate-x-1/2 transform fill-black lg:block "
                 viewBox="0 0 100 100"
                 preserveAspectRatio="none"
                 aria-hidden="true"
@@ -81,7 +111,7 @@ export default function Odysseus() {
           <div className="bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
             <img
               className="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
-              src="\odysseus.jpg"
+              src="/odysseus.jpg"
               alt=""
             />
           </div>
@@ -133,7 +163,7 @@ export default function Odysseus() {
                     <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
                       <div className="relative">
                         <img
-                          src="\odysseus.jpg"
+                          src="/odysseus.jpg"
                           alt=""
                           className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                         />
@@ -143,7 +173,7 @@ export default function Odysseus() {
                     <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
                       <div className="relative">
                         <img
-                          src="\odysseus.jpg"
+                          src="/odysseus.jpg"
                           alt=""
                           className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                         />
@@ -151,7 +181,7 @@ export default function Odysseus() {
                       </div>
                       <div className="relative">
                         <img
-                          src="\odysseus.jpg"
+                          src="/odysseus.jpg"
                           alt=""
                           className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                         />
@@ -161,7 +191,7 @@ export default function Odysseus() {
                     <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                       <div className="relative">
                         <img
-                          src="\odysseus.jpg"
+                          src="/odysseus.jpg"
                           alt=""
                           className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                         />
@@ -169,7 +199,7 @@ export default function Odysseus() {
                       </div>
                       <div className="relative">
                         <img
-                          src="\odysseus.jpg"
+                          src="/odysseus.jpg"
                           alt=""
                           className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                         />
@@ -190,28 +220,14 @@ export default function Odysseus() {
               <div className="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
                 <div className="lg:w-full lg:max-w-2xl lg:flex-auto">
                   <p className="text-xl leading-8 text-[#BCD3E8]">
-                    Aliquet nec orci mattis amet quisque ullamcorper neque, nibh
-                    sem. At arcu, sit dui mi, nibh dui, diam eget aliquam.
-                    Quisque id at vitae feugiat egestas ac. Diam nulla orci at
-                    in viverra scelerisque eget. Eleifend egestas fringilla
-                    sapien.
+                  Our mission with Project Odysseus is to pioneer the integration of cyber physical systems and artificial intelligence in creating an autonomous maze-solving robot. By pushing the boundaries of current technology, we aim to develop a sophisticated robot that can navigate complex environments independently. This project will not only demonstrate the potential of AI-driven robotics but also serve as a testament to our commitment to innovation and excellence in the field of robotics and artificial intelligence.
                   </p>
                   <div className="mt-10  mx-auto max-w-xl text-base leading-7 text-[#BCD3E8]">
                     <p>
-                      Faucibus commodo massa rhoncus, volutpat. Dignissim sed
-                      eget risus enim. Mattis mauris semper sed amet vitae sed
-                      turpis id. Id dolor praesent donec est. Odio penatibus
-                      risus viverra tellus varius sit neque erat velit. Faucibus
-                      commodo massa rhoncus, volutpat. Dignissim sed eget risus
-                      enim. Mattis mauris semper sed amet vitae sed turpis id.
+                    We strive to leverage the latest advancements in machine learning, sensor technology, and algorithm design to build a robot capable of real-time decision-making and adaptability. Project Odysseus is designed to simulate real-world applications where autonomous navigation is crucial, such as search and rescue missions, exploration of hazardous environments, and automated logistics. Through this project, we aim to showcase how intelligent systems can be applied to solve practical problems, enhancing efficiency and safety in various industries.
                     </p>
                     <p className="mt-10">
-                      Et vitae blandit facilisi magna lacus commodo. Vitae
-                      sapien duis odio id et. Id blandit molestie auctor
-                      fermentum dignissim. Lacus diam tincidunt ac cursus in
-                      vel. Mauris varius vulputate et ultrices hac adipiscing
-                      egestas. Iaculis convallis ac tempor et ut. Ac lorem vel
-                      integer orci.
+                    Ultimately, our goal is to inspire and educate the next generation of engineers and technologists. By sharing our journey and the knowledge we gain from Project Odysseus, we hope to foster a deeper understanding and appreciation of the potential of AI and robotics. We are committed to contributing to the broader technological community, encouraging innovation, and promoting the development of smart, autonomous systems that can make a positive impact on society.
                     </p>
                   </div>
                 </div>

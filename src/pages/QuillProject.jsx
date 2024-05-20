@@ -1,42 +1,58 @@
-
-
 const team = [
   {
-    name: "Michael Foster",
-    role: "Co-Founder / CTO",
-    imageUrl:
-      "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+    name: "Mahir Rohatgi",
+    role: "Project Lead",
+    imageUrl: "/team/Mahir.jpg",
   },
   {
-    name: "Michael Foster",
-    role: "Co-Founder / CTO",
+    name: "Krish Goel",
+    role: "Technical Advisor",
     imageUrl:
-      "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+      "/team/Krish-Goel.jpeg",
   },
   {
-    name: "Michael Foster",
-    role: "Co-Founder / CTO",
-    imageUrl:
-      "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+    name: "Devyani Ghildiyal",
+    role: "Team Member",
+    imageUrl: "/team/Devyani.jpeg",
   },
   {
-    name: "Michael Foster",
-    role: "Co-Founder / CTO",
+    name: "Khetul Patel",
+    role: "Robotics Head",
     imageUrl:
-      "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+      "/team/Khetul.jpg",
   },
   {
-    name: "Michael Foster",
-    role: "Co-Founder / CTO",
+    name: "Shresth Shroff ",
+    role: "Electrical and Mechanical Head",
     imageUrl:
-      "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+      "/team/Shresth.jpg",
   },
   {
-    name: "Michael Foster",
-    role: "Co-Founder / CTO",
+    name: "Aanan Chopra",
+    role: "Python Team",
     imageUrl:
-      "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+      "/team/Aanan.jpg",
   },
+  {
+    name: "Rishi Singh",
+    role: "Coding the backend python thing",
+    imageUrl:
+      "/team/Rishi.jpg",
+  },
+  {
+    name: "Tanishka Magar",
+    role: "Image processing & Arduino Team",
+    imageUrl:
+      "/team/Tanishka.jpeg",
+  },
+  {
+    name: "Sia asrani ",
+    role: "Documentation Team",
+    imageUrl:
+      "/team/Sia.jpg",
+  },
+
+
 ];
 
 export default function Quill() {
@@ -80,7 +96,7 @@ export default function Quill() {
         <div className="bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
           <img
             className="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
-            src="\quill.jpg"
+            src="/quill.jpg"
             alt=""
           />
         </div>
@@ -125,14 +141,14 @@ export default function Quill() {
                     What is Quill?
                   </h1>
                   <p className="relative mt-6 text-lg leading-8 text-[#BCD3E8] sm:max-w-md lg:max-w-none">
-                  Introducing our next live project: Quill. A Robot that Writes Your Assignments in Your Handwriting, Just Submit Your Questions in any format. This project combines cyber physical systems with artificial intelligence, and we could not be more stoked to build it.
+                  Introducing our next live project: Quill. A Robot that Writes Your Assignments in Your Handwriting, Just Submit Your Questions in any format. This project combines cyber physical systems with artificial intelligence, and we could not be more stoked to build it. We aim to create a unique, personalized experience where our innovative robotic technology can accurately replicate individual handwriting styles. 
                   </p>
                 </div>
                 <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
                   <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
                     <div className="relative">
                       <img
-                        src="\quill.jpg"
+                        src="/quill.jpg"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -142,7 +158,7 @@ export default function Quill() {
                   <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
                     <div className="relative">
                       <img
-                        src="\quill.jpg"
+                        src="/quill.jpg"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -150,7 +166,7 @@ export default function Quill() {
                     </div>
                     <div className="relative">
                       <img
-                        src="\quill.jpg"
+                        src="/quill.jpg"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -160,7 +176,7 @@ export default function Quill() {
                   <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                     <div className="relative">
                       <img
-                        src="\quill.jpg"
+                        src="/quill.jpg"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -168,7 +184,7 @@ export default function Quill() {
                     </div>
                     <div className="relative">
                       <img
-                        src="\quill.jpg"
+                        src="/quill.jpg"
                         alt=""
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       />
@@ -189,28 +205,14 @@ export default function Quill() {
             <div className="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
               <div className="lg:w-full lg:max-w-2xl lg:flex-auto">
                 <p className="text-xl leading-8 text-[#BCD3E8]">
-                  Aliquet nec orci mattis amet quisque ullamcorper neque, nibh
-                  sem. At arcu, sit dui mi, nibh dui, diam eget aliquam.
-                  Quisque id at vitae feugiat egestas ac. Diam nulla orci at
-                  in viverra scelerisque eget. Eleifend egestas fringilla
-                  sapien.
+                At Quill, our mission is to revolutionize the way students and professionals handle their written tasks by seamlessly integrating cutting-edge cyber-physical systems with advanced artificial intelligence. We aim to create a unique, personalized experience where our innovative robotic technology can accurately replicate individual handwriting styles. This ensures that every assignment, note, or document retains a personal touch, bridging the gap between traditional writing and modern digital convenience.
                 </p>
                 <div className="mt-10  mx-auto max-w-xl text-base leading-7 text-[#BCD3E8]">
                   <p>
-                    Faucibus commodo massa rhoncus, volutpat. Dignissim sed
-                    eget risus enim. Mattis mauris semper sed amet vitae sed
-                    turpis id. Id dolor praesent donec est. Odio penatibus
-                    risus viverra tellus varius sit neque erat velit. Faucibus
-                    commodo massa rhoncus, volutpat. Dignissim sed eget risus
-                    enim. Mattis mauris semper sed amet vitae sed turpis id.
+                  Our commitment extends beyond mere automation. We strive to empower users with a tool that not only saves time but also enhances productivity and creativity. By handling repetitive and time-consuming writing tasks, Quill allows individuals to focus on higher-order thinking and more meaningful activities. Our technology is designed to be intuitive and user-friendly, ensuring that anyone, regardless of their technical proficiency, can benefit from its capabilities
                   </p>
                   <p className="mt-10">
-                    Et vitae blandit facilisi magna lacus commodo. Vitae
-                    sapien duis odio id et. Id blandit molestie auctor
-                    fermentum dignissim. Lacus diam tincidunt ac cursus in
-                    vel. Mauris varius vulputate et ultrices hac adipiscing
-                    egestas. Iaculis convallis ac tempor et ut. Ac lorem vel
-                    integer orci.
+                  We are dedicated to pushing the boundaries of what's possible in the realm of artificial intelligence and robotics. Our team is passionate about continuous innovation, constantly refining Quill to meet the evolving needs of our users. By fostering a culture of excellence and collaboration, we aim to set new standards in the field of cyber-physical systems, ultimately transforming how written communication is approached in educational and professional settings.
                   </p>
                 </div>
               </div>

@@ -13,7 +13,7 @@ const Core = [
     id: 2,
     name: "Siddharth Singhal",
     role: "Webmaster",
-    imageUrl: "https://ucarecdn.com/388ce2a1-2904-4f6e-b6d5-fa21f1d5b93f/-/preview/",
+    imageUrl: "https://ucarecdn.com/388ce2a1-2904-4f6e-b6d5-fa21f1d5b93f/-/preview/ ",
     github: "https://github.com/joytechs247",
     linkedinUrl: "https://www.linkedin.com/in/siddharth-singhal-242a10244",
     web: ""

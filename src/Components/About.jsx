@@ -1,9 +1,4 @@
-// const links = [
-//   { name: "Open roles", href: "#" },
-//   { name: "Internship program", href: "#" },
-//   { name: "Our values", href: "#" },
-//   { name: "Meet our leadership", href: "#" },
-// ];
+
 const stats = [
   { name: "Current Members", value: "120+" },
   { name: "Events conducted", value: "20+" },
@@ -12,11 +7,11 @@ const stats = [
 
 export default function About() {
   return (
-    <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+    <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32" id="about">
       <img
-        src="/Gradient-1.png" //keep changing with copy relative path and upload to main folder i.e. websit master//
+        src="/Gradient-1.png" 
         alt="gradient background"
-        className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
+        className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center opacity-10"
       />
       <div
         className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"

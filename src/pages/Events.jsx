@@ -19,7 +19,7 @@ export default function Events() {
                 <img
                   src={post.imageUrl}
                   alt=""
-                  className="aspect-[16/9] w-full h-48 rounded-t-lg object-cover"
+                  className="aspect-[16/9] w-full h-56 rounded-t-lg object-cover"
                 />
                 <div className="absolute inset-0 rounded-t-lg bg-gray-900/40" />
               </div>
