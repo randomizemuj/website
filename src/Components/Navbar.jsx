@@ -26,7 +26,7 @@ const Navbar = () => {
     "fixed top-0 left-0 right-0 z-10 bg-black text-white font-sans sm:px-4 sm:py-3 md:px-4 md:py-6 p-5 opacity-100 backdrop-blur bg-transparent shadow-md border-b border-gray-900 ";
 
   const nav =
-    " fixed top-0 left-0 right-0 z-10 text-white font-sans sm:px-4 sm:py-3 md:px-4 md:py-6  bg-black backdrop-blur bg-transparent shadow-md border-b border-gray-900 ";
+    " fixed top-0 left-0 right-0 z-10 text-white font-sans sm:px-4 sm:py-3 md:px-4 md:py-6 p-5  bg-black backdrop-blur bg-transparent shadow-md border-b border-gray-900 ";
 
   // fixed top-0 left-0 right-0 z-10 bg-black text-white font-sans px-4 py-4 md:px-6 md:py-6 backdrop-filter backdrop-blur-3xl opacity-80
 
@@ -111,7 +111,7 @@ const Navbar = () => {
               Home
             </a>
 
-            <HashLink to="/#our-projects" className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-xl">
+            <HashLink to="/#our-projects" className="block text-white hover:text-gray-300 px-3 py-2 rounded-md">
               Projects
             </HashLink>
             <a

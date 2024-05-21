@@ -1,9 +1,9 @@
 const navigation = {
   main: [
-    { name: "About", href: "/about" },
-    { name: "Plan of Action", href: "#planofaction" },
-    { name: "Live Projects", href: "#our-projects" },
-    { name: "Passion Projects", href: "#our-projects" },
+    { name: "Home", href: "/" },
+    { name: "About", href: "/about"  },
+    { name: "Projects", href: "/#our-projects" },
+    { name: "Our Team", href: "/teams" },
     { name: "Events", href: "/events" },
   ],
   social: [
