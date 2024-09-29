@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { HashLink } from 'react-router-hash-link';
-
+import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -48,12 +48,12 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="hidden md:block">
-            <a
-              href="/"
+            <Link
+              to="/"
               className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-xl"
             >
               Home
-            </a>
+            </Link>
             <span className="px-1.5"></span>
             {/* <a
               href="#our-projects"
@@ -61,21 +61,31 @@ const Navbar = () => {
             >
               Projects
             </a> */}
-            <HashLink to="/#our-projects" className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-xl">
+            
+            <Link
+              to="/projects"
+              className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-xl"
+            >
               Projects
-            </HashLink>
-            <a
-              href="/events"
+            </Link>
+            <Link
+              to="/events"
               className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-xl"
             >
               Events
-            </a>
-            <a
-              href="/teams"
+            </Link>
+            <Link
+              to="/thefest"
+              className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-xl"
+            >
+              The Fest
+            </Link>
+            <Link
+              to="/teams"
               className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-xl"
             >
               Teams
-            </a>
+            </Link>
 
             {/* <a href="/resources" className="text-white hover:text-gray-300 px-3 py-2 rounded-md">
                 Resources
@@ -101,7 +111,9 @@ const Navbar = () => {
             </svg>
           </button>
         </div>
-        <div className={`md:hidden opacity-100 backdrop-blur-none bg-black	 ${showMobileMenu ? "" : "hidden"}`}>
+        <div
+          className={`md:hidden opacity-100 backdrop-blur-none bg-black	 ${showMobileMenu ? "" : "hidden"}`}
+        >
           <div className=" pt-2 pb-3 space-y-1">
             <span className="px-1.5"></span>
             <a
@@ -111,7 +123,10 @@ const Navbar = () => {
               Home
             </a>
 
-            <HashLink to="/#our-projects" className="block text-white hover:text-gray-300 px-3 py-2 rounded-md">
+            <HashLink
+              to="/#our-projects"
+              className="block text-white hover:text-gray-300 px-3 py-2 rounded-md"
+            >
               Projects
             </HashLink>
             <a
@@ -121,11 +136,19 @@ const Navbar = () => {
               Events
             </a>
             <a
+              href="/thefest"
+              className="block text-white hover:text-gray-300 px-3 py-2 rounded-md"
+            >
+              The Fest
+            </a>
+
+            <a
               href="/teams"
               className="block text-white hover:text-gray-300 px-3 py-2 rounded-md"
             >
               Teams
             </a>
+
             {/*<a href="/resources" className="block text-white hover:text-gray-300 px-3 py-2 rounded-md">*/}
             {/*  Resources*/}
             {/*</a>*/}

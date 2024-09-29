@@ -1,3 +1,200 @@
 body{
   background-color: black;
+  overflow-x: hidden;
 }
+
+.projects{
+  display: none;
+}
+.projectsHeading{
+  font-family: zain;
+}
+
+.live-card{
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  background-color: #8a9bb3;
+  background-image: linear-gradient(147deg, #8a9bb3 0%, #b0bec5 74%);
+}
+
+.passion-card{
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  background-color: #8a9bb3;
+  background-image: linear-gradient(147deg, #8a9bb3 0%, #b0bec5 74%);
+}
+
+.liveProjects-card{
+  position: relative; 
+  right: -200px; 
+  opacity: 0; 
+  transition: opacity 0.25s ease;
+}
+.passionProjects-card{
+  position: relative; 
+  right: -200px;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+/* Ensure the headings are on top and cards are underneath */
+.projectsHeading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Default styling for heading text */
+
+
+/* Responsive design for headings and cards */
+/* @media (max-width: 768px) {
+  .passion-card{
+    height: 600px;
+  }
+  .projectsHeading-container {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .projectsHeading {
+    font-size: 2rem; 
+  }
+
+  .liveProjects-card,
+  .passionProjects-card {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto !important;
+  }
+
+  .liveProjects-card img,
+  .passionProjects-card img {
+    height: 50vh;
+  }
+} */
+
+/* Medium font size for tablets */
+/* @media (max-width: 768px) {
+  .projectsHeading-container {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .projectsHeading {
+    font-size: 2.5rem; 
+  }
+
+  .liveProjects-card,
+  .passionProjects-card {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)) !important;
+  }
+} */
+
+/* Default font size for larger screens */
+/* @media (min-width: 1025px) {
+  .projectsHeading {
+    font-size: 3rem; 
+  }
+} */
+
+.EventsCard{
+  background-color: #8a9bb3;
+  background-image: linear-gradient(147deg, #8a9bb3 0%, #b0bec5 74%);
+}
+
+.eventsDescp1{
+  display: none;
+}
+.eventsDescp2{
+  display: none;
+}
+.eventsDescp3{
+  display: none;
+}
+.eventsDescp4{
+  display: none;
+}
+.eventsDescp5{
+  display: none;
+}
+/*Scrollbar styling*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.carousel-section {
+  padding: 50px;
+  background-color: #f9f9f9;
+}
+
+.carousel-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  background-color: #8a9bb3;
+  background-image: linear-gradient(147deg, #8a9bb3 0%, #b0bec5 74%);
+}
+
+.carousel-slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-content {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-heading {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.carousel-text {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.carousel-prev, .carousel-next {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carousel-prev:hover, .carousel-next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
