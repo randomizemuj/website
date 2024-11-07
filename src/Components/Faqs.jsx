@@ -21,7 +21,7 @@ function Faqs() {
             onClick={() => toggleSection(4)}
             className="flex items-center justify-between w-full p-5 font-medium text-left border-[#c9c8c8] border"
           >
-            <span>How accurate is the EcoScore?</span>
+            <span>What is Randomize(); and who can join?</span>
             <svg
               className={`w-3 h-3 transform ${
                 openSection === 4 ? "rotate-180" : "rotate-0"
@@ -42,10 +42,12 @@ function Faqs() {
           {openSection === 4 && (
             <div className="p-5 border border-b-0 border-[#c9c8c8]">
               <p className="mb-2">
-                The accuracy of the EcoScore depends on the accuracy of the
-                information you provide. Terra strives to use up-to-date
-                emissions factors and methodologies, but estimates may vary
-                based on individual circumstances.
+                Randomize(); is a tech club dedicated to fostering learning,
+                creativity, and community building among young minds interested
+                in technology. We welcome all year students, as well as other
+                passionate individuals who want to explore and showcase their
+                skills. Whether you're a beginner or an experienced coder,
+                there's a place for you here.
               </p>
             </div>
           )}
@@ -57,7 +59,7 @@ function Faqs() {
             onClick={() => toggleSection(5)}
             className="flex items-center justify-between w-full p-5 font-medium text-left border-[#c9c8c8] border"
           >
-            <span>What types of products can I find on the Marketplace?</span>
+            <span>What kind of workshops do we offer?</span>
             <svg
               className={`w-3 h-3 transform ${
                 openSection === 5 ? "rotate-180" : "rotate-0"
@@ -78,10 +80,11 @@ function Faqs() {
           {openSection === 5 && (
             <div className="p-5 border border-b-0 border-[#c9c8c8]">
               <p className="mb-2">
-                Terra offers a curated selection of eco-friendly products across
-                various categories. This might include sustainable clothing,
-                home goods, beauty products, and more, with options from
-                different countries.
+                We conduct monthly workshops on key topics like data structures,
+                algorithms, programming languages, and other tech fundamentals.
+                These sessions are designed to be interactive, where you'll not
+                only learn but also engage in hands-on activities to reinforce
+                the concepts.
               </p>
             </div>
           )}
@@ -93,7 +96,7 @@ function Faqs() {
             onClick={() => toggleSection(6)}
             className="flex items-center justify-between w-full p-5 font-medium text-left border-[#c9c8c8] border"
           >
-            <span>How does the Recycle Item Search Bar work?</span>
+            <span>How do you promote skill development in members?</span>
             <svg
               className={`w-3 h-3 transform ${
                 openSection === 6 ? "rotate-180" : "rotate-0"
@@ -114,10 +117,11 @@ function Faqs() {
           {openSection === 6 && (
             <div className="p-5 border border-b-0 border-[#c9c8c8]">
               <p className="mb-2">
-                The Recycle Item Search Bar provides detailed information on
-                material composition, recyclability, local recycling guidelines
-                for various items, etc. Simply enter the item name to get
-                started.
+                At Randomize();, we believe in passion-based projects. This
+                means each member can work on a project they are passionate
+                about, showcasing their skills while learning new ones. We also
+                offer mentorship where seniors guide juniors, helping you grow
+                in a supportive environment.
               </p>
             </div>
           )}
@@ -129,7 +133,7 @@ function Faqs() {
             onClick={() => toggleSection(7)}
             className="flex items-center justify-between w-full p-5 font-medium text-left border-[#c9c8c8] border"
           >
-            <span>What is the EcoSwap?</span>
+            <span>What is the mentorship program like?</span>
             <svg
               className={`w-3 h-3 transform ${
                 openSection === 7 ? "rotate-180" : "rotate-0"
@@ -150,9 +154,11 @@ function Faqs() {
           {openSection === 7 && (
             <div className="p-5 border border-b-0 border-[#c9c8c8]">
               <p className="mb-2">
-                EcoSwap allows users to buy, sell, or trade materials and items
-                to encourage reuse and reduce waste. It's a community-driven
-                platform promoting sustainability.
+                Our mentorship program pairs senior members with newcomers.
+                Senior members provide guidance on projects, help new members
+                learn core concepts, and share their experiences to help you
+                navigate your tech journey. This mentorship is essential in
+                creating a nurturing and inclusive space for everyone.
               </p>
             </div>
           )}

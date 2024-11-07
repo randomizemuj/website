@@ -33,7 +33,7 @@ function TeamCard({
   ];
 
   return (
-    <div className="bg-gray-800 max-w-max p-6 text-white inline-block m-6 rounded-lg text-center">
+    <div className="bg-gray-800 max-w-max p-6 text-white inline-block m-6 rounded-lg text-center hover:scale-105">
       <div className="aspect-square overflow-hidden rounded-tl-3xl object-cover rounded-br-3xl flex justify-center mb-5">
         <img
           className="w-36 h-36 md:w-44 md:h-44 object-cover"
