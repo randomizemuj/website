@@ -55,6 +55,15 @@ const Exec2024 = [
     github: "https://github.com/Samridhi47",
     linkedinUrl: "https://www.linkedin.com/in/samridhi-goyal-433a33247",
   },
+  {
+    id: 8,
+    name: "Samyak Jain",
+    role: "Community Director",
+    imageUrl: "/Team2024-25/Samyak.png",
+    github: "",
+    linkedinUrl:
+      "https://www.linkedin.com/in/samyak-jain-a23552256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+  },
 ];
 
 export default Exec2024;
