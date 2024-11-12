@@ -102,12 +102,12 @@ function Projects() {
       {LiveProjectsData.map((post) => (
         <article
           key={post.id}
-          className="relative flex flex-col justify-end overflow-hidden rounded-2xl  px-8 pb-8 pt-80 sm:pt-48 lg:pt-80 transition-transform duration-300 hover:scale-125 hover:opacity-75 row-span-1 max-sm:w-full"
+          className="relative flex flex-col justify-end overflow-hidden rounded-2xl  px-8 pb-8 pt-80 sm:pt-48 lg:pt-80 transition-transform duration-300 sm:hover:scale-125 hover:opacity-75 row-span-1 max-sm:w-full max-sm:h-[1%] "
         >
           <img
             src={post.imageUrl}
             alt=""
-            className="absolute inset-0 z-0 h-full w-full object-cover max-sm:h-[38vh]"
+            className="absolute inset-0 z-0 h-full w-full object-cover max-sm:h-full"
           />
           <div className="absolute inset-0 z-10 bg-gradient-to-t from-gray-900 via-gray-900/40" />
           <div className="absolute inset-0 z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
@@ -123,7 +123,7 @@ function Projects() {
     </div>
   </div>
 </div>
-        {/* Passion Projects */}
+        {/* Passion Projects real */}
         <div ref={sectionRef2} className="max-lg:h-[100vh] max-md:h-[80vh] max-sm:h-auto h-screen w-screen px-6 lg:px-10 projects-container">
   <div className="h-[80%] lg:h-[65%] max-sm:h-auto bg-gray-600 flex sm:justify-center items-center max-sm:flex-col shadow-[0_15px_35px_rgba(0,0,0,0.5)] rounded-[40px] backdrop-blur-[10px] overflow-hidden max-sm:pt-1 max-sm:flex-wrap passion-card">
 
@@ -137,12 +137,12 @@ function Projects() {
       {PassionProjectsData.map((post) => (
         <article
           key={post.id}
-          className="relative flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80 transition-transform duration-300 hover:scale-125 hover:opacity-75 row-span-1 max-sm:w-full"
+          className="relative flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80 transition-transform duration-300 hover:scale-125 hover:opacity-75 row-span-1 max-sm:w-full max-sm:h-[1%]"
         >
           <img
             src={post.imageUrl}
             alt=""
-            className="absolute inset-0 z-0 h-full w-full object-cover max-sm:h-[38vh]"
+            className="absolute inset-0 z-0 h-full w-full object-cover max-sm:h-full"
           />
           <div className="absolute inset-0 z-10 bg-gradient-to-t from-gray-900 via-gray-900/40" />
           <div className="absolute inset-0 z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
@@ -158,6 +158,8 @@ function Projects() {
     </div>
   </div>
 </div>
+
+
 
 
   
