@@ -57,7 +57,7 @@ const projects = {
   ],
   live: [
     { id: 1, title: 'Randomize Website', image: '/website.jpg' },
-    { id: 2, title: 'Others', image: '/fest.webp' },
+    { id: 2, title: 'Laxmi Chit Fund', image: '/laxmi.png' },
     // Add more live projects here
   ],
 };
@@ -168,7 +168,7 @@ const Projects = () => {
         <h1 className="text-8xl font-bold text-center mb-12 font-zain projectsPageHeading">Projects</h1>
           <p className='text-lg flex justify-center font-zain projectsPageDesc'>Browse through Randomize's rich inventory of projects. Click on any one to know more</p>
         <section className="mb-16">
-          <h2 className="text-3xl font-semibold mb-8">Passion Projects</h2>
+          <h2 className="text-3xl font-semibold mb-8">Live Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.passion.map((project) => (
               <div
@@ -239,7 +239,7 @@ const Projects = () => {
    
             
         <section>
-          <h2 className="text-3xl font-semibold mb-8">Live Projects</h2>
+          <h2 className="text-3xl font-semibold mb-8">Passion Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.live.map((project) => (
               <div
