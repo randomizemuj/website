@@ -123,12 +123,12 @@ const Navbar = () => {
               Home
             </a>
 
-            <HashLink
-              to="/#our-projects"
+            <a
+              href="/projects"
               className="block text-white hover:text-gray-300 px-3 py-2 rounded-md"
             >
               Projects
-            </HashLink>
+            </a>
             <a
               href="/events"
               className="block text-white hover:text-gray-300 px-3 py-2 rounded-md"
