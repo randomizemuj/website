@@ -195,14 +195,7 @@ const Core2024 = [
     github: "",
     linkedinUrl: "https://www.linkedin.com/in/tanya-roy-303b89295/",
   },
-  {
-    id: 24,
-    name: "Aarohi Tyagi",
-    role: "Head of Public Relations",
-    imageUrl: "",
-    github: "https://github.com/aarohityagi",
-    linkedinUrl: "https://www.linkedin.com/in/aarohi-tyagi-30aa17282/",
-  },
+
   {
     id: 25,
     name: "Bithal Mohanty",
@@ -260,6 +253,14 @@ const Core2024 = [
     imageUrl: "/Team2024-25/aaradhya.jpg",
     github: "",
     linkedinUrl: "https://www.linkedin.com/in/aaradhya-somvanshi-969622221/",
+  },
+  {
+    id: 24,
+    name: "Aarohi Tyagi",
+    role: "Head of Public Relations",
+    imageUrl: "",
+    github: "https://github.com/aarohityagi",
+    linkedinUrl: "https://www.linkedin.com/in/aarohi-tyagi-30aa17282/",
   },
 ];
 

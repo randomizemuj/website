@@ -6,9 +6,9 @@ import { useInView } from "react-intersection-observer";
 // 2. npm i react-spring
 
 const stats = [
-  { name: "Current Members", value: 120 },
-  { name: "Events conducted", value: 20 },
-  { name: "Participants", value: 400 },
+  { name: "Current Members", value: 300 },
+  { name: "Events conducted", value: 30 },
+  { name: "Participants", value: 500 },
 ];
 
 function Number({ n, isVisible }) {

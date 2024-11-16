@@ -75,7 +75,7 @@ function Events(props) {
             <p className="ml-2 text-sky-500 uppercase tracking-loose">
               Godspeed Randomize
             </p>
-            <p className="font-zain text-3xl md:text-6xl leading-normal md:leading-relaxed mb-2 font-zain Events">
+            <p className=" text-3xl md:text-6xl leading-normal md:leading-relaxed mb-2 font-zain Events">
               Events-di-Timeline
             </p>
             <p className="text-sm md:text-base text-gray-50 mb-4">
