@@ -33,7 +33,7 @@ const features = [
     ],
   },
   {
-    name: "COMMUNITY BUILDIND",
+    name: "COMMUNITY BUILDING",
     subFeatures: [
       {
         name: "Learning Together:",

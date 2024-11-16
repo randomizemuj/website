@@ -39,14 +39,14 @@ const Exec2024 = [
     github: "https://github.com/joytechs247",
     linkedinUrl: "https://www.linkedin.com/in/siddharth-singhal-242a10244",
   },
-  {
-    id: 6,
-    name: "Ranojit Palit",
-    role: "Human Resources Director",
-    imageUrl: "/Team2024-25/Ranojit.jpeg",
-    github: "https://github.com/ranojit2102",
-    linkedinUrl: "https://www.linkedin.com/in/ranojit-palit-a54b3924a",
-  },
+  // {
+  //   id: 6,
+  //   name: "Ranojit Palit",
+  //   role: "Human Resources Director",
+  //   imageUrl: "/Team2024-25/Ranojit.jpeg",
+  //   github: "https://github.com/ranojit2102",
+  //   linkedinUrl: "https://www.linkedin.com/in/ranojit-palit-a54b3924a",
+  // },
   {
     id: 7,
     name: "Samridhi Goyal",

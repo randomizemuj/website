@@ -21,7 +21,7 @@ const Core2024 = [
     role: "Webmaster",
     imageUrl: "/Team2024-25/Rishi.jpg",
     github: "https://github.com/Risheeshh",
-    linkedinUrl: "",
+    linkedinUrl: "https://www.linkedin.com/in/rishush",
   },
 
   {
@@ -60,7 +60,7 @@ const Core2024 = [
     id: 8,
     name: "ARYAN KAPOOR",
     role: "Head of Graphic Design",
-    imageUrl: "/Team2024-25/ARYAN.jpg",
+    imageUrl: "/Team2024-25/Aryan.png",
     github: "https://github.com/AryanKapoor24",
     linkedinUrl: "https://www.linkedin.com/in/aryan-kapoor-67098b261/",
   },
@@ -84,7 +84,7 @@ const Core2024 = [
     id: 11,
     name: "Aryan Tak",
     role: "Head of Events",
-    imageUrl: "/Team2024-25/Aryan.png",
+    imageUrl: "/Team2024-25/ARYAN.jpg",
     github: "",
     linkedinUrl: "https://www.linkedin.com/in/aryan-singh-tak-a87b27229/",
   },
@@ -158,7 +158,7 @@ const Core2024 = [
     id: 19,
     name: "Aryan Sharma",
     role: "Head of IT and Operations",
-    imageUrl: "",
+    imageUrl: "/Team2024-25/AryanSharma.jpg",
     github: "",
     linkedinUrl: "",
   },
@@ -215,7 +215,7 @@ const Core2024 = [
     id: 26,
     name: "Devansh Sharma",
     role: "Head of Coverage",
-    imageUrl: "",
+    imageUrl: "/Team2024-25/Devansh.jpg",
     github: "https://github.com/DSTHEBEST",
     linkedinUrl: "https://www.linkedin.com/in/devansh-sharma-086aa5245/",
   },
@@ -238,12 +238,12 @@ const Core2024 = [
 
   {
     id: 29,
-    name: "Jatin Saxena",
+    name: "Laraib Firoz",
     role: "Head of logistics",
-    imageUrl: "/Team2024-25/Jatin.jpg",
+    imageUrl: "/Team2024-25/Laraib.jpg",
     github: "",
     linkedinUrl:
-      "https://www.linkedin.com/in/jatin-saxena-902117326?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      " https://www.linkedin.com/in/laraibfiroz?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app ",
   },
   {
     id: 30,
