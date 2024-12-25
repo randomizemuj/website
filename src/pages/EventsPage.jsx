@@ -144,24 +144,24 @@ function Events(props) {
                   />
                 </div>
                 {/*Gradient pattern ends */}
-
                 <div className="mb-8 flex justify-between flex-row-reverse items-center w-full">
                   <div className="order-1 w-[45%] h-full flex justify-start max-md:ml-5">
                     <h1 className="text-gray-400 text-5xl font-bold max-md:text-xl ">
-                      Competitive Programming
+                      Hello World 2.0
                     </h1>
                   </div>
+
                   <div
-                    className="order-1 w-[45%] text-left shadow-[0_15px_35px_rgba(0,0,0,0.5)] rounded-[40px] flex items-center max-sm:flex-col EventsCard"
+                    className="order-1 w-[45%] text-left bg-gray-100 shadow-[0_15px_35px_rgba(0,0,0,0.5)] rounded-[40px] flex items-center max-sm:flex-col EventsCard"
                     id="1"
                     onClick={handleClick}
                   >
                     <div className="order-1 m-0 h-[100%] w-1/2 max-sm:order-1 max-sm:mt-8 eventsImage1">
-                      <img className="object-fill" src="/cp-workshop.jpg" />
+                      <img className="object-fill" src="/hello-world-2024.jpg" />
                     </div>
                     <div className="w-1/2 max-sm:pl-1 max-sm:order-2 flex justify-center flex-col items-center eventsDate1">
                       <p className="mb-3 max-lg:mb-5 text-3xl max-lg:text-base text-black font-zain eventsHeading">
-                        9 Sept, 2023
+                        16-17 October, 2024
                       </p>
                       {/* <h4 className="mb-3 font-bold text-lg max-sm:text-base md:text-2xl text-black">
                         Competitive Programming
@@ -169,18 +169,18 @@ function Events(props) {
                     </div>
                     <div className="eventsDescp1 p-[10%] max-lg:p-8 ">
                       <p className="text-xl max-lg:text-xs leading-snug text-gray-500 text-opacity-100">
-                        A 2-hour session where we'll tackle a programming
-                        problem, break it down, discuss approaches, solve with
-                        flowcharts and logic, then code it. No prior programming
-                        knowledge required..
+                      RANDOMIZE is back with our most anticipated and flagship event "HELLO WORLD!"
+Buckle up for a two-day of fun and exploration in the amazing universe of Computer Science!
+
                       </p>
                     </div>
                   </div>
                 </div>
+
                 <div className="mb-8 flex justify-between items-center w-full">
                   <div className="order-1 w-[45%] h-full flex justify-end pl-60 pr-0 mr-10 max-lg:pl-0">
                     <h1 className="text-gray-400 text-5xl font-bold max-md:text-xl">
-                      Hello World
+                      Web Dev Workshop
                     </h1>
                   </div>
                   <div
@@ -189,11 +189,11 @@ function Events(props) {
                     onClick={handleClick}
                   >
                     <div className="m-0 h-[100%] w-1/2 max-sm:order-1 max-sm:mt-8 eventsImage2">
-                      <img className="object-fill" src="/hello-world.jpg" />
+                      <img className="object-fill" src="/WebDevWS-1.jpg" />
                     </div>
                     <div className="w-1/2 max-sm:pl-1 max-sm:order-2 flex justify-center flex-col items-center eventsDate2">
                       <p className="mb-3 max-lg:mb-5 text-3xl max-lg:text-base text-black font-zain eventsHeading">
-                        13 Sept, 2023
+                        1 September, 2024
                       </p>
                       {/* <h4 className="mb-3 font-bold text-lg max-sm:text-base md:text-2xl text-black">
                         Competitive Programming
@@ -201,16 +201,94 @@ function Events(props) {
                     </div>
                     <div className="eventsDescp2 p-[10%] max-lg:p-8 ">
                       <p className="text-xl max-lg:text-xs leading-snug text-gray-500 text-opacity-100">
-                        Learn about various topics at the upcoming two-day event
-                        on 13th and 14th September 2023. Graphic
-                        Design+UI/UX,Generative AI+Fundamentals of AI,
-                        DSA+Competitive Programming,Full Stack Development + App
-                        Development,Introduction to Decentralized Technologies
-                        (blockchain, Web3, NFTs, Crypto).
+                      Whether you're a beginner or have some coding experience, this hands-on session will help you design and code your own personalized portfolio website from scratch. 
+Our experienced developers will guide you through every step!
+
+No prerequisites—just bring your thirst for knowledge and creativity!
                       </p>
                     </div>
                   </div>
                 </div>
+
+                <div className="mb-8 flex justify-between flex-row-reverse items-center w-full">
+                  <div className="order-1 w-[45%] h-full flex justify-start max-md:ml-5">
+                    <h1 className="text-gray-400 text-5xl font-bold max-md:text-xl ">
+                      Panel Talk
+                      <br />
+                      with a Googler
+                    </h1>
+                  </div>
+
+                  <div
+                    className="order-1 w-[45%] text-left bg-gray-100 shadow-[0_15px_35px_rgba(0,0,0,0.5)] rounded-[40px] flex items-center max-sm:flex-col EventsCard"
+                    id="3"
+                    onClick={handleClick}
+                  >
+                    <div className="order-1 m-0 h-[100%] w-1/2 max-sm:order-1 max-sm:mt-8 eventsImage3">
+                      <img className="object-fill" src="/googler.webp" />
+                    </div>
+                    <div className="w-1/2 max-sm:pl-1 max-sm:order-2 flex justify-center flex-col items-center eventsDate3">
+                      <p className="mb-3 max-lg:mb-5 text-3xl max-lg:text-base text-black font-zain eventsHeading">
+                        14 April, 2024
+                      </p>
+                      {/* <h4 className="mb-3 font-bold text-lg max-sm:text-base md:text-2xl text-black">
+                        Competitive Programming
+                      </h4> */}
+                    </div>
+                    <div className="eventsDescp3 p-[10%] max-lg:p-8 ">
+                      <p className="text-xl max-lg:text-xs leading-snug text-gray-500 text-opacity-100">
+                        Randomize(); is hosting an exclusive panel talk event
+                        this weekend with a distinguished industry
+                        expert.Details-Speaker: Kalyan Kumar Dubey, an employee
+                        at Google and a 5-star Coder on CodeChef,Topic: Gain
+                        insights and strategies to enhance coding skills, and
+                        understand the work environment at Google.This is an
+                        opportunity to learn from an experienced professional at
+                        Google, get your questions answered, and improve your
+                        coding abilities.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mb-8 flex justify-between items-center w-full">
+                  <div className="order-1 w-[45%] h-full flex justify-end">
+                    <h1 className="text-gray-400 text-5xl font-bold max-md:text-xl ">
+                      Git Workshop
+                    </h1>
+                  </div>
+
+                  <div
+                    className="order-1 w-[45%] text-left bg-gray-100 shadow-[0_15px_35px_rgba(0,0,0,0.5)] rounded-[40px] flex items-center max-sm:flex-col EventsCard"
+                    id="4"
+                    onClick={handleClick}
+                  >
+                    <div className=" m-0 h-[100%] w-1/2 max-sm:order-1 max-sm:mt-8 eventsImage4">
+                      <img className="object-fill" src="/github.jpg" />
+                    </div>
+                    <div className="w-1/2 max-sm:pl-1 max-sm:order-2 flex justify-center flex-col items-center eventsDate4">
+                      <p className="mb-3 max-lg:mb-5 text-3xl max-lg:text-base text-black font-zain eventsHeading">
+                        3 Feb, 2024
+                      </p>
+                      {/* <h4 className="mb-3 font-bold text-lg max-sm:text-base md:text-2xl text-black">
+                        Competitive Programming
+                      </h4> */}
+                    </div>
+                    <div className="eventsDescp4 p-[10%] max-lg:p-8 ">
+                      <p className="text-xl max-lg:text-xs leading-snug text-gray-500 text-opacity-100">
+                        Randomize is conducting a session to teach Git and
+                        GitHub from scratch, which are essential skills for:
+                        Writing code in large teams,Creating scalable
+                        projects,Software engineering roles,The emphasis is on
+                        the importance of learning Git and GitHub for
+                        collaborative coding, scalable projects, and software
+                        engineering roles.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                
+                
 
                 <div className="mb-8 flex justify-between flex-row-reverse items-center w-full">
                   <div className="order-1 w-[45%] h-full flex justify-start max-md:ml-5">
@@ -220,13 +298,13 @@ function Events(props) {
                   </div>
                   <div
                     className="order-1 w-[45%] text-left bg-gray-100 shadow-[0_15px_35px_rgba(0,0,0,0.5)] rounded-[40px] flex items-center max-sm:flex-col EventsCard"
-                    id="3"
+                    id="5"
                     onClick={handleClick}
                   >
-                    <div className="order-1 m-0 h-[100%] w-1/2 max-sm:order-1 max-sm:mt-8 eventsImage3">
+                    <div className="order-1 m-0 h-[100%] w-1/2 max-sm:order-1 max-sm:mt-8 eventsImage5">
                       <img className="object-fill" src="/fest.webp" />
                     </div>
-                    <div className="w-1/2 max-sm:pl-1 max-sm:order-2 flex justify-center flex-col items-center eventsDate3">
+                    <div className="w-1/2 max-sm:pl-1 max-sm:order-2 flex justify-center flex-col items-center eventsDate5">
                       <p className="mb-3 max-lg:mb-5 text-3xl max-lg:text-base text-black font-zain eventsHeading">
                         19 Jan, 2024
                       </p>
@@ -234,7 +312,7 @@ function Events(props) {
                         Competitive Programming
                       </h4> */}
                     </div>
-                    <div className="eventsDescp3 p-[10%] max-lg:p-8 ">
+                    <div className="eventsDescp5 p-[10%] max-lg:p-8 ">
                       <p className="text-xl max-lg:text-xs leading-snug text-gray-500 text-opacity-100">
                         Randomize(); is organizing a 3-Day Technological
                         Festival called 'The Fest' from 19th to 21st
@@ -283,37 +361,35 @@ function Events(props) {
                 {/*Gradient pattern ends */}
 
                 <div className="mb-8 flex justify-between items-center w-full">
-                  <div className="order-1 w-[45%] h-full flex justify-end">
-                    <h1 className="text-gray-400 text-5xl font-bold max-md:text-xl ">
-                      Git Workshop
+                  <div className="order-1 w-[45%] h-full flex justify-end pl-60 pr-0 mr-10 max-lg:pl-0">
+                    <h1 className="text-gray-400 text-5xl font-bold max-md:text-xl">
+                      Hello World
                     </h1>
                   </div>
-
                   <div
                     className="order-1 w-[45%] text-left bg-gray-100 shadow-[0_15px_35px_rgba(0,0,0,0.5)] rounded-[40px] flex items-center max-sm:flex-col EventsCard"
-                    id="4"
+                    id="6"
                     onClick={handleClick}
                   >
-                    <div className=" m-0 h-[100%] w-1/2 max-sm:order-1 max-sm:mt-8 eventsImage4">
-                      <img className="object-fill" src="/github.jpg" />
+                    <div className="m-0 h-[100%] w-1/2 max-sm:order-1 max-sm:mt-8 eventsImage6">
+                      <img className="object-fill" src="/hello-world.jpg" />
                     </div>
-                    <div className="w-1/2 max-sm:pl-1 max-sm:order-2 flex justify-center flex-col items-center eventsDate4">
+                    <div className="w-1/2 max-sm:pl-1 max-sm:order-2 flex justify-center flex-col items-center eventsDate6">
                       <p className="mb-3 max-lg:mb-5 text-3xl max-lg:text-base text-black font-zain eventsHeading">
-                        3 Feb, 2024
+                        13 Sept, 2023
                       </p>
                       {/* <h4 className="mb-3 font-bold text-lg max-sm:text-base md:text-2xl text-black">
                         Competitive Programming
                       </h4> */}
                     </div>
-                    <div className="eventsDescp4 p-[10%] max-lg:p-8 ">
+                    <div className="eventsDescp6 p-[10%] max-lg:p-8 ">
                       <p className="text-xl max-lg:text-xs leading-snug text-gray-500 text-opacity-100">
-                        Randomize is conducting a session to teach Git and
-                        GitHub from scratch, which are essential skills for:
-                        Writing code in large teams,Creating scalable
-                        projects,Software engineering roles,The emphasis is on
-                        the importance of learning Git and GitHub for
-                        collaborative coding, scalable projects, and software
-                        engineering roles.
+                        Learn about various topics at the upcoming two-day event
+                        on 13th and 14th September 2023. Graphic
+                        Design+UI/UX,Generative AI+Fundamentals of AI,
+                        DSA+Competitive Programming,Full Stack Development + App
+                        Development,Introduction to Decentralized Technologies
+                        (blockchain, Web3, NFTs, Crypto).
                       </p>
                     </div>
                   </div>
@@ -322,43 +398,37 @@ function Events(props) {
                 <div className="mb-8 flex justify-between flex-row-reverse items-center w-full">
                   <div className="order-1 w-[45%] h-full flex justify-start max-md:ml-5">
                     <h1 className="text-gray-400 text-5xl font-bold max-md:text-xl ">
-                      Panel Talk
-                      <br />
-                      with a Googler
+                      Competitive Programming
                     </h1>
                   </div>
-
                   <div
-                    className="order-1 w-[45%] text-left bg-gray-100 shadow-[0_15px_35px_rgba(0,0,0,0.5)] rounded-[40px] flex items-center max-sm:flex-col EventsCard"
-                    id="5"
+                    className="order-1 w-[45%] text-left shadow-[0_15px_35px_rgba(0,0,0,0.5)] rounded-[40px] flex items-center max-sm:flex-col EventsCard"
+                    id="7"
                     onClick={handleClick}
                   >
-                    <div className="order-1 m-0 h-[100%] w-1/2 max-sm:order-1 max-sm:mt-8 eventsImage5">
-                      <img className="object-fill" src="/googler.webp" />
+                    <div className="order-1 m-0 h-[100%] w-1/2 max-sm:order-1 max-sm:mt-8 eventsImage7">
+                      <img className="object-fill" src="/cp-workshop.jpg" />
                     </div>
-                    <div className="w-1/2 max-sm:pl-1 max-sm:order-2 flex justify-center flex-col items-center eventsDate5">
+                    <div className="w-1/2 max-sm:pl-1 max-sm:order-2 flex justify-center flex-col items-center eventsDate7">
                       <p className="mb-3 max-lg:mb-5 text-3xl max-lg:text-base text-black font-zain eventsHeading">
-                        14 April, 2024
+                        9 Sept, 2023
                       </p>
                       {/* <h4 className="mb-3 font-bold text-lg max-sm:text-base md:text-2xl text-black">
                         Competitive Programming
                       </h4> */}
                     </div>
-                    <div className="eventsDescp5 p-[10%] max-lg:p-8 ">
+                    <div className="eventsDescp7 p-[10%] max-lg:p-8 ">
                       <p className="text-xl max-lg:text-xs leading-snug text-gray-500 text-opacity-100">
-                        Randomize(); is hosting an exclusive panel talk event
-                        this weekend with a distinguished industry
-                        expert.Details-Speaker: Kalyan Kumar Dubey, an employee
-                        at Google and a 5-star Coder on CodeChef,Topic: Gain
-                        insights and strategies to enhance coding skills, and
-                        understand the work environment at Google.This is an
-                        opportunity to learn from an experienced professional at
-                        Google, get your questions answered, and improve your
-                        coding abilities.
+                        A 2-hour session where we'll tackle a programming
+                        problem, break it down, discuss approaches, solve with
+                        flowcharts and logic, then code it. No prior programming
+                        knowledge required..
                       </p>
                     </div>
                   </div>
                 </div>
+                
+
               </div>
             </div>
           </div>
