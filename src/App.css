@@ -106,7 +106,7 @@ body{
 .EventsCard{
   background-color: #8a9bb3;
   background-image: linear-gradient(147deg, #8a9bb3 0%, #b0bec5 74%);
-  transition: all 3000ms ease-in-out;
+  transition: all 2000ms ease-in-out;
 }
 
 .eventsDescp1{
