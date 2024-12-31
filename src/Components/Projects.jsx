@@ -1,6 +1,7 @@
 import LiveProjectsData from "../Data/LiveProjectsData.jsx";
 import PassionProjectsData from "../Data/PassionProjectsData.jsx";
 import { useEffect, useRef } from "react";
+import ScrollOut from "scroll-out";
 
 function Projects() {
   const sectionRef1 = useRef("");
@@ -43,10 +44,10 @@ function Projects() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            if (entry.target === sectionRef1.current) {
+            if (entry.target === sectionRef1.current && !isSmallDevice) {
               liveProjectAnimation();
-            } else if (entry.target === sectionRef2.current) {
-              passionProjectAnimation();
+            } else if (entry.target === sectionRef2.current && !isSmallDevice) {
+             passionProjectAnimation();
             }
           }
         });
@@ -62,12 +63,29 @@ function Projects() {
         observer.observe(section);
       }
     });
+    if(isSmallDevice){
+      ScrollOut({
+      onShown: function(element, ctx, scrollingElement) {
+        
+          element.style.opacity = 1; 
+          element.style.transform = 'translateX(0)'; // Slide to the original position
+        
+      },
+      onHidden: function(element, ctx, scrollingElement) {
+        
+          element.style.opacity = 0;
+          element.style.transform = 'translateX(300%)'; // Slide back to the right
+        
+      },
+    });
+    }
+    
   }, []);
 
   function liveProjectAnimation() {
     $(".liveProjects-card")
       .css({
-        display: "grid",
+        
         opacity: 0,
         right: "-200px",
       })
@@ -97,6 +115,7 @@ function Projects() {
 
   return (
     <div
+    
       className="bg-black py-10 sm:py-14 max-sm:mb-[15%] h-auto"
       id="our-projects"
     >
@@ -117,7 +136,8 @@ function Projects() {
             {LiveProjectsData.map((post) => (
               <article
                 key={post.id}
-                className="relative flex flex-col justify-end overflow-hidden rounded-2xl  px-8 pb-8 pt-80 sm:pt-48 lg:pt-80 transition-transform duration-300 sm:hover:scale-125 hover:opacity-75 row-span-1 max-sm:w-full max-sm:h-[1%] "
+                className="relative flex flex-col justify-end overflow-hidden rounded-2xl transition-transform duration-300 sm:hover:scale-125 hover:opacity-75  px-8 pb-8 pt-80 sm:pt-48 lg:pt-80 row-span-1 max-sm:w-full max-sm:h-[1%] max-sm:transform max-sm:-translate-x-full max-sm:transition-all max-sm:duration-[3000ms] max-sm:ease-in-out hello "
+                data-scroll
               >
                 <img
                   src={post.imageUrl}
@@ -156,7 +176,8 @@ function Projects() {
             {PassionProjectsData.map((post) => (
               <article
                 key={post.id}
-                className="relative flex flex-col justify-end overflow-hidden rounded-2xl  px-8 pb-8 pt-80 sm:pt-48 lg:pt-80 transition-transform duration-300 sm:hover:scale-125 hover:opacity-75 row-span-1 max-sm:w-full max-sm:h-[1%] "
+                className="relative flex flex-col justify-end overflow-hidden rounded-2xl  px-8 pb-8 pt-80 sm:pt-48 lg:pt-80 transition-transform duration-300 sm:hover:scale-125 hover:opacity-75 row-span-1 max-sm:w-full max-sm:h-[1%] max-sm:transform max-sm:-translate-x-full max-sm:transition-all max-sm:duration-[3000ms] max-sm:ease-in-out hello"
+                data-scroll
               >
                 <img
                   src={post.imageUrl}

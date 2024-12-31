@@ -4,7 +4,7 @@ const LiveProjects = [
     title: "Odysseus",
     href: "/odysseus",
     description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+      "An autonomous maze solving robot.",
     imageUrl: "/odysseus.jpg",
     date: "Mar 16, 2020",
     datetime: "2020-03-16",
@@ -15,7 +15,7 @@ const LiveProjects = [
     title: "Quill",
     href: "/quill",
     description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+      "Quill. A Robot that Writes Your Assignments in Your Handwriting, Just Submit Your Questions in any format.",
     imageUrl: "/quill.jpg",
     date: "Mar 16, 2020",
     datetime: "2020-03-16",
@@ -25,7 +25,7 @@ const LiveProjects = [
     title: "Pathaan",
     href: "/Pathaan",
     description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+      "Precision Android targeted for hostile annihilation and nullification.",
     imageUrl: "/pathaan.jpg",
     date: "Mar 16, 2020",
     datetime: "2020-03-16",

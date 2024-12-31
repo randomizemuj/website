@@ -3,11 +3,14 @@ import Exec2024 from "../Data/Exec/Exec2024.jsx";
 import TeamCard from "../Components/TeamCard.jsx";
 import Exec2023 from "../Data/Exec/Exec2023.jsx";
 import Core2023 from "../Data/Core/Core2023.jsx";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import FacultyList from "../Data/Faculty/Faculty.jsx";
 import { Fade } from "react-awesome-reveal";
 
 export default function Teams() {
+  useEffect(() => {
+    window.scrollTo(0, 0);//resets the scrolling to the top of the page
+  }, []);
   const [selectYear, setSelectYear] = useState("2024");
   return (
     <>

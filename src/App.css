@@ -3,6 +3,7 @@ body{
   overflow-x: hidden;
 }
 
+
 .projects{
   display: none;
 }
@@ -21,19 +22,24 @@ body{
   background-color: #8a9bb3;
   background-image: linear-gradient(147deg, #8a9bb3 0%, #b0bec5 74%);
 }
+@media (min-width: 640px){
+    .liveProjects-card{
+    position: relative; 
+    right: -200px; 
+    opacity: 0; 
+    transition: opacity 0.25s ease;
+  }
+    .passionProjects-card{
+    position: relative; 
+    right: -200px;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+  }
+}
 
-.liveProjects-card{
-  position: relative; 
-  right: -200px; 
-  opacity: 0; 
-  transition: opacity 0.25s ease;
-}
-.passionProjects-card{
-  position: relative; 
-  right: -200px;
-  opacity: 0;
-  transition: opacity 0.25s ease;
-}
+
+
+
 
 /* Ensure the headings are on top and cards are underneath */
 .projectsHeading-container {
@@ -100,6 +106,7 @@ body{
 .EventsCard{
   background-color: #8a9bb3;
   background-image: linear-gradient(147deg, #8a9bb3 0%, #b0bec5 74%);
+  transition: all 3000ms ease-in-out;
 }
 
 .eventsDescp1{
@@ -121,6 +128,12 @@ body{
   display: none;
 }
 .eventsDescp7{
+  display: none;
+}
+.eventsDescp8{
+  display: none;
+}
+.eventsDescp9{
   display: none;
 }
 /*Scrollbar styling*/
@@ -203,4 +216,14 @@ body{
 .carousel-prev:hover, .carousel-next:hover {
   background-color: rgba(0, 0, 0, 0.7);
 }
+/* 
+[data-scroll] {
+  transition: opacity 5s ease-in-out;
+}
+[data-scroll="in"] {
+  opacity: 1;
+}
+[data-scroll="out"] {
+  opacity: 0;
+} */
 

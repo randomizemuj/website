@@ -4,7 +4,7 @@ const PassionProjects = [
     title: "Randomize Website",
     href: "/randomize-website",
     description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+      "A creative endeavor by our club to design and build our very own website, showcasing our projects, events, passion, and community spirit.",
     imageUrl: "/website.jpg",
     date: "Mar 16, 2020",
     datetime: "2020-03-16",
@@ -14,7 +14,7 @@ const PassionProjects = [
     title: "Laxmi Chit Fund",
     href: "/laxmiChitFund",
     description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+      "Under development",
     imageUrl: "/laxmi.png",
     date: "Mar 16, 2020",
     datetime: "2020-03-16",

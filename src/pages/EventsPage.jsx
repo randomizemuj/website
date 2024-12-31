@@ -1,8 +1,8 @@
 import eventData from "../Data/Eventsdata.jsx";
-
+import ScrollOut from "scroll-out";
 import { useState, useEffect } from "react";
 
-function Events(props) {
+const Events = () => {
   const [count, setCount] = useState(0);
   function handleClick(event) {
     const currentCard = event.currentTarget.id;
@@ -22,6 +22,32 @@ function Events(props) {
       console.log("No");
     }
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0);//resets the scrolling to the top of the page
+    ScrollOut({
+      targets: '.EventsCard',
+      onShown: function(element, ctx, scrollingElement) {
+        
+          element.style.opacity = 1; 
+          element.style.transform = 'translateX(0)'; // Slide to the original position
+        
+      },
+      onHidden: function(element, ctx, scrollingElement) {
+          
+          element.style.opacity = 0;
+          if(element.id%2 == 0){
+            element.style.transform = 'translateX(400%)';
+          }
+          else{
+            element.style.transform = 'translateX(-400%)'; // Slide back to the left
+          }
+          
+        
+      },
+    }); 
+
+  }, []);
 
   return (
     <section>
@@ -147,21 +173,22 @@ function Events(props) {
                 <div className="mb-8 flex justify-between flex-row-reverse items-center w-full">
                   <div className="order-1 w-[45%] h-full flex justify-start max-md:ml-5">
                     <h1 className="text-gray-400 text-5xl font-bold max-md:text-xl ">
-                      Hello World 2.0
+                      EP Workshop
                     </h1>
                   </div>
 
                   <div
-                    className="order-1 w-[45%] text-left bg-gray-100 shadow-[0_15px_35px_rgba(0,0,0,0.5)] rounded-[40px] flex items-center max-sm:flex-col EventsCard"
+                    className="order-1 w-[45%] text-left bg-gray-100 shadow-[0_15px_35px_rgba(0,0,0,0.5)] rounded-[40px] flex items-center max-sm:flex-col transform opacity-0 EventsCard"
                     id="1"
                     onClick={handleClick}
+                    
                   >
                     <div className="order-1 m-0 h-[100%] w-1/2 max-sm:order-1 max-sm:mt-8 eventsImage1">
-                      <img className="object-fill" src="/hello-world-2024.jpg" />
+                      <img className="object-fill" src="/Ep-workshop.jpg" />
                     </div>
                     <div className="w-1/2 max-sm:pl-1 max-sm:order-2 flex justify-center flex-col items-center eventsDate1">
                       <p className="mb-3 max-lg:mb-5 text-3xl max-lg:text-base text-black font-zain eventsHeading">
-                        16-17 October, 2024
+                        5 December, 2024
                       </p>
                       {/* <h4 className="mb-3 font-bold text-lg max-sm:text-base md:text-2xl text-black">
                         Competitive Programming
@@ -169,8 +196,71 @@ function Events(props) {
                     </div>
                     <div className="eventsDescp1 p-[10%] max-lg:p-8 ">
                       <p className="text-xl max-lg:text-xs leading-snug text-gray-500 text-opacity-100">
+                      Randomize hosted an engaging session focused on the 1st Year EP syllabus, offering in-depth explanations, practice questions, and interactive doubt-solving to help students prepare effectively for their MTE.
+
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="mb-8 flex justify-between items-center w-full">
+                  <div className="order-1 w-[45%] h-full flex justify-end pl-60 pr-0 mr-10 max-lg:pl-0">
+                    <h1 className="text-gray-400 text-5xl font-bold max-md:text-xl">
+                      Hello World 2.O
+                    </h1>
+                  </div>
+                  <div
+                    className="order-1 w-[45%] text-left bg-gray-100 shadow-[0_15px_35px_rgba(0,0,0,0.5)] rounded-[40px] flex items-center max-sm:flex-col EventsCard"
+                    id="2"
+                    onClick={handleClick}
+                  >
+                    <div className="m-0 h-[100%] w-1/2 max-sm:order-1 max-sm:mt-8 eventsImage2">
+                      <img className="object-fill" src="/hello-world-2024.jpg" />
+                    </div>
+                    <div className="w-1/2 max-sm:pl-1 max-sm:order-2 flex justify-center flex-col items-center eventsDate2">
+                      <p className="mb-3 max-lg:mb-5 text-3xl max-lg:text-base text-black font-zain eventsHeading">
+                        16-17 October, 2024
+                      </p>
+                      {/* <h4 className="mb-3 font-bold text-lg max-sm:text-base md:text-2xl text-black">
+                        Competitive Programming
+                      </h4> */}
+                    </div>
+                    <div className="eventsDescp2 p-[10%] max-lg:p-8 ">
+                      <p className="text-xl max-lg:text-xs leading-snug text-gray-500 text-opacity-100">
                       RANDOMIZE is back with our most anticipated and flagship event "HELLO WORLD!"
 Buckle up for a two-day of fun and exploration in the amazing universe of Computer Science!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div className="mb-8 flex justify-between flex-row-reverse items-center w-full">
+                  <div className="order-1 w-[45%] h-full flex justify-start max-md:ml-5">
+                    <h1 className="text-gray-400 text-5xl font-bold max-md:text-xl ">
+                      Freshman Meetup
+                    </h1>
+                  </div>
+
+                  <div
+                    className="order-1 w-[45%] text-left bg-gray-100 shadow-[0_15px_35px_rgba(0,0,0,0.5)] rounded-[40px] flex items-center max-sm:flex-col transform EventsCard"
+                    id="3"
+                    onClick={handleClick}
+                    
+                  >
+                    <div className="order-1 m-0 h-[100%] w-1/2 max-sm:order-1 max-sm:mt-8 eventsImage3">
+                      <img className="object-fill" src="/freshman-meetup.png" />
+                    </div>
+                    <div className="w-1/2 max-sm:pl-1 max-sm:order-2 flex justify-center flex-col items-center eventsDate3">
+                      <p className="mb-3 max-lg:mb-5 text-3xl max-lg:text-base text-black font-zain eventsHeading">
+                        8 October, 2024
+                      </p>
+                      {/* <h4 className="mb-3 font-bold text-lg max-sm:text-base md:text-2xl text-black">
+                        Competitive Programming
+                      </h4> */}
+                    </div>
+                    <div className="eventsDescp3 p-[10%] max-lg:p-8 ">
+                      <p className="text-xl max-lg:text-xs leading-snug text-gray-500 text-opacity-100">
+                      The RANDOMIZE Freshman Meetup brought together first-year students for an evening filled with laughter, engaging conversations, and valuable insights. Attendees connected with their peers, got answers to their questions, and learned from their seniors, all while enjoying the vibrant and welcoming atmosphere.
 
                       </p>
                     </div>
@@ -185,13 +275,13 @@ Buckle up for a two-day of fun and exploration in the amazing universe of Comput
                   </div>
                   <div
                     className="order-1 w-[45%] text-left bg-gray-100 shadow-[0_15px_35px_rgba(0,0,0,0.5)] rounded-[40px] flex items-center max-sm:flex-col EventsCard"
-                    id="2"
+                    id="4"
                     onClick={handleClick}
                   >
-                    <div className="m-0 h-[100%] w-1/2 max-sm:order-1 max-sm:mt-8 eventsImage2">
+                    <div className="m-0 h-[100%] w-1/2 max-sm:order-1 max-sm:mt-8 eventsImage4">
                       <img className="object-fill" src="/WebDevWS-1.jpg" />
                     </div>
-                    <div className="w-1/2 max-sm:pl-1 max-sm:order-2 flex justify-center flex-col items-center eventsDate2">
+                    <div className="w-1/2 max-sm:pl-1 max-sm:order-2 flex justify-center flex-col items-center eventsDate4">
                       <p className="mb-3 max-lg:mb-5 text-3xl max-lg:text-base text-black font-zain eventsHeading">
                         1 September, 2024
                       </p>
@@ -199,7 +289,7 @@ Buckle up for a two-day of fun and exploration in the amazing universe of Comput
                         Competitive Programming
                       </h4> */}
                     </div>
-                    <div className="eventsDescp2 p-[10%] max-lg:p-8 ">
+                    <div className="eventsDescp4 p-[10%] max-lg:p-8 ">
                       <p className="text-xl max-lg:text-xs leading-snug text-gray-500 text-opacity-100">
                       Whether you're a beginner or have some coding experience, this hands-on session will help you design and code your own personalized portfolio website from scratch. 
 Our experienced developers will guide you through every step!
@@ -221,13 +311,13 @@ No prerequisites—just bring your thirst for knowledge and creativity!
 
                   <div
                     className="order-1 w-[45%] text-left bg-gray-100 shadow-[0_15px_35px_rgba(0,0,0,0.5)] rounded-[40px] flex items-center max-sm:flex-col EventsCard"
-                    id="3"
+                    id="5"
                     onClick={handleClick}
                   >
-                    <div className="order-1 m-0 h-[100%] w-1/2 max-sm:order-1 max-sm:mt-8 eventsImage3">
+                    <div className="order-1 m-0 h-[100%] w-1/2 max-sm:order-1 max-sm:mt-8 eventsImage5">
                       <img className="object-fill" src="/googler.webp" />
                     </div>
-                    <div className="w-1/2 max-sm:pl-1 max-sm:order-2 flex justify-center flex-col items-center eventsDate3">
+                    <div className="w-1/2 max-sm:pl-1 max-sm:order-2 flex justify-center flex-col items-center eventsDate5">
                       <p className="mb-3 max-lg:mb-5 text-3xl max-lg:text-base text-black font-zain eventsHeading">
                         14 April, 2024
                       </p>
@@ -235,7 +325,7 @@ No prerequisites—just bring your thirst for knowledge and creativity!
                         Competitive Programming
                       </h4> */}
                     </div>
-                    <div className="eventsDescp3 p-[10%] max-lg:p-8 ">
+                    <div className="eventsDescp5 p-[10%] max-lg:p-8 ">
                       <p className="text-xl max-lg:text-xs leading-snug text-gray-500 text-opacity-100">
                         Randomize(); is hosting an exclusive panel talk event
                         this weekend with a distinguished industry
@@ -260,13 +350,13 @@ No prerequisites—just bring your thirst for knowledge and creativity!
 
                   <div
                     className="order-1 w-[45%] text-left bg-gray-100 shadow-[0_15px_35px_rgba(0,0,0,0.5)] rounded-[40px] flex items-center max-sm:flex-col EventsCard"
-                    id="4"
+                    id="6"
                     onClick={handleClick}
                   >
-                    <div className=" m-0 h-[100%] w-1/2 max-sm:order-1 max-sm:mt-8 eventsImage4">
+                    <div className=" m-0 h-[100%] w-1/2 max-sm:order-1 max-sm:mt-8 eventsImage6">
                       <img className="object-fill" src="/github.jpg" />
                     </div>
-                    <div className="w-1/2 max-sm:pl-1 max-sm:order-2 flex justify-center flex-col items-center eventsDate4">
+                    <div className="w-1/2 max-sm:pl-1 max-sm:order-2 flex justify-center flex-col items-center eventsDate6">
                       <p className="mb-3 max-lg:mb-5 text-3xl max-lg:text-base text-black font-zain eventsHeading">
                         3 Feb, 2024
                       </p>
@@ -274,7 +364,7 @@ No prerequisites—just bring your thirst for knowledge and creativity!
                         Competitive Programming
                       </h4> */}
                     </div>
-                    <div className="eventsDescp4 p-[10%] max-lg:p-8 ">
+                    <div className="eventsDescp6 p-[10%] max-lg:p-8 ">
                       <p className="text-xl max-lg:text-xs leading-snug text-gray-500 text-opacity-100">
                         Randomize is conducting a session to teach Git and
                         GitHub from scratch, which are essential skills for:
@@ -298,13 +388,13 @@ No prerequisites—just bring your thirst for knowledge and creativity!
                   </div>
                   <div
                     className="order-1 w-[45%] text-left bg-gray-100 shadow-[0_15px_35px_rgba(0,0,0,0.5)] rounded-[40px] flex items-center max-sm:flex-col EventsCard"
-                    id="5"
+                    id="7"
                     onClick={handleClick}
                   >
-                    <div className="order-1 m-0 h-[100%] w-1/2 max-sm:order-1 max-sm:mt-8 eventsImage5">
+                    <div className="order-1 m-0 h-[100%] w-1/2 max-sm:order-1 max-sm:mt-8 eventsImage7">
                       <img className="object-fill" src="/fest.webp" />
                     </div>
-                    <div className="w-1/2 max-sm:pl-1 max-sm:order-2 flex justify-center flex-col items-center eventsDate5">
+                    <div className="w-1/2 max-sm:pl-1 max-sm:order-2 flex justify-center flex-col items-center eventsDate7">
                       <p className="mb-3 max-lg:mb-5 text-3xl max-lg:text-base text-black font-zain eventsHeading">
                         19 Jan, 2024
                       </p>
@@ -312,7 +402,7 @@ No prerequisites—just bring your thirst for knowledge and creativity!
                         Competitive Programming
                       </h4> */}
                     </div>
-                    <div className="eventsDescp5 p-[10%] max-lg:p-8 ">
+                    <div className="eventsDescp7 p-[10%] max-lg:p-8 ">
                       <p className="text-xl max-lg:text-xs leading-snug text-gray-500 text-opacity-100">
                         Randomize(); is organizing a 3-Day Technological
                         Festival called 'The Fest' from 19th to 21st
@@ -368,13 +458,13 @@ No prerequisites—just bring your thirst for knowledge and creativity!
                   </div>
                   <div
                     className="order-1 w-[45%] text-left bg-gray-100 shadow-[0_15px_35px_rgba(0,0,0,0.5)] rounded-[40px] flex items-center max-sm:flex-col EventsCard"
-                    id="6"
+                    id="8"
                     onClick={handleClick}
                   >
-                    <div className="m-0 h-[100%] w-1/2 max-sm:order-1 max-sm:mt-8 eventsImage6">
+                    <div className="m-0 h-[100%] w-1/2 max-sm:order-1 max-sm:mt-8 eventsImage8">
                       <img className="object-fill" src="/hello-world.jpg" />
                     </div>
-                    <div className="w-1/2 max-sm:pl-1 max-sm:order-2 flex justify-center flex-col items-center eventsDate6">
+                    <div className="w-1/2 max-sm:pl-1 max-sm:order-2 flex justify-center flex-col items-center eventsDate8">
                       <p className="mb-3 max-lg:mb-5 text-3xl max-lg:text-base text-black font-zain eventsHeading">
                         13 Sept, 2023
                       </p>
@@ -382,7 +472,7 @@ No prerequisites—just bring your thirst for knowledge and creativity!
                         Competitive Programming
                       </h4> */}
                     </div>
-                    <div className="eventsDescp6 p-[10%] max-lg:p-8 ">
+                    <div className="eventsDescp8 p-[10%] max-lg:p-8 ">
                       <p className="text-xl max-lg:text-xs leading-snug text-gray-500 text-opacity-100">
                         Learn about various topics at the upcoming two-day event
                         on 13th and 14th September 2023. Graphic
@@ -403,13 +493,13 @@ No prerequisites—just bring your thirst for knowledge and creativity!
                   </div>
                   <div
                     className="order-1 w-[45%] text-left shadow-[0_15px_35px_rgba(0,0,0,0.5)] rounded-[40px] flex items-center max-sm:flex-col EventsCard"
-                    id="7"
+                    id="9"
                     onClick={handleClick}
                   >
-                    <div className="order-1 m-0 h-[100%] w-1/2 max-sm:order-1 max-sm:mt-8 eventsImage7">
+                    <div className="order-1 m-0 h-[100%] w-1/2 max-sm:order-1 max-sm:mt-8 eventsImage9">
                       <img className="object-fill" src="/cp-workshop.jpg" />
                     </div>
-                    <div className="w-1/2 max-sm:pl-1 max-sm:order-2 flex justify-center flex-col items-center eventsDate7">
+                    <div className="w-1/2 max-sm:pl-1 max-sm:order-2 flex justify-center flex-col items-center eventsDate9">
                       <p className="mb-3 max-lg:mb-5 text-3xl max-lg:text-base text-black font-zain eventsHeading">
                         9 Sept, 2023
                       </p>
@@ -417,7 +507,7 @@ No prerequisites—just bring your thirst for knowledge and creativity!
                         Competitive Programming
                       </h4> */}
                     </div>
-                    <div className="eventsDescp7 p-[10%] max-lg:p-8 ">
+                    <div className="eventsDescp9 p-[10%] max-lg:p-8 ">
                       <p className="text-xl max-lg:text-xs leading-snug text-gray-500 text-opacity-100">
                         A 2-hour session where we'll tackle a programming
                         problem, break it down, discuss approaches, solve with
