@@ -61,7 +61,7 @@ const Navbar = () => {
             >
               Projects
             </a> */}
-            
+
             <Link
               to="/projects"
               className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-xl"
@@ -84,7 +84,7 @@ const Navbar = () => {
               to="/teams"
               className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-xl"
             >
-              Teams
+              Team
             </Link>
 
             {/* <a href="/resources" className="text-white hover:text-gray-300 px-3 py-2 rounded-md">

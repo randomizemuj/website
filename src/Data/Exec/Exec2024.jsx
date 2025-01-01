@@ -1,7 +1,13 @@
 const Exec2024 = [
   {
     id: 1,
-    name: "Pranit Khandelwal",
+    name: (
+      <>
+        Pranit
+        <br />
+        Khandelwal
+      </>
+    ),
     role: "President",
     imageUrl: "/Team2024-25/Pranit.jpg",
     github: "https://github.com/pranit-pk",
@@ -33,7 +39,13 @@ const Exec2024 = [
   },
   {
     id: 5,
-    name: "Siddharth Singhal",
+    name: (
+      <>
+        Siddharth
+        <br />
+        Singhal
+      </>
+    ),
     role: "Tech Lead",
     imageUrl: "/Team2024-25/siddharth.jpg",
     github: "https://github.com/joytechs247",

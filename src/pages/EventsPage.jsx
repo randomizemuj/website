@@ -24,29 +24,22 @@ const Events = () => {
   }
 
   useEffect(() => {
-    window.scrollTo(0, 0);//resets the scrolling to the top of the page
+    window.scrollTo(0, 0); //resets the scrolling to the top of the page
     ScrollOut({
-      targets: '.EventsCard',
-      onShown: function(element, ctx, scrollingElement) {
-        
-          element.style.opacity = 1; 
-          element.style.transform = 'translateX(0)'; // Slide to the original position
-        
+      targets: ".EventsCard",
+      onShown: function (element, ctx, scrollingElement) {
+        element.style.opacity = 1;
+        element.style.transform = "translateX(0)"; // Slide to the original position
       },
-      onHidden: function(element, ctx, scrollingElement) {
-          
-          element.style.opacity = 0;
-          if(element.id%2 == 0){
-            element.style.transform = 'translateX(400%)';
-          }
-          else{
-            element.style.transform = 'translateX(-400%)'; // Slide back to the left
-          }
-          
-        
+      onHidden: function (element, ctx, scrollingElement) {
+        element.style.opacity = 0;
+        if (element.id % 2 == 0) {
+          element.style.transform = "translateX(400%)";
+        } else {
+          element.style.transform = "translateX(-400%)"; // Slide back to the left
+        }
       },
-    }); 
-
+    });
   }, []);
 
   return (
@@ -181,7 +174,6 @@ const Events = () => {
                     className="order-1 w-[45%] text-left bg-gray-100 shadow-[0_15px_35px_rgba(0,0,0,0.5)] rounded-[40px] flex items-center max-sm:flex-col transform opacity-0 EventsCard"
                     id="1"
                     onClick={handleClick}
-                    
                   >
                     <div className="order-1 m-0 h-[100%] w-1/2 max-sm:order-1 max-sm:mt-8 eventsImage1">
                       <img className="object-fill" src="/Ep-workshop.jpg" />
@@ -196,8 +188,10 @@ const Events = () => {
                     </div>
                     <div className="eventsDescp1 p-[10%] max-lg:p-8 ">
                       <p className="text-xl max-lg:text-xs leading-snug text-gray-500 text-opacity-100">
-                      Randomize hosted an engaging session focused on the 1st Year EP syllabus, offering in-depth explanations, practice questions, and interactive doubt-solving to help students prepare effectively for their MTE.
-
+                        Randomize hosted an engaging session focused on the 1st
+                        Year EP syllabus, offering in-depth explanations,
+                        practice questions, and interactive doubt-solving to
+                        help students prepare effectively for their MTE.
                       </p>
                     </div>
                   </div>
@@ -214,7 +208,10 @@ const Events = () => {
                     onClick={handleClick}
                   >
                     <div className="m-0 h-[100%] w-1/2 max-sm:order-1 max-sm:mt-8 eventsImage2">
-                      <img className="object-fill" src="/hello-world-2024.jpg" />
+                      <img
+                        className="object-fill"
+                        src="/hello-world-2024.jpg"
+                      />
                     </div>
                     <div className="w-1/2 max-sm:pl-1 max-sm:order-2 flex justify-center flex-col items-center eventsDate2">
                       <p className="mb-3 max-lg:mb-5 text-3xl max-lg:text-base text-black font-zain eventsHeading">
@@ -226,13 +223,13 @@ const Events = () => {
                     </div>
                     <div className="eventsDescp2 p-[10%] max-lg:p-8 ">
                       <p className="text-xl max-lg:text-xs leading-snug text-gray-500 text-opacity-100">
-                      RANDOMIZE is back with our most anticipated and flagship event "HELLO WORLD!"
-Buckle up for a two-day of fun and exploration in the amazing universe of Computer Science!
+                        RANDOMIZE is back with our most anticipated and flagship
+                        event "HELLO WORLD!" Buckle up for a two-day of fun and
+                        exploration in the amazing universe of Computer Science!
                       </p>
                     </div>
                   </div>
                 </div>
-
 
                 <div className="mb-8 flex justify-between flex-row-reverse items-center w-full">
                   <div className="order-1 w-[45%] h-full flex justify-start max-md:ml-5">
@@ -245,7 +242,6 @@ Buckle up for a two-day of fun and exploration in the amazing universe of Comput
                     className="order-1 w-[45%] text-left bg-gray-100 shadow-[0_15px_35px_rgba(0,0,0,0.5)] rounded-[40px] flex items-center max-sm:flex-col transform EventsCard"
                     id="3"
                     onClick={handleClick}
-                    
                   >
                     <div className="order-1 m-0 h-[100%] w-1/2 max-sm:order-1 max-sm:mt-8 eventsImage3">
                       <img className="object-fill" src="/freshman-meetup.png" />
@@ -260,8 +256,12 @@ Buckle up for a two-day of fun and exploration in the amazing universe of Comput
                     </div>
                     <div className="eventsDescp3 p-[10%] max-lg:p-8 ">
                       <p className="text-xl max-lg:text-xs leading-snug text-gray-500 text-opacity-100">
-                      The RANDOMIZE Freshman Meetup brought together first-year students for an evening filled with laughter, engaging conversations, and valuable insights. Attendees connected with their peers, got answers to their questions, and learned from their seniors, all while enjoying the vibrant and welcoming atmosphere.
-
+                        The RANDOMIZE Freshman Meetup brought together
+                        first-year students for an evening filled with laughter,
+                        engaging conversations, and valuable insights. Attendees
+                        connected with their peers, got answers to their
+                        questions, and learned from their seniors, all while
+                        enjoying the vibrant and welcoming atmosphere.
                       </p>
                     </div>
                   </div>
@@ -291,10 +291,12 @@ Buckle up for a two-day of fun and exploration in the amazing universe of Comput
                     </div>
                     <div className="eventsDescp4 p-[10%] max-lg:p-8 ">
                       <p className="text-xl max-lg:text-xs leading-snug text-gray-500 text-opacity-100">
-                      Whether you're a beginner or have some coding experience, this hands-on session will help you design and code your own personalized portfolio website from scratch. 
-Our experienced developers will guide you through every step!
-
-No prerequisites—just bring your thirst for knowledge and creativity!
+                        Whether you're a beginner or have some coding
+                        experience, this hands-on session will help you design
+                        and code your own personalized portfolio website from
+                        scratch. Our experienced developers will guide you
+                        through every step! No prerequisites—just bring your
+                        thirst for knowledge and creativity!
                       </p>
                     </div>
                   </div>
@@ -377,8 +379,6 @@ No prerequisites—just bring your thirst for knowledge and creativity!
                     </div>
                   </div>
                 </div>
-                
-                
 
                 <div className="mb-8 flex justify-between flex-row-reverse items-center w-full">
                   <div className="order-1 w-[45%] h-full flex justify-start max-md:ml-5">
@@ -517,8 +517,6 @@ No prerequisites—just bring your thirst for knowledge and creativity!
                     </div>
                   </div>
                 </div>
-                
-
               </div>
             </div>
           </div>
@@ -526,6 +524,6 @@ No prerequisites—just bring your thirst for knowledge and creativity!
       </div>
     </section>
   );
-}
+};
 
 export default Events;

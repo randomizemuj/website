@@ -2,7 +2,13 @@ const Core2024 = [
   {
     id: 1,
     name: "Vishesh Khadaria",
-    role: "Deputy Managing Director",
+    role: (
+      <>
+        Deputy Managing
+        <br />
+        Director
+      </>
+    ),
     imageUrl: "/Team2024-25/vishesh.jpg",
     github: "",
     linkedinUrl: "www.linkedin.com/in/vishesh-khadaria-203340236",
@@ -157,15 +163,33 @@ const Core2024 = [
   {
     id: 19,
     name: "Aryan Sharma",
-    role: "Head of IT and Operations",
+    role: (
+      <>
+        Head of IT and
+        <br />
+        Operations
+      </>
+    ),
     imageUrl: "/Team2024-25/AryanSharma.jpg",
     github: "",
     linkedinUrl: "",
   },
   {
     id: 20,
-    name: "Nachiket Chaudhary",
-    role: "Head of IT and Operations",
+    name: (
+      <>
+        Nachiket
+        <br />
+        Chaudhary
+      </>
+    ),
+    role: (
+      <>
+        Head of IT and
+        <br />
+        Operations
+      </>
+    ),
     imageUrl: "/Team2024-25/Nachiket.jpg",
     github: "https://github.com/Nachiketc238",
     linkedinUrl: "https://www.linkedin.com/in/nachiket-chaudhary-795997282",
@@ -173,7 +197,13 @@ const Core2024 = [
   {
     id: 21,
     name: "Saanvi Chauhan",
-    role: "Head of IT & Operations",
+    role: (
+      <>
+        Head of IT and
+        <br />
+        Operations
+      </>
+    ),
     imageUrl: "/Team2024-25/Saanvi.jpg",
     github: "",
     linkedinUrl: "https://www.linkedin.com/in/saanvichauhan",
@@ -187,19 +217,25 @@ const Core2024 = [
     linkedinUrl: "https://www.linkedin.com/in/vedica-saini-aba984280/",
   },
 
-  {
-    id: 23,
-    name: "Tanya Roy",
-    role: "Head of content",
-    imageUrl: "/Team2024-25/Tanya.jpg",
-    github: "",
-    linkedinUrl: "https://www.linkedin.com/in/tanya-roy-303b89295/",
-  },
+  // {
+  //   id: 23,
+  //   name: "Tanya Roy",
+  //   role: "Head of content",
+  //   imageUrl: "/Team2024-25/Tanya.jpg",
+  //   github: "",
+  //   linkedinUrl: "https://www.linkedin.com/in/tanya-roy-303b89295/",
+  // },
 
   {
     id: 25,
     name: "Bithal Mohanty",
-    role: "CP LEAD",
+    role: (
+      <>
+        Competitive
+        <br />
+        Programming Lead
+      </>
+    ),
     imageUrl: "/Team2024-25/BITHAL.jpg",
     github: "https://github.com/BITHAL04",
     linkedinUrl: "https://www.linkedin.com/in/bithal-mohanty-5519b71b9/",
@@ -248,7 +284,13 @@ const Core2024 = [
   },
   {
     id: 31,
-    name: "Aaradhya somvanshi",
+    name: (
+      <>
+        Aaradhya
+        <br />
+        somvanshi
+      </>
+    ),
     role: "Head of social media",
     imageUrl: "/Team2024-25/aaradhya.jpg",
     github: "",

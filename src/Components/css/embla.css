@@ -8,41 +8,26 @@
   display: flex;
   flex-direction: column; */
 }
-.caraouselContainer{
+.caraouselContainer {
   /* background-color: #6c7b8b;
 background-image: linear-gradient(147deg, #6c7b8b 0%, #9ca5b2 74%); */
 
-/* background-image: linear-gradient(to bottom right , #006A67 0%, #003161 74%); */
-background-image: linear-gradient(to bottom right, #537895, #09203F);
-
-
-
-
+  /* background-image: linear-gradient(to bottom right , #006A67 0%, #003161 74%); */
+  background-image: linear-gradient(to bottom right, #537895, #09203f);
 }
 .embla__viewport {
   overflow: hidden;
   width: 50vw;
 
-  
-    transform:
-      perspective(750px)
-      translate3d(0px, 0px, -100px)
-      rotateX(27deg)
-      scale(1, 1);
-    border-radius: 20px;
-    transition: 0.4s ease-in-out transform;
-    
-  }
+  transform: perspective(750px) translate3d(0px, 0px, -100px) rotateX(27deg)
+    scale(1, 1);
+  border-radius: 20px;
+  transition: 0.4s ease-in-out transform;
+}
 
-
-  .embla__viewport:hover{
-
-    transform: translate3d(0px, 0px, -250px);
-    
-    }
-    
-  
-  
+.embla__viewport:hover {
+  transform: translate3d(0px, 0px, -250px);
+}
 
 .embla__container {
   display: flex;
@@ -108,7 +93,7 @@ background-image: linear-gradient(to bottom right, #537895, #09203F);
   height: 35%;
 }
 
-.embla__button:hover{
+.embla__button:hover {
   background-color: rgb(40, 40, 40);
 }
 
@@ -145,7 +130,7 @@ background-image: linear-gradient(to bottom right, #537895, #09203F);
   border-radius: 50%;
   display: flex;
   align-items: center;
-  content: '';
+  content: "";
 }
 .embla__dot--selected:after {
   box-shadow: inset 0 0 0 0.2rem var(--text-body);
@@ -157,8 +142,7 @@ background-image: linear-gradient(to bottom right, #537895, #09203F);
   width: 100%; /* Ensure it scales with the container */
 }
 
-
-@media (max-width:758px){
+@media (max-width: 758px) {
   /* .embla__buttons{
     gap: 300%;
     width: 100%;
@@ -178,19 +162,12 @@ background-image: linear-gradient(to bottom right, #537895, #09203F);
   .embla__viewport {
     overflow: hidden;
     width: 70vw;
-  
-    
-      transform:
-        perspective(750px)
-        translate3d(0px, 0px, -50px)
-        rotateX(27deg)
-        scale(1, 1);
-      border-radius: 20px;
-      transition: 0.4s ease-in-out transform;
-    
-      
-      
-    }
+
+    transform: perspective(750px) translate3d(0px, 0px, -50px) rotateX(27deg)
+      scale(1, 1);
+    border-radius: 20px;
+    transition: 0.4s ease-in-out transform;
+  }
   .embla__controls {
     display: flex;
     justify-content: space-between; /* Push buttons to opposite ends */
@@ -214,5 +191,3 @@ background-image: linear-gradient(to bottom right, #537895, #09203F);
     height: 3rem;
   }
 }
-  
-

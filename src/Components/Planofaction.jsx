@@ -1,17 +1,12 @@
 import {
-  QrCodeIcon,
-  LightBulbIcon,
   ClipboardDocumentCheckIcon,
   UsersIcon,
   MagnifyingGlassIcon,
   ClipboardDocumentListIcon,
-  ClipboardDocumentIcon,
-  PresentationChartLineIcon,
   CalendarDaysIcon,
   FolderArrowDownIcon,
   AcademicCapIcon,
   CheckCircleIcon,
-  MoonIcon,
 } from "@heroicons/react/20/solid";
 
 const features = [
@@ -73,7 +68,7 @@ const features = [
     ],
   },
   {
-    name: "SKILL DEMONSTATION",
+    name: "SKILL DEMONSTRATION",
     subFeatures: [
       {
         name: "Passion Projects:",
@@ -94,49 +89,44 @@ const features = [
 export default function Planofaction() {
   return (
     <div
-      className="bg-[#000000] py-24 sm:py-32 grid place-content-center"
-      id="planofaction "
+      className="bg-[#000000] py-14 sm:py-20 md:pb-44 grid place-content-center"
+      id="planofaction"
     >
-      <div className="mx-auto max-w-7xl px-9">
+      <div className="mx-auto px-9">
         <div className="mx-auto lg:mx-0 flex justify-center">
-          <p className="mt-2 text-3xl font-bold tracking-tight text-[#dadada] sm:text-4xl text-center">
+          <p className="mt-2 text-3xl font-bold tracking-tight text-[#dadada] sm:text-6xl text-center">
             Plan Of Action
           </p>
         </div>
         <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 text-base leading-7 text-[#dadada] sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:gap-x-16">
           {features.map((feature) => (
-            <div className="bg-slate-600/30 p-5 rounded-3xl border-r border-white/50 border-b">
-              <dt className="font-bold text-center text-base md:text-xl text-[#dadada]">
+            <div
+              key={feature.name}
+              className="bg-gradient-to-br from-[#537895] to-[#09203f] hover:bg-gradient-to-tl hover:from-[#537895] hover:to-[#09203f] transition-all duration-500 ease-in-out p-5 rounded-3xl transform hover:-translate-y-2 hover:shadow-lg"
+            >
+              <dt className="font-bold text-center text-base md:text-2xl text-white transition-all duration-500 ease-in-out">
                 {feature.name}
               </dt>
               <div className="mt-4 space-y-4">
                 {feature.subFeatures.map((subFeature) => (
                   <div
                     key={subFeature.name}
-                    className="relative pl-9  text-sm md:text-base"
+                    className="relative pl-9 text-sm md:text-lg transition-all duration-500 ease-in-out"
                   >
-                    <dt className="inline font-semibold text-[#dadada]">
+                    <dt className=" font-semibold text-white/90 flex items-center">
                       <subFeature.icon
-                        className="absolute left-1 top-1 h-5 w-5 text-indigo-500"
+                        className="absolute left-1 top-1 h-5 w-5 text-white transition-transform duration-500 ease-in-out"
                         aria-hidden="true"
                       />
                       {subFeature.name}
-                    </dt>{" "}
-                    <dd className="inline">{subFeature.description}</dd>
+                    </dt>
+                    <dd className="inline text-white/90">
+                      {subFeature.description}
+                    </dd>
                   </div>
                 ))}
               </div>
             </div>
-            // <div key={feature.name} className="relative pl-9">
-            //   <dt className="inline font-semibold text-[#dadada]">
-            //     <feature.icon
-            //       className="absolute left-1 top-1 h-5 w-5 text-indigo-500"
-            //       aria-hidden="true"
-            //     />
-            //     {feature.name}
-            //   </dt>{" "}
-            //   <dd className="inline">{feature.description}</dd>
-            // </div>
           ))}
         </dl>
       </div>

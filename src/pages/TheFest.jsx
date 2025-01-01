@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import thefest from "/thefest.png";
 import thefesttext from "/thefesttext.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,13 +10,13 @@ import TheFestCoundown from "../Components/TheFestCoundown";
 
 function TheFest() {
   useEffect(() => {
-    window.scrollTo(0, 0);//resets the scrolling to the top of the page
+    window.scrollTo(0, 0);
   }, []);
-  const now = new Date().getTime(); // Current time in milliseconds
-  const targetDate = new Date("2025-01-15T00:00:00").getTime(); // Target date in milliseconds
+  const now = new Date().getTime();
+  const targetDate = new Date("2025-01-15T00:00:00").getTime();
 
   const duration = targetDate - now;
-  console.log(duration); // This will give you the duration in milliseconds
+  console.log(duration);
 
   return (
     <>

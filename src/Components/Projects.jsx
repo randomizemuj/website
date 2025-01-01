@@ -47,7 +47,7 @@ function Projects() {
             if (entry.target === sectionRef1.current && !isSmallDevice) {
               liveProjectAnimation();
             } else if (entry.target === sectionRef2.current && !isSmallDevice) {
-             passionProjectAnimation();
+              passionProjectAnimation();
             }
           }
         });
@@ -63,29 +63,23 @@ function Projects() {
         observer.observe(section);
       }
     });
-    if(isSmallDevice){
+    if (isSmallDevice) {
       ScrollOut({
-      onShown: function(element, ctx, scrollingElement) {
-        
-          element.style.opacity = 1; 
-          element.style.transform = 'translateX(0)'; // Slide to the original position
-        
-      },
-      onHidden: function(element, ctx, scrollingElement) {
-        
+        onShown: function (element, ctx, scrollingElement) {
+          element.style.opacity = 1;
+          element.style.transform = "translateX(0)"; // Slide to the original position
+        },
+        onHidden: function (element, ctx, scrollingElement) {
           element.style.opacity = 0;
-          element.style.transform = 'translateX(300%)'; // Slide back to the right
-        
-      },
-    });
+          element.style.transform = "translateX(300%)"; // Slide back to the right
+        },
+      });
     }
-    
   }, []);
 
   function liveProjectAnimation() {
     $(".liveProjects-card")
       .css({
-        
         opacity: 0,
         right: "-200px",
       })
@@ -115,7 +109,6 @@ function Projects() {
 
   return (
     <div
-    
       className="bg-black py-10 sm:py-14 max-sm:mb-[15%] h-auto"
       id="our-projects"
     >

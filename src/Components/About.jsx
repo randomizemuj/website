@@ -8,7 +8,7 @@ import { useInView } from "react-intersection-observer";
 const stats = [
   { name: "Current Members", value: 300 },
   { name: "Events conducted", value: 30 },
-  { name: "Participants", value: 500 },
+  { name: "Participants", value: 1000 },
 ];
 
 function Number({ n, isVisible }) {
