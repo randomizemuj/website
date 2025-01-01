@@ -44,7 +44,7 @@ function Faqs() {
       </div>
 
       {/* FAQ List */}
-      <div className="w-full rounded-3xl text-lg md:text-2xl overflow-hidden border border-[#c9c8c8]">
+      <div className="w-full rounded-3xl text-sm md:text-2xl overflow-hidden border border-[#c9c8c8]">
         {faqItems.map(({ id, question, answer }) => (
           <div key={id} className="bg-[#09090c]">
             {/* FAQ Question */}
