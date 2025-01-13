@@ -5,12 +5,15 @@ import useEmblaCarousel from 'embla-carousel-react'
 import useCarouselKeyboardNavigation from './useCarouselKeyboardNavigation'
 import img1 from '/cp-workshop.jpg'
 import img2 from '/fest.webp'
-import img3 from '/github.jpg'
+import img3 from '/GitHub Workshop.png'
 import img5 from '/hello-world.jpg'
 import img6 from '/WebDevWS-1.jpg'
-import img7 from '/hello-world-2024.jpg'
+import img7 from '/hello-world-2024.png'
+import img8 from '/freshman-meetup.png'
+import img9 from '/WebDevWS-2.png'
+import img10 from '/ANN Class.png'
 
-const images = [img2, img1, img3, img5, img6, img7]
+const images = [img2, img1, img3, img5, img7, img10, img8, img9, img6]
 
 
 

@@ -42,7 +42,10 @@ const Events = () => {
     });
   }, []);
 
+  const isSmallDevice = window.innerWidth < 768;
+
   return (
+    
     <section>
       <div className="text-white py-8">
         {/*Background gradient */}
@@ -180,7 +183,7 @@ const Events = () => {
                     </div>
                     <div className="w-1/2 max-sm:pl-1 max-sm:order-2 flex justify-center flex-col items-center eventsDate1">
                       <p className="mb-3 max-lg:mb-5 text-3xl max-lg:text-base text-black font-zain eventsHeading">
-                        5 December, 2024
+                        5 Dec, 2024
                       </p>
                       {/* <h4 className="mb-3 font-bold text-lg max-sm:text-base md:text-2xl text-black">
                         Competitive Programming
@@ -203,19 +206,19 @@ const Events = () => {
                     </h1>
                   </div>
                   <div
-                    className="order-1 w-[45%] text-left bg-gray-100 shadow-[0_15px_35px_rgba(0,0,0,0.5)] rounded-[40px] flex items-center max-sm:flex-col EventsCard"
+                    className="order-1 w-[45%] gap-10 text-left bg-gray-100 shadow-[0_15px_35px_rgba(0,0,0,0.5)] rounded-[40px] flex items-center max-sm:flex-col EventsCard"
                     id="2"
                     onClick={handleClick}
                   >
                     <div className="m-0 h-[100%] w-1/2 max-sm:order-1 max-sm:mt-8 eventsImage2">
                       <img
                         className="object-fill"
-                        src="/hello-world-2024.jpg"
+                        src="/hello-world-2024.png"
                       />
                     </div>
                     <div className="w-1/2 max-sm:pl-1 max-sm:order-2 flex justify-center flex-col items-center eventsDate2">
                       <p className="mb-3 max-lg:mb-5 text-3xl max-lg:text-base text-black font-zain eventsHeading">
-                        16-17 October, 2024
+                        16-17 Oct, 2024
                       </p>
                       {/* <h4 className="mb-3 font-bold text-lg max-sm:text-base md:text-2xl text-black">
                         Competitive Programming
@@ -248,7 +251,7 @@ const Events = () => {
                     </div>
                     <div className="w-1/2 max-sm:pl-1 max-sm:order-2 flex justify-center flex-col items-center eventsDate3">
                       <p className="mb-3 max-lg:mb-5 text-3xl max-lg:text-base text-black font-zain eventsHeading">
-                        8 October, 2024
+                        8 Oct, 2024
                       </p>
                       {/* <h4 className="mb-3 font-bold text-lg max-sm:text-base md:text-2xl text-black">
                         Competitive Programming
@@ -283,7 +286,7 @@ const Events = () => {
                     </div>
                     <div className="w-1/2 max-sm:pl-1 max-sm:order-2 flex justify-center flex-col items-center eventsDate4">
                       <p className="mb-3 max-lg:mb-5 text-3xl max-lg:text-base text-black font-zain eventsHeading">
-                        1 September, 2024
+                        1 Sept, 2024
                       </p>
                       {/* <h4 className="mb-3 font-bold text-lg max-sm:text-base md:text-2xl text-black">
                         Competitive Programming
@@ -523,6 +526,26 @@ const Events = () => {
         </div>
       </div>
     </section>
+
+// {events.map((event, index) => (
+//   <div
+//     key={index}
+//     className={`flex flex-col items-center ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} mb-10`}
+//     data-aos="fade-up"
+//   >
+//     <div className="bg-gradient-to-r from-blue-600 to-blue-400 text-white rounded-lg shadow-lg p-5 md:w-1/2">
+//       <h2 className="text-lg font-medium mb-1 text-gray-100">{event.date}</h2>
+//       <h3 className="text-3xl font-extrabold mb-3 text-white">{event.title}</h3>
+//       <p className="text-gray-200 leading-relaxed">{event.description}</p>
+//       
+//         <img
+//         src={event.image}
+//         alt={event.title}
+//         className="rounded-lg shadow-md w-full h-auto max-w-sm object-cover"
+//       />
+//       
+//     </div>
+//     </div>))}
   );
 };
 

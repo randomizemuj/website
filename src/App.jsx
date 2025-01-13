@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "./Components/Footer.jsx";
 import Navbar from "./Components/Navbar.jsx";
 import Home from "./pages/Home.jsx";
-import Events from "./pages/EventsPage.jsx";
+import Events from "./pages/Events.jsx";
 import Projects from "./pages/ProjectsPage.jsx";
 import Teams from "./pages/Teams.jsx";
 import Quill from "./pages/QuillProject.jsx";
