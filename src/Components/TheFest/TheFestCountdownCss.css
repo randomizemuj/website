@@ -1,0 +1,21 @@
+@keyframes digitChange {
+  0% {
+    transform: translateY(20%);
+    opacity: 0;
+    filter: blur(2px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(-15%);
+    filter: blur(1px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.digit-animation {
+  animation: digitChange 0.4s ease-in-out;
+}
