@@ -136,6 +136,18 @@ body{
 .eventsDescp9{
   display: none;
 }
+.eventsDescp10{
+  display: none;
+}
+.eventsDescp11{
+  display: none;
+}
+.eventsDescp12{
+  display: none;
+}
+.eventsDescp13{
+  display: none;
+}
 /*Scrollbar styling*/
 
 /* width */
@@ -227,3 +239,49 @@ body{
   opacity: 0;
 } */
 
+
+.scroll-pipe-container {
+  position: absolute; /* Inside the page */
+  left: 20px; /* Adjust as needed */
+  top: 0;
+  width: 6px; /* Width of the pipe */
+  height: 100%; /* Full height of the page */
+  background-color: rgba(0, 0, 0, 0.1); /* Optional background */
+  overflow: hidden; /* Ensure the inner pipe doesn't overflow */
+}
+
+.scroll-pipe {
+  width: 100%;
+  background: linear-gradient(to bottom, #ff7eb3, #ff758c, #ff7e67, #ffa533); /* Gradient colors */
+  background-size: 100% 100%; /* Dynamically sized gradient */
+  transition: height 0.1s ease-in-out;
+}
+
+/* Shiny text */
+.shiny-text {
+  color: #b5b5b5a4; /* Adjust this color to change intensity/style */
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: -100%;
+  }
+}
+
+.shiny-text.disabled {
+  animation: none;
+}
