@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { BackgroundBeams } from "../Components/TheFest/background-beams";
 import TimelineFest from "../Components/TheFest/timeline-fest";
 import TheFestCountdown from "../Components/TheFest/TheFestCoundown";
+import EventDetails from "../Components/TheFest/EventDetails";
+import Gallery from "../Components/TheFest/Gallery";
 
 ////done
 const TheFest = () => {
@@ -9,7 +11,7 @@ const TheFest = () => {
     window.scrollTo(0, 0);
   }, []);
   const now = new Date().getTime();
-  const targetDate = new Date("2025-01-15T00:00:00").getTime();
+  const targetDate = new Date("2025-02-07T00:00:00").getTime();
 
   const duration = targetDate - now;
   console.log(duration);
@@ -94,6 +96,13 @@ const TheFest = () => {
             </div>
           ))}
         </div>
+      </div>
+
+      {/* //////////////////////Event Deatils///////////////////// */}
+      <EventDetails />
+
+      <div className="">
+        <Gallery />
       </div>
     </div>
   );
