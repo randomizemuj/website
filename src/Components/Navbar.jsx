@@ -143,6 +143,12 @@ const Navbar = () => {
               Events
             </a>
             <a
+              href="/gallery"
+              className="block text-white hover:text-gray-300 px-3 py-2 rounded-md"
+            >
+              Gallery
+            </a>
+            <a
               href="/thefest"
               className="block text-white hover:text-gray-300 px-3 py-2 rounded-md"
             >
