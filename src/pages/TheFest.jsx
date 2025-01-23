@@ -3,7 +3,6 @@ import { BackgroundBeams } from "../Components/TheFest/background-beams";
 import TimelineFest from "../Components/TheFest/timeline-fest";
 import TheFestCountdown from "../Components/TheFest/TheFestCoundown";
 import EventDetails from "../Components/TheFest/EventDetails";
-import Gallery from "../Components/TheFest/Gallery";
 
 ////done
 const TheFest = () => {
@@ -17,7 +16,7 @@ const TheFest = () => {
   console.log(duration);
 
   return (
-    <div className="bg-[#070707] dark w-full h-max py-2">
+    <div className="bg-[#070707] dark w-full h-max py-2 pb-11">
       <div className="relative">
         <div className="md:w-[75%] sm:w-[85%] xs:w-[85%] xss:w-[95%] flex flex-col justify-center items-center mx-auto relative z-20">
           <div className="mt-40 leading-[1.1] flex flex-col">
@@ -35,7 +34,7 @@ const TheFest = () => {
             </h3>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-3.5 my-8">
               <button className="text-sm md:text-xl p-2 md:p-5 hover:scale-[1.025] items-center text-[#00a7f1] bg-[#00a9f146] border border-[#00a7f1] transition-all ease-in-out rounded-3xl md:rounded-full w-32 md:w-max">
-                Registeration Starting soon
+                Registration Starting soon
               </button>
               {/* <button className="text-sm p-2 hover:scale-[1.025]  items-center text-[#e5e5e5] font-inter bg-transparent border border-white border-opacity-50 transition-all ease-in-out rounded-full">
                 More Details
@@ -100,10 +99,6 @@ const TheFest = () => {
 
       {/* //////////////////////Event Deatils///////////////////// */}
       <EventDetails />
-
-      <div className="">
-        <Gallery />
-      </div>
     </div>
   );
 };

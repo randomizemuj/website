@@ -30,14 +30,14 @@ const Core2024 = [
     linkedinUrl: "https://www.linkedin.com/in/rishush",
   },
 
-  {
-    id: 4,
-    name: "Pragati Mohan",
-    role: "Head of Promotions",
-    imageUrl: "/Team2024-25/Pragati.jpeg",
-    github: "",
-    linkedinUrl: "https://www.linkedin.com/in/pragati-mohan-86a1932a3/",
-  },
+  // {
+  //   id: 4,
+  //   name: "Pragati Mohan",
+  //   role: "Head of Promotions",
+  //   imageUrl: "/Team2024-25/Pragati.jpeg",
+  //   github: "",
+  //   linkedinUrl: "https://www.linkedin.com/in/pragati-mohan-86a1932a3/",
+  // },
   {
     id: 5,
     name: "Aanan Chopra",

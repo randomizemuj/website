@@ -11,21 +11,20 @@ const Timeline = () => {
       day: "DAY 1",
       events: [
         {
-          time: "01:00 PM",
-          title: "Opening Ceremony",
-          content:
-            "Join us for the grand opening of our tech fest! Exciting speakers and performances await.",
-        },
-        {
-          time: "07:30 PM",
+          time: "02:30 PM",
           title: "Registration for Hackathon",
           content:
             "Get ready to code! Register for our 48-hour hackathon challenge.",
         },
         {
-          time: "09:00 PM",
+          time: "04:00 PM",
           title: "Hackathon Starts",
           content: "The hackathon begins! May the best coders win.",
+        },
+        {
+          time: "05:30 PM",
+          title: "Round 1 begins!",
+          content: "The first round of the hackathon kicks off.",
         },
       ],
     },
@@ -33,39 +32,40 @@ const Timeline = () => {
       day: "DAY 2",
       events: [
         {
-          time: "10:00 AM",
-          title: "Cryptex Starts",
-          content:
-            "Put your problem-solving skills to the test in our cryptography challenge.",
+          time: "08:00 AM",
+          title: "Round 2 Begins",
+          content: "The second round of the hackathon is here. Keep coding!",
         },
+
         {
           time: "02:30 PM",
-          title: "Registration for Ideathon",
+          title: "Hackathon ends",
           content:
-            "Got a brilliant idea? Register for our ideathon and bring it to life!",
+            "The hackathon concludes. Stay tuned for the results and awards ceremony.",
         },
         {
-          time: "03:00 PM",
-          title: "Ideathon Starts",
+          time: "04:00 PM",
+          title: "Tech Debate begins",
           content:
-            "Let the brainstorming begin! Present your innovative ideas to our panel of judges.",
+            "Join us for a lively debate on the latest tech trends and topics.",
         },
         {
-          time: "04:30 PM",
-          title: "Round 1 Ends",
+          time: "08:00 PM",
+          title: "Tech Debate concludes",
           content:
-            "First round of the hackathon concludes. Good luck to all participants!",
+            "The tech debate competition concludes. Stay tuned for the results.",
         },
+        // {
+        //   time: "08:00 PM",
+        //   title: "Tech Debate results",
+        //   content:
+        //     "The results of the tech debate competition will be announced.",
+        // },
         {
-          time: "05:00 PM",
-          title: "Presentation Starts",
-          content: "Teams present their projects to our esteemed judges.",
-        },
-        {
-          time: "06:00 PM",
-          title: "Result Announcement",
+          time: "11:00 PM",
+          title: "Cryptx Starts",
           content:
-            "The moment of truth! Winners of various events will be announced.",
+            "Put your problem-solving skills to the test in our cryptography challenge..",
         },
       ],
     },
@@ -73,16 +73,14 @@ const Timeline = () => {
       day: "DAY 3",
       events: [
         {
-          time: "01:00 PM",
-          title: "Hackathon Officially Ends",
-          content:
-            "The coding marathon comes to an end. Congratulations to all participants!",
+          time: "11:00 AM",
+          title: "Cryptx ends",
+          content: "The Cryptx challenge concludes. ",
         },
         {
-          time: "06:00 PM",
-          title: "Cultural Night",
-          content:
-            "Wrap up the fest with an evening of music, dance, and celebration.",
+          time: "12:00 PM",
+          title: "Closing ceremony",
+          content: "Join us for the closing ceremony of our The Fest.",
         },
       ],
     },

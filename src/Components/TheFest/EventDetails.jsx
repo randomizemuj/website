@@ -1,10 +1,10 @@
 const features = [
-  {
-    name: "Ideathon",
-    description:
-      "Ideathon was an offline pitch event held on 20th January 2024 from 3:00 PM to 8:00 PM. This event was designed to empower students to present groundbreaking ideas, fostering a culture of innovation and creativity within the technological landscape. Ideathon provided a platform for participants to showcase their skills, explore collaborative solutions, and engage in critical thinking.",
-    imgUrl: "/Ideathon.jpeg",
-  },
+  // {
+  //   name: "Ideathon",
+  //   description:
+  //     "Ideathon was an offline pitch event held on 20th January 2024 from 3:00 PM to 8:00 PM. This event was designed to empower students to present groundbreaking ideas, fostering a culture of innovation and creativity within the technological landscape. Ideathon provided a platform for participants to showcase their skills, explore collaborative solutions, and engage in critical thinking.",
+  //   imgUrl: "/Ideathon.jpeg",
+  // },
   {
     name: "Hackathon (The Fest)",
     description:
@@ -17,12 +17,12 @@ const features = [
       "Cryptex was an online cryptic hunt conducted over two days, from 20th to 21st January 2024, running continuously from 10:00 AM to 10:00 AM. This event was crafted to test and enhance participants' problem-solving abilities through a series of cryptic challenges and hidden clues. Cryptex focused on developing analytical and cognitive skills among participants.Cryptex successfully fostered technological and intellectual growth, encouraging participants to employ innovative thinking and collaborative problem-solving strategies.",
     imgUrl: "/Cryptex.jpeg",
   },
-  {
-    name: "Bollywood Night",
-    description:
-      " Bollywood Night served as a grand finale to the tech-centric events, offering participants and attendees a relaxing and enjoyable cultural experience. The event featured mesmerizing performances and lively beats that immersed the audience in the spirited essence of Bollywood. The schedule included stage setup, entry and settling down, performances, DJ sessions, and the grand exit, ensuring a seamless and engaging experience for all attendees.",
-    imgUrl: "/BollywoodNight.jpg",
-  },
+  // {
+  //   name: "Bollywood Night",
+  //   description:
+  //     " Bollywood Night served as a grand finale to the tech-centric events, offering participants and attendees a relaxing and enjoyable cultural experience. The event featured mesmerizing performances and lively beats that immersed the audience in the spirited essence of Bollywood. The schedule included stage setup, entry and settling down, performances, DJ sessions, and the grand exit, ensuring a seamless and engaging experience for all attendees.",
+  //   imgUrl: "/BollywoodNight.jpg",
+  // },
 ];
 
 export default function EventDetails() {

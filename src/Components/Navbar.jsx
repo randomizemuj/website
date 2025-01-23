@@ -75,11 +75,18 @@ const Navbar = () => {
               Events
             </Link>
             <Link
+              to="/gallery"
+              className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-xl"
+            >
+              Gallery
+            </Link>
+            <Link
               to="/thefest"
               className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-xl"
             >
               The Fest
             </Link>
+
             <Link
               to="/teams"
               className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-xl"
