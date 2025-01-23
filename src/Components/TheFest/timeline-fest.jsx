@@ -23,7 +23,7 @@ const Timeline = () => {
         },
         {
           time: "05:30 PM",
-          title: "Round 1 begins!",
+          title: "Round 1 begins",
           content: "The first round of the hackathon kicks off.",
         },
       ],
@@ -102,7 +102,7 @@ const Timeline = () => {
 
   return (
     <div className="w-full font-sans md:px-10" ref={containerRef}>
-      <div className="max-w-7xl mx-auto py-20 px-4">
+      <div className="max-w-7xl mx-auto py-10 md:py-20 px-4">
         <h2 className="text-3xl md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
           Tech Fest Timeline
         </h2>

@@ -65,7 +65,7 @@ const TheFest = () => {
       </div>
 
       {/* ///////////////General instruction//////////////// */}
-      <div className="mx-8 md:mx-16 mt-20 mb-24">
+      <div className="mx-8 md:mx-16  md:mt-20 mb-24">
         <h2 className="text-3xl font-bold text-[#00a7f1] mb-8 text-center">
           General Instructions
         </h2>
