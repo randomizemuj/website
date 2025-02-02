@@ -2,61 +2,60 @@ const team = [
   {
     name: "Mahir Rohatgi",
     role: "Project Lead",
-    imageUrl: "/team/Mahir.jpg",
+    imageUrl:
+      "https://res.cloudinary.com/randomize/image/upload/v1738163351/Website/Projects%20team/quill/Mahir_k3z8lu.jpg",
   },
   {
     name: "Krish Goel",
     role: "Technical Advisor",
     imageUrl:
-      "/team/Krish-Goel.jpeg",
+      "https://res.cloudinary.com/randomize/image/upload/v1738163359/Website/Projects%20team/quill/Krish-Goel_vcy2si.jpg",
   },
   {
     name: "Devyani Ghildiyal",
     role: "Team Member",
-    imageUrl: "/team/Devyani.jpeg",
+    imageUrl:
+      "https://res.cloudinary.com/randomize/image/upload/v1738163374/Website/Projects%20team/quill/Devyani_xywrz0.jpg",
   },
   {
     name: "Khetul Patel",
     role: "Robotics Head",
     imageUrl:
-      "/team/Khetul.jpg",
+      "https://res.cloudinary.com/randomize/image/upload/v1738163389/Website/Projects%20team/quill/Khetul_htsgpe.jpg",
   },
   {
     name: "Shresth Shroff ",
     role: "Electrical and Mechanical Head",
     imageUrl:
-      "/team/Shresth.jpg",
+      "https://res.cloudinary.com/randomize/image/upload/v1738163396/Website/Projects%20team/quill/Shresth_v4srhr.jpg",
   },
   {
     name: "Aanan Chopra",
     role: "Python Team",
     imageUrl:
-      "/team/Aanan.jpg",
+      "https://res.cloudinary.com/randomize/image/upload/v1738163412/Website/Projects%20team/quill/Aanan_syjzxt.jpg",
   },
   {
     name: "Rishi Singh",
     role: "Coding the backend python thing",
     imageUrl:
-      "/team/Rishi.jpg",
+      "https://res.cloudinary.com/randomize/image/upload/v1738163425/Website/Projects%20team/quill/Rishi_ev5qu2.jpg",
   },
   {
     name: "Tanishka Magar",
     role: "Image processing & Arduino Team",
     imageUrl:
-      "/team/Tanishka.jpeg",
+      "https://res.cloudinary.com/randomize/image/upload/v1738163446/Website/Projects%20team/quill/Tanishka_wub2qa.jpg",
   },
   {
     name: "Sia asrani ",
     role: "Documentation Team",
     imageUrl:
-      "/team/Sia.jpg",
+      "https://res.cloudinary.com/randomize/image/upload/v1738163454/Website/Projects%20team/quill/Sia_szyegg.jpg",
   },
-
-
 ];
 
 export default function Quill() {
-
   return (
     <div className="bg-black">
       <div className="relative">
@@ -73,13 +72,15 @@ export default function Quill() {
 
             <div className="relative px-6 py-32 sm:py-40 lg:px-8 lg:py-56 lg:pr-0">
               <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
-                <div className="hidden sm:mb-10 sm:flex">
-                </div>
+                <div className="hidden sm:mb-10 sm:flex"></div>
                 <h1 className="text-4xl font-bold tracking-tight text-[#F4EFE8] sm:text-6xl">
                   Quill
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-[#BCD3E8]">
-                Introducing our next live project: Quill. A Robot that Writes Your Assignments in Your Handwriting, Just Submit Your Questions in any format.                </p>
+                  Introducing our next live project: Quill. A Robot that Writes
+                  Your Assignments in Your Handwriting, Just Submit Your
+                  Questions in any format.{" "}
+                </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
                     href="/"
@@ -87,7 +88,6 @@ export default function Quill() {
                   >
                     View Source Code
                   </a>
-                 
                 </div>
               </div>
             </div>
@@ -107,7 +107,6 @@ export default function Quill() {
             className="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-white [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"
             aria-hidden="true"
           >
-            
             <svg x="50%" y={-1} className="overflow-visible fill-black">
               <path
                 d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
@@ -141,7 +140,14 @@ export default function Quill() {
                     What is Quill?
                   </h1>
                   <p className="relative mt-6 text-lg leading-8 text-[#BCD3E8] sm:max-w-md lg:max-w-none">
-                  Introducing our next live project: Quill. A Robot that Writes Your Assignments in Your Handwriting, Just Submit Your Questions in any format. This project combines cyber physical systems with artificial intelligence, and we could not be more stoked to build it. We aim to create a unique, personalized experience where our innovative robotic technology can accurately replicate individual handwriting styles. 
+                    Introducing our next live project: Quill. A Robot that
+                    Writes Your Assignments in Your Handwriting, Just Submit
+                    Your Questions in any format. This project combines cyber
+                    physical systems with artificial intelligence, and we could
+                    not be more stoked to build it. We aim to create a unique,
+                    personalized experience where our innovative robotic
+                    technology can accurately replicate individual handwriting
+                    styles.
                   </p>
                 </div>
                 <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
@@ -205,19 +211,40 @@ export default function Quill() {
             <div className="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
               <div className="lg:w-full lg:max-w-2xl lg:flex-auto">
                 <p className="text-xl leading-8 text-[#BCD3E8]">
-                At Quill, our mission is to revolutionize the way students and professionals handle their written tasks by seamlessly integrating cutting-edge cyber-physical systems with advanced artificial intelligence. We aim to create a unique, personalized experience where our innovative robotic technology can accurately replicate individual handwriting styles. This ensures that every assignment, note, or document retains a personal touch, bridging the gap between traditional writing and modern digital convenience.
+                  At Quill, our mission is to revolutionize the way students and
+                  professionals handle their written tasks by seamlessly
+                  integrating cutting-edge cyber-physical systems with advanced
+                  artificial intelligence. We aim to create a unique,
+                  personalized experience where our innovative robotic
+                  technology can accurately replicate individual handwriting
+                  styles. This ensures that every assignment, note, or document
+                  retains a personal touch, bridging the gap between traditional
+                  writing and modern digital convenience.
                 </p>
                 <div className="mt-10  mx-auto max-w-xl text-base leading-7 text-[#BCD3E8]">
                   <p>
-                  Our commitment extends beyond mere automation. We strive to empower users with a tool that not only saves time but also enhances productivity and creativity. By handling repetitive and time-consuming writing tasks, Quill allows individuals to focus on higher-order thinking and more meaningful activities. Our technology is designed to be intuitive and user-friendly, ensuring that anyone, regardless of their technical proficiency, can benefit from its capabilities
+                    Our commitment extends beyond mere automation. We strive to
+                    empower users with a tool that not only saves time but also
+                    enhances productivity and creativity. By handling repetitive
+                    and time-consuming writing tasks, Quill allows individuals
+                    to focus on higher-order thinking and more meaningful
+                    activities. Our technology is designed to be intuitive and
+                    user-friendly, ensuring that anyone, regardless of their
+                    technical proficiency, can benefit from its capabilities
                   </p>
                   <p className="mt-10">
-                  We are dedicated to pushing the boundaries of what's possible in the realm of artificial intelligence and robotics. Our team is passionate about continuous innovation, constantly refining Quill to meet the evolving needs of our users. By fostering a culture of excellence and collaboration, we aim to set new standards in the field of cyber-physical systems, ultimately transforming how written communication is approached in educational and professional settings.
+                    We are dedicated to pushing the boundaries of what's
+                    possible in the realm of artificial intelligence and
+                    robotics. Our team is passionate about continuous
+                    innovation, constantly refining Quill to meet the evolving
+                    needs of our users. By fostering a culture of excellence and
+                    collaboration, we aim to set new standards in the field of
+                    cyber-physical systems, ultimately transforming how written
+                    communication is approached in educational and professional
+                    settings.
                   </p>
                 </div>
               </div>
-
-
             </div>
           </div>
         </div>
@@ -248,10 +275,7 @@ export default function Quill() {
             ))}
           </ul>
         </div>
-
-        
       </main>
-
     </div>
   );
 }

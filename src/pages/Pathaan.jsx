@@ -2,57 +2,68 @@ const team = [
   {
     name: "Krish Goel",
     role: "Project Lead/Founder",
-    imageUrl: "/team/Krish-Goel.jpeg",
+    imageUrl:
+      "https://res.cloudinary.com/randomize/image/upload/v1738163106/Website/Projects%20team/pathaan/Krish-Goel_qo6tj8.jpg",
   },
   {
     name: "Aditya Punmiya",
     role: "Project Co-Lead",
-    imageUrl: "/team/Aditya.webp",
+    imageUrl:
+      "https://res.cloudinary.com/randomize/image/upload/v1738163115/Website/Projects%20team/pathaan/Aditya_r99a8d.webp",
   },
   {
     name: "Dhruv Bansal",
     role: "Team Head",
-    imageUrl: "/team/Dhruv.jpg",
+    imageUrl:
+      "https://res.cloudinary.com/randomize/image/upload/v1738163130/Website/Projects%20team/pathaan/Dhruv_itsmau.jpg",
   },
   {
     name: "Aviral Gupta",
     role: "Team Leader",
-    imageUrl: "/team/Aviral.jpg",
+    imageUrl:
+      "https://res.cloudinary.com/randomize/image/upload/v1738163135/Website/Projects%20team/pathaan/Aviral_lmwvah.jpg",
   },
   {
     name: "GARVIT ARORA",
     role: "Hardware and robotics",
-    imageUrl: "/team/Garvit.png",
+    imageUrl:
+      "https://res.cloudinary.com/randomize/image/upload/v1738163146/Website/Projects%20team/pathaan/Garvit_jfscaf.png",
   },
   {
     name: "Shresth Shroff ",
     role: "Electrical and Mechanical Head",
-    imageUrl: "/team/Shresth.jpg",
+    imageUrl:
+      "https://res.cloudinary.com/randomize/image/upload/v1738163152/Website/Projects%20team/pathaan/Shresth_krbqwg.jpg",
   },
   {
     name: "Siddharth Singhal",
     role: "Circuitry and Robotics ",
-    imageUrl: "/team/Siddharth.jpg",
+    imageUrl:
+      "https://res.cloudinary.com/randomize/image/upload/v1738163164/Website/Projects%20team/pathaan/Siddharth_uovpgh.jpg",
   },
   {
     name: "Savir Sharma ",
     role: "Software Team Lead",
-    imageUrl: "/team/Savir.JPG",
+    imageUrl:
+      "https://res.cloudinary.com/randomize/image/upload/v1738163171/Website/Projects%20team/pathaan/Savir_klgueb.jpg",
   },
   {
     name: "Mahadevan K S",
     role: "Circuitry, Robotics, Maze Building",
-    imageUrl: "/team/Mahadevan.jpg",
+    imageUrl:
+      "https://res.cloudinary.com/randomize/image/upload/v1738163158/Website/Projects%20team/pathaan/Mahadevan_kqdwcv.jpg",
   },
   {
     name: "Garv Kundnani",
     role: "Algorithms & AI, Documentation & Logistics",
-    imageUrl: "/team/Garv.jpg",
+    imageUrl:
+      "https://res.cloudinary.com/randomize/image/upload/v1738163197/Website/Projects%20team/pathaan/Garv_dhsovt.jpg",
   },
   {
     name: "Sudiksha Mathpal",
     role: "Algorithms team, Logistics team",
-    imageUrl: "/team/Sudiksha.jpg",
+    imageUrl:
+      "https://res.cloudinary.com/randomize/image/upload/v1738163177/Website/Projects%20team/pathaan/Sudiksha_xstkmr.jpg",
   },
 ];
 

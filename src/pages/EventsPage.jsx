@@ -45,7 +45,6 @@ const Events = () => {
   const isSmallDevice = window.innerWidth < 768;
 
   return (
-    
     <section>
       <div className="text-white py-8">
         {/*Background gradient */}
@@ -179,7 +178,10 @@ const Events = () => {
                     onClick={handleClick}
                   >
                     <div className="order-1 m-0 h-[100%] w-1/2 max-sm:order-1 max-sm:mt-8 eventsImage1">
-                      <img className="object-fill" src="/Ep-workshop.jpg" />
+                      <img
+                        className="object-fill"
+                        src="https://res.cloudinary.com/randomize/image/upload/v1737912586/Website/Events/Ep-workshop_llvcui.jpg"
+                      />
                     </div>
                     <div className="w-1/2 max-sm:pl-1 max-sm:order-2 flex justify-center flex-col items-center eventsDate1">
                       <p className="mb-3 max-lg:mb-5 text-3xl max-lg:text-base text-black font-zain eventsHeading">
@@ -213,7 +215,7 @@ const Events = () => {
                     <div className="m-0 h-[100%] w-1/2 max-sm:order-1 max-sm:mt-8 eventsImage2">
                       <img
                         className="object-fill"
-                        src="/hello-world-2024.png"
+                        src="https://res.cloudinary.com/randomize/image/upload/v1737912595/Website/Events/hello-world-2024_cahxla.png"
                       />
                     </div>
                     <div className="w-1/2 max-sm:pl-1 max-sm:order-2 flex justify-center flex-col items-center eventsDate2">
@@ -247,7 +249,10 @@ const Events = () => {
                     onClick={handleClick}
                   >
                     <div className="order-1 m-0 h-[100%] w-1/2 max-sm:order-1 max-sm:mt-8 eventsImage3">
-                      <img className="object-fill" src="/freshman-meetup.png" />
+                      <img
+                        className="object-fill"
+                        src="https://res.cloudinary.com/randomize/image/upload/v1737912589/Website/Events/freshman-meetup_eorghl.png"
+                      />
                     </div>
                     <div className="w-1/2 max-sm:pl-1 max-sm:order-2 flex justify-center flex-col items-center eventsDate3">
                       <p className="mb-3 max-lg:mb-5 text-3xl max-lg:text-base text-black font-zain eventsHeading">
@@ -282,7 +287,10 @@ const Events = () => {
                     onClick={handleClick}
                   >
                     <div className="m-0 h-[100%] w-1/2 max-sm:order-1 max-sm:mt-8 eventsImage4">
-                      <img className="object-fill" src="/WebDevWS-1.jpg" />
+                      <img
+                        className="object-fill"
+                        src="https://res.cloudinary.com/randomize/image/upload/v1737912587/Website/Events/WebDevWS-1_srdxwm.jpg"
+                      />
                     </div>
                     <div className="w-1/2 max-sm:pl-1 max-sm:order-2 flex justify-center flex-col items-center eventsDate4">
                       <p className="mb-3 max-lg:mb-5 text-3xl max-lg:text-base text-black font-zain eventsHeading">
@@ -320,7 +328,10 @@ const Events = () => {
                     onClick={handleClick}
                   >
                     <div className="order-1 m-0 h-[100%] w-1/2 max-sm:order-1 max-sm:mt-8 eventsImage5">
-                      <img className="object-fill" src="/googler.webp" />
+                      <img
+                        className="object-fill"
+                        src="https://res.cloudinary.com/randomize/image/upload/v1737915875/Website/Events/googler_mke1bd.jpg"
+                      />
                     </div>
                     <div className="w-1/2 max-sm:pl-1 max-sm:order-2 flex justify-center flex-col items-center eventsDate5">
                       <p className="mb-3 max-lg:mb-5 text-3xl max-lg:text-base text-black font-zain eventsHeading">
@@ -359,7 +370,10 @@ const Events = () => {
                     onClick={handleClick}
                   >
                     <div className=" m-0 h-[100%] w-1/2 max-sm:order-1 max-sm:mt-8 eventsImage6">
-                      <img className="object-fill" src="/github.jpg" />
+                      <img
+                        className="object-fill"
+                        src="https://res.cloudinary.com/randomize/image/upload/v1737912590/Website/Events/GitHub_Workshop_ttcyex.png"
+                      />
                     </div>
                     <div className="w-1/2 max-sm:pl-1 max-sm:order-2 flex justify-center flex-col items-center eventsDate6">
                       <p className="mb-3 max-lg:mb-5 text-3xl max-lg:text-base text-black font-zain eventsHeading">
@@ -395,7 +409,10 @@ const Events = () => {
                     onClick={handleClick}
                   >
                     <div className="order-1 m-0 h-[100%] w-1/2 max-sm:order-1 max-sm:mt-8 eventsImage7">
-                      <img className="object-fill" src="/fest.webp" />
+                      <img
+                        className="object-fill"
+                        src="https://res.cloudinary.com/randomize/image/upload/v1737914588/Website/Events/fest_mbjr9x.jpg"
+                      />
                     </div>
                     <div className="w-1/2 max-sm:pl-1 max-sm:order-2 flex justify-center flex-col items-center eventsDate7">
                       <p className="mb-3 max-lg:mb-5 text-3xl max-lg:text-base text-black font-zain eventsHeading">
@@ -465,7 +482,10 @@ const Events = () => {
                     onClick={handleClick}
                   >
                     <div className="m-0 h-[100%] w-1/2 max-sm:order-1 max-sm:mt-8 eventsImage8">
-                      <img className="object-fill" src="/hello-world.jpg" />
+                      <img
+                        className="object-fill"
+                        src="https://res.cloudinary.com/randomize/image/upload/v1737912586/Website/Events/hello-world_bh9wc9.jpg"
+                      />
                     </div>
                     <div className="w-1/2 max-sm:pl-1 max-sm:order-2 flex justify-center flex-col items-center eventsDate8">
                       <p className="mb-3 max-lg:mb-5 text-3xl max-lg:text-base text-black font-zain eventsHeading">
@@ -500,7 +520,10 @@ const Events = () => {
                     onClick={handleClick}
                   >
                     <div className="order-1 m-0 h-[100%] w-1/2 max-sm:order-1 max-sm:mt-8 eventsImage9">
-                      <img className="object-fill" src="/cp-workshop.jpg" />
+                      <img
+                        className="object-fill"
+                        src="https://res.cloudinary.com/randomize/image/upload/v1737912586/Website/Events/cp-workshop_gheuws.jpg"
+                      />
                     </div>
                     <div className="w-1/2 max-sm:pl-1 max-sm:order-2 flex justify-center flex-col items-center eventsDate9">
                       <p className="mb-3 max-lg:mb-5 text-3xl max-lg:text-base text-black font-zain eventsHeading">
@@ -527,25 +550,25 @@ const Events = () => {
       </div>
     </section>
 
-// {events.map((event, index) => (
-//   <div
-//     key={index}
-//     className={`flex flex-col items-center ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} mb-10`}
-//     data-aos="fade-up"
-//   >
-//     <div className="bg-gradient-to-r from-blue-600 to-blue-400 text-white rounded-lg shadow-lg p-5 md:w-1/2">
-//       <h2 className="text-lg font-medium mb-1 text-gray-100">{event.date}</h2>
-//       <h3 className="text-3xl font-extrabold mb-3 text-white">{event.title}</h3>
-//       <p className="text-gray-200 leading-relaxed">{event.description}</p>
-//       
-//         <img
-//         src={event.image}
-//         alt={event.title}
-//         className="rounded-lg shadow-md w-full h-auto max-w-sm object-cover"
-//       />
-//       
-//     </div>
-//     </div>))}
+    // {events.map((event, index) => (
+    //   <div
+    //     key={index}
+    //     className={`flex flex-col items-center ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} mb-10`}
+    //     data-aos="fade-up"
+    //   >
+    //     <div className="bg-gradient-to-r from-blue-600 to-blue-400 text-white rounded-lg shadow-lg p-5 md:w-1/2">
+    //       <h2 className="text-lg font-medium mb-1 text-gray-100">{event.date}</h2>
+    //       <h3 className="text-3xl font-extrabold mb-3 text-white">{event.title}</h3>
+    //       <p className="text-gray-200 leading-relaxed">{event.description}</p>
+    //
+    //         <img
+    //         src={event.image}
+    //         alt={event.title}
+    //         className="rounded-lg shadow-md w-full h-auto max-w-sm object-cover"
+    //       />
+    //
+    //     </div>
+    //     </div>))}
   );
 };
 

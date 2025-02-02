@@ -3,21 +3,81 @@ import "react-photo-album/rows.css";
 import React from "react";
 
 const photos = [
-  { src: "/galleryPhotos/1.JPG", width: 800, height: 600 },
-  { src: "/galleryPhotos/2.JPG", width: 800, height: 600 },
-  { src: "/galleryPhotos/3.JPG", width: 800, height: 600 },
-  { src: "/galleryPhotos/4.JPG", width: 800, height: 600 },
-  { src: "/galleryPhotos/5.JPG", width: 800, height: 600 },
-  { src: "/galleryPhotos/6.JPG", width: 800, height: 600 },
-  { src: "/galleryPhotos/7.JPG", width: 800, height: 600 },
-  { src: "/galleryPhotos/8.JPG", width: 800, height: 600 },
-  { src: "/galleryPhotos/9.JPG", width: 800, height: 600 },
-  { src: "/galleryPhotos/10.JPG", width: 800, height: 600 },
-  { src: "/galleryPhotos/11.JPG", width: 800, height: 600 },
-  { src: "/galleryPhotos/12.JPG", width: 800, height: 600 },
-  { src: "/galleryPhotos/13.JPG", width: 800, height: 600 },
-  { src: "/galleryPhotos/14.JPG", width: 800, height: 600 },
-  { src: "/galleryPhotos/15.JPG", width: 800, height: 600 },
+  {
+    src: "https://res.cloudinary.com/randomize/image/upload/v1737894904/Website/GalleryPhotos/1_ukjzqp.jpg",
+    width: 800,
+    height: 600,
+  },
+  {
+    src: "https://res.cloudinary.com/randomize/image/upload/v1737894905/Website/GalleryPhotos/2_zlbcpd.jpg",
+    width: 800,
+    height: 600,
+  },
+  {
+    src: "https://res.cloudinary.com/randomize/image/upload/v1737894904/Website/GalleryPhotos/3_fbny0l.jpg",
+    width: 800,
+    height: 600,
+  },
+  {
+    src: "https://res.cloudinary.com/randomize/image/upload/v1737894905/Website/GalleryPhotos/4_vfbuhn.jpg",
+    width: 800,
+    height: 600,
+  },
+  {
+    src: "https://res.cloudinary.com/randomize/image/upload/v1737894911/Website/GalleryPhotos/5_d1yzj6.jpg",
+    width: 800,
+    height: 600,
+  },
+  {
+    src: "https://res.cloudinary.com/randomize/image/upload/v1737894907/Website/GalleryPhotos/6_tdeu3f.jpg",
+    width: 800,
+    height: 600,
+  },
+  {
+    src: "https://res.cloudinary.com/randomize/image/upload/v1737894910/Website/GalleryPhotos/7_rksjdx.jpg",
+    width: 800,
+    height: 600,
+  },
+  {
+    src: "https://res.cloudinary.com/randomize/image/upload/v1737894909/Website/GalleryPhotos/8_zcrqg5.jpg",
+    width: 800,
+    height: 600,
+  },
+  {
+    src: "https://res.cloudinary.com/randomize/image/upload/v1737894909/Website/GalleryPhotos/9_un1jjx.jpg",
+    width: 800,
+    height: 600,
+  },
+  {
+    src: "https://res.cloudinary.com/randomize/image/upload/v1737894905/Website/GalleryPhotos/10_ynwzre.jpg",
+    width: 800,
+    height: 600,
+  },
+  {
+    src: "https://res.cloudinary.com/randomize/image/upload/v1737894905/Website/GalleryPhotos/11_j0p2me.jpg",
+    width: 800,
+    height: 600,
+  },
+  {
+    src: "https://res.cloudinary.com/randomize/image/upload/v1737894907/Website/GalleryPhotos/12_thlfff.jpg",
+    width: 800,
+    height: 600,
+  },
+  {
+    src: "https://res.cloudinary.com/randomize/image/upload/v1737894908/Website/GalleryPhotos/13_gaujtx.jpg",
+    width: 800,
+    height: 600,
+  },
+  {
+    src: "https://res.cloudinary.com/randomize/image/upload/v1737894910/Website/GalleryPhotos/14_d0l5b1.jpg",
+    width: 800,
+    height: 600,
+  },
+  {
+    src: "https://res.cloudinary.com/randomize/image/upload/v1737894910/Website/GalleryPhotos/15_fkgry2.jpg",
+    width: 800,
+    height: 600,
+  },
 ];
 
 function CustomPhoto({ photo, width, height, onClick }) {

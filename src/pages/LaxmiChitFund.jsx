@@ -2,78 +2,93 @@ const team = [
   {
     name: "Siddharth Singhal",
     role: "Project Lead",
-    imageUrl: "/team/Siddharth.jpg",
+    imageUrl:
+      "https://res.cloudinary.com/randomize/image/upload/v1738120117/Website/Projects%20team/Laxmi%20Chit%20fund/siddharth_im0juu.jpg",
   },
   {
     name: "Krish Goel",
     role: "Technical Advisor",
-    imageUrl: "/team/Krish-Goel.jpeg",
+    imageUrl:
+      "https://res.cloudinary.com/randomize/image/upload/v1738129195/Website/Projects%20team/Laxmi%20Chit%20fund/Krish-Goel_vfkecm.jpg",
   },
   {
     name: "Aditya Punmiya",
     role: "Technical Advisor",
-    imageUrl: "/team/Aditya.webp",
+    imageUrl:
+      "https://res.cloudinary.com/randomize/image/upload/v1738129235/Website/Projects%20team/Laxmi%20Chit%20fund/Aditya_ddw1wl.webp",
   },
   {
-    name: "KASHIKA BHARDWAJ",
+    name: "Kashika Bhardwaj",
     role: "Frontend Developer/Content Team",
-    imageUrl: "/team/Kashika.jpg",
+    imageUrl:
+      "https://res.cloudinary.com/randomize/image/upload/v1738163593/Website/Projects%20team/Randomize%20website/Kashika_t63xmz.jpg",
   },
   {
     name: "Kanishk Valechha",
     role: "Frontend Developer",
-    imageUrl: "/team/Kanishk.jpg",
+    imageUrl:
+      "https://res.cloudinary.com/randomize/image/upload/v1738129318/Website/Projects%20team/Laxmi%20Chit%20fund/Kanishk_iizbzt.jpg",
   },
   {
     name: "Harshada Chandel ",
     role: "Frontend Developer",
-    imageUrl: "/team/Harshada.jpg",
+    imageUrl:
+      "https://res.cloudinary.com/randomize/image/upload/v1738129355/Website/Projects%20team/Laxmi%20Chit%20fund/Harshada_ehla5m.jpg",
   },
   {
     name: "ROHIT GANGULY",
     role: "Frontend Developer",
-    imageUrl: "/team/ROHIT.jpg",
+    imageUrl:
+      "https://res.cloudinary.com/randomize/image/upload/v1738129496/Website/Projects%20team/Laxmi%20Chit%20fund/ROHIT_gnivds.jpg",
   },
   {
     name: "Shubh Shrivastava",
     role: "Frontend Developer",
-    imageUrl: "/team/Shubh.jpg",
+    imageUrl:
+      "https://res.cloudinary.com/randomize/image/upload/v1738129525/Website/Projects%20team/Laxmi%20Chit%20fund/Shubh_meuyrm.jpg",
   },
   {
     name: "Mohammed Iqbal Khan",
     role: "Frontend Developer",
-    imageUrl: "/team/Mohd-Iqbal.jpg",
+    imageUrl:
+      "https://res.cloudinary.com/randomize/image/upload/v1738129552/Website/Projects%20team/Laxmi%20Chit%20fund/Mohd-Iqbal_bhdqdd.jpg",
   },
   {
     name: "Gayathri Ravindran",
     role: "Frontend Developer",
-    imageUrl: "/team/Gayathri.jpg",
+    imageUrl:
+      "https://res.cloudinary.com/randomize/image/upload/v1738129582/Website/Projects%20team/Laxmi%20Chit%20fund/Gayathri_jtrhcd.jpg",
   },
 
   {
     name: "Sia asrani",
     role: "Content/Frontend Developer",
-    imageUrl: "/team/Sia.jpg",
+    imageUrl:
+      "https://res.cloudinary.com/randomize/image/upload/v1738129616/Website/Projects%20team/Laxmi%20Chit%20fund/Sia_tkkkij.jpg",
   },
   {
     name: "Garv Kundnani",
     role: "Frontend Developer",
-    imageUrl: "/team/Garv.jpg",
+    imageUrl:
+      "https://res.cloudinary.com/randomize/image/upload/v1738129668/Website/Projects%20team/Laxmi%20Chit%20fund/Garv_hckxlc.jpg",
   },
   {
     name: "Meenakshi Kumar ",
     role: "Frontend Developer",
-    imageUrl: "/team/meenakshi.jpg",
+    imageUrl:
+      "https://res.cloudinary.com/randomize/image/upload/v1738129689/Website/Projects%20team/Laxmi%20Chit%20fund/meenakshi_ffbruf.jpg",
   },
   {
     name: "Vishesh Khadaria",
     role: "Content Team",
-    imageUrl: "/team/Vishesh.jpg",
+    imageUrl:
+      "https://res.cloudinary.com/randomize/image/upload/v1738129710/Website/Projects%20team/Laxmi%20Chit%20fund/vishesh_uulzes.jpg",
   },
   {
     name: "Vedica saini",
     role: "Content Team",
-    imageUrl: "/team/Vedica.jpg",
+    imageUrl:
+      "https://res.cloudinary.com/randomize/image/upload/v1738129741/Website/Projects%20team/Laxmi%20Chit%20fund/Vedica_mks4ox.jpg",
   },
 ];
 
