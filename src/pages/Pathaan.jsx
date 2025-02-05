@@ -67,8 +67,8 @@ export default function Pathaan() {
                   Pathaan
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-[#BCD3E8]">
-                  Introducing our first live project: Pathaan. An autonomous
-                  maze solving robot.
+                  An autonomous quadruped robot with a turret-equipped head,
+                  controlled via EEG signals
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
