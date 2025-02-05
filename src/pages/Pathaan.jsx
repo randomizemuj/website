@@ -1,69 +1,47 @@
 const team = [
   {
-    name: "Krish Goel",
+    name: "Mahek Chandak",
     role: "Project Lead/Founder",
     imageUrl:
-      "https://res.cloudinary.com/randomize/image/upload/v1738163106/Website/Projects%20team/pathaan/Krish-Goel_qo6tj8.jpg",
+      "https://ucarecdn.com/0f786e22-2575-4aee-ad01-8dc00c68b074/-/preview/",
   },
   {
     name: "Aditya Punmiya",
-    role: "Project Co-Lead",
+    role: "Project Software Lead",
     imageUrl:
-      "https://res.cloudinary.com/randomize/image/upload/v1738163115/Website/Projects%20team/pathaan/Aditya_r99a8d.webp",
+      "https://res.cloudinary.com/randomize/image/upload/w_800,h_800,c_fit,q_auto,f_auto/v1738163115/Website/Projects%20team/pathaan/Aditya_r99a8d.webp",
   },
   {
-    name: "Dhruv Bansal",
-    role: "Team Head",
+    name: "Pranit Khandelwal",
+    role: "Project Lead",
     imageUrl:
-      "https://res.cloudinary.com/randomize/image/upload/v1738163130/Website/Projects%20team/pathaan/Dhruv_itsmau.jpg",
+      "https://res.cloudinary.com/randomize/image/upload/w_800,h_800,c_fit,q_auto,f_auto/v1737884264/Website/Team2024-25/Pranit_q0xsjy.jpg",
   },
   {
-    name: "Aviral Gupta",
-    role: "Team Leader",
+    name: "Siddarth Singhal",
+    role: "Project Lead",
     imageUrl:
-      "https://res.cloudinary.com/randomize/image/upload/v1738163135/Website/Projects%20team/pathaan/Aviral_lmwvah.jpg",
+      "https://res.cloudinary.com/randomize/image/upload/w_800,h_800,c_fit,q_auto,f_auto/v1738163164/Website/Projects%20team/pathaan/Siddharth_uovpgh.jpg",
   },
   {
-    name: "GARVIT ARORA",
-    role: "Hardware and robotics",
-    imageUrl:
-      "https://res.cloudinary.com/randomize/image/upload/v1738163146/Website/Projects%20team/pathaan/Garvit_jfscaf.png",
+    name: "Krittika Benjwal",
+    role: "Software Team",
+    imageUrl: "",
   },
   {
-    name: "Shresth Shroff ",
-    role: "Electrical and Mechanical Head",
-    imageUrl:
-      "https://res.cloudinary.com/randomize/image/upload/v1738163152/Website/Projects%20team/pathaan/Shresth_krbqwg.jpg",
+    name: "Parthav Shah",
+    role: "Software Team",
+    imageUrl: "",
   },
   {
-    name: "Siddharth Singhal",
-    role: "Circuitry and Robotics ",
-    imageUrl:
-      "https://res.cloudinary.com/randomize/image/upload/v1738163164/Website/Projects%20team/pathaan/Siddharth_uovpgh.jpg",
+    name: "Kavish Sharma",
+    role: "Hardware and Robotics Lead",
+    imageUrl: "",
   },
   {
-    name: "Savir Sharma ",
-    role: "Software Team Lead",
-    imageUrl:
-      "https://res.cloudinary.com/randomize/image/upload/v1738163171/Website/Projects%20team/pathaan/Savir_klgueb.jpg",
-  },
-  {
-    name: "Mahadevan K S",
-    role: "Circuitry, Robotics, Maze Building",
-    imageUrl:
-      "https://res.cloudinary.com/randomize/image/upload/v1738163158/Website/Projects%20team/pathaan/Mahadevan_kqdwcv.jpg",
-  },
-  {
-    name: "Garv Kundnani",
-    role: "Algorithms & AI, Documentation & Logistics",
-    imageUrl:
-      "https://res.cloudinary.com/randomize/image/upload/v1738163197/Website/Projects%20team/pathaan/Garv_dhsovt.jpg",
-  },
-  {
-    name: "Sudiksha Mathpal",
-    role: "Algorithms team, Logistics team",
-    imageUrl:
-      "https://res.cloudinary.com/randomize/image/upload/v1738163177/Website/Projects%20team/pathaan/Sudiksha_xstkmr.jpg",
+    name: "Krish Sharma ",
+    role: "Design Lead",
+    imageUrl: "",
   },
 ];
 
@@ -151,10 +129,12 @@ export default function Pathaan() {
                     What is Pathaan?
                   </h1>
                   <p className="relative mt-6 text-lg leading-8 text-[#BCD3E8] sm:max-w-md lg:max-w-none">
-                    Introducing our first live project: Pathaan. An autonomous
-                    maze solving robot. This project combines cyber physical
-                    systems with artificial intelligence, and we could not be
-                    more stoked to build it.
+                    Pathaan is our autonomous quadruped robot with a
+                    turret-equipped head, controlled via EEG signals. This
+                    cutting-edge project merges cyber-physical systems with
+                    artificial intelligence, pushing the boundaries of robotics
+                    and human-machine interaction. We’re beyond excited to bring
+                    this vision to life!
                   </p>
                 </div>
                 <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
@@ -218,39 +198,41 @@ export default function Pathaan() {
             <div className="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
               <div className="lg:w-full lg:max-w-2xl lg:flex-auto">
                 <p className="text-xl leading-8 text-[#BCD3E8]">
-                  Our mission with Project Pathaan is to pioneer the integration
-                  of cyber physical systems and artificial intelligence in
-                  creating an autonomous maze-solving robot. By pushing the
-                  boundaries of current technology, we aim to develop a
-                  sophisticated robot that can navigate complex environments
-                  independently. This project will not only demonstrate the
-                  potential of AI-driven robotics but also serve as a testament
-                  to our commitment to innovation and excellence in the field of
-                  robotics and artificial intelligence.
+                  we aim to pioneer the integration of cyber-physical systems,
+                  artificial intelligence, and brain-computer interfaces in
+                  developing an advanced EEG-controlled quadruped robot. By
+                  pushing the limits of current technology, Pathaan will
+                  showcase the potential of AI-driven autonomous movement,
+                  real-time decision-making, and human-machine interaction. This
+                  project is a testament to our commitment to innovation,
+                  robotics excellence, and redefining control systems through
+                  neural interfaces.
                 </p>
                 <div className="mt-10  mx-auto max-w-xl text-base leading-7 text-[#BCD3E8]">
                   <p>
-                    We strive to leverage the latest advancements in machine
-                    learning, sensor technology, and algorithm design to build a
-                    robot capable of real-time decision-making and adaptability.
-                    Project Pathaan is designed to simulate real-world
-                    applications where autonomous navigation is crucial, such as
-                    search and rescue missions, exploration of hazardous
-                    environments, and automated logistics. Through this project,
-                    we aim to showcase how intelligent systems can be applied to
-                    solve practical problems, enhancing efficiency and safety in
-                    various industries.
+                    We aim to leverage cutting-edge advancements in machine
+                    learning, sensor technology, and algorithm design to build
+                    Pathaan, a real-time adaptable, EEG-controlled quadruped
+                    robot. Designed for autonomous decision-making, Pathaan
+                    simulates real-world applications like search and rescue
+                    missions, hazardous environment exploration, and automated
+                    logistics.
                   </p>
                   <p className="mt-10">
-                    Ultimately, our goal is to inspire and educate the next
-                    generation of engineers and technologists. By sharing our
-                    journey and the knowledge we gain from Project Pathaan, we
-                    hope to foster a deeper understanding and appreciation of
-                    the potential of AI and robotics. We are committed to
-                    contributing to the broader technological community,
-                    encouraging innovation, and promoting the development of
-                    smart, autonomous systems that can make a positive impact on
-                    society.
+                    Through this project, we strive to demonstrate the power of
+                    AI-driven robotics in solving practical challenges,
+                    enhancing efficiency, safety, and human-machine
+                    collaboration.
+                  </p>
+                  <p className="mt-10">
+                    Beyond building an innovative system, our goal is to inspire
+                    and educate the next generation of engineers and
+                    technologists. By sharing our journey, research, and
+                    technical breakthroughs, we hope to foster a deeper
+                    appreciation for AI, robotics, and cyber-physical systems.
+                    We are committed to driving innovation, contributing to the
+                    technological community, and shaping the future of
+                    autonomous systems for a better tomorrow.
                   </p>
                 </div>
               </div>
