@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         sans: ["Montserrat", "sans-serif"],
         inter: ["Inter", "sans-serif"], //The fest
+        hacker: ["'Press Start 2P'", "cursive"],
       },
       screens: {
         // 'xs':'400px',
@@ -116,6 +117,7 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       colors: {
+        "neon-green": "#39ff14",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {

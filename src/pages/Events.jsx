@@ -50,10 +50,80 @@
 
 import events from "../Data/Eventsdata.jsx";
 import ScrollOut from "scroll-out";
-import { useState, useEffect } from "react";
-import ScrollIndicator from "../Components/scrollIndicator.jsx";
-    
+import {
+  motion,
+  MotionValue,
+  useScroll,
+  useSpring,
+  useTransform,
+} from "framer-motion"
+import { useState, useEffect, useRef } from "react";
 
+// function useParallax(value: MotionValue<number>, distance: number) {
+//   return useTransform(value, [0, 1], [-distance, distance]);
+// }
+function useParallax(value, distance) {
+  return useTransform(value, [0, 1], [-distance, distance]);
+}
+
+// function EventCard({ event, id }: { event: any; id: number }) {
+//   const ref = useRef(null)
+//   const { scrollYProgress } = useScroll({ target: ref })
+//   const y = useParallax(scrollYProgress, 300)
+function EventCard({ event, id }) {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({ target: ref });
+  const y = useParallax(scrollYProgress, 300);
+
+
+  const handleClick = () => {
+      console.log(`Clicked event with ID: ${event.id}`)
+  }
+
+  return (
+      <section className="img-container">
+          <div ref={ref}>
+              <div
+                  className="mb-8 flex justify-between flex-column flex-wrap gap-0 w-full mb-[30%] bg-white/5 backdrop-blur-md border border-white/20 rounded-[10%] shadow-lg p-4 event"
+                  
+              >
+                  <div className="order-1 w-full flex justify-center mb-[20%]">
+                      <h1 className="text-gray-400 text-5xl font-bold max-md:text-3xl text-center">
+                          {event.date}
+                          <br />
+                          <br />
+                          {event.title}
+                      </h1>
+                  </div>
+                  <div
+                      className="order-2 w-full text-left bg-gray-100 shadow-[0_15px_35px_rgba(0,0,0,0.5)] rounded-[40px] flex items-center max-sm:flex-col transform opacity-0 EventsCard overflow-hidden"
+                      id={event.id}
+                      onClick={handleClick}
+                  >
+                      <div
+                          className={`order-1 m-0 h-[100%] max-sm:order-1 eventsImage${event.id}`}
+                      >
+                          <img className="object-fill" src={event.image} />
+                      </div>
+                      <div
+                          className={`eventsDescp${event.id} p-[10%] max-lg:p-8`}
+                      >
+                          <p className="text-xl max-lg:text-s leading-snug text-gray-800 text-opacity-100">
+                              {event.description}
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <motion.h2
+              // Hide until scroll progress is measured
+              initial={{ visibility: "hidden" }}
+              animate={{ visibility: "visible" }}
+              style={{ y }}
+          >{`#00${id}`}</motion.h2>
+      </section>
+  )
+}
 
 const Events = () => {
   const isSmallDevice = window.innerWidth < 768;
@@ -111,7 +181,13 @@ const Events = () => {
     alert("hi");
     console.log("demn");
   }
-  
+
+  const { scrollYProgress } = useScroll()
+    const scaleX = useSpring(scrollYProgress, {
+        stiffness: 100,
+        damping: 30,
+        restDelta: 0.001,
+    })
 
   return (
     
@@ -204,7 +280,7 @@ const Events = () => {
                       borderRadius: "1%",
                     }}
                   ></div>
-                </div>): <ScrollIndicator />}
+                </div>): null }
 
                 {/*Gradient Pattern*/}
                 <svg
@@ -307,42 +383,14 @@ const Events = () => {
                     ))
                     ): null)
                     ):  
-                    
-                  <div
-                  className="mb-8 flex justify-between flex-column flex-wrap  gap-0 w-full mb-[30%] bg-white/5 backdrop-blur-md border border-white/20 rounded-[10%] shadow-lg p-4 event">
-                    
-                    <div className="order-1 w-full flex justify-center mb-[20%] ">
-                      <h1 className="text-gray-400 text-5xl font-bold max-md:text-3xl text-center">
-                        {event.date}
-                        <br/>
-                        <br/>
-                        {event.title}
-                      </h1>
-                      
-                    </div>
-
-                    <div
-                    
-                      className="order-2 w-full text-left bg-gray-100 shadow-[0_15px_35px_rgba(0,0,0,0.5)] rounded-[40px] flex items-center max-sm:flex-col transform opacity-0 EventsCard overflow-hidden"
-                      id={event.id}
-                      onClick={handleClick}
-                    >
-                      <div className={`order-1 m-0 h-[100%] max-sm:order-1 eventsImage${event.id}`}>
-                        <img className="object-fill " src={event.image} />
-                      </div>
-                      {/* <div className={`w-1/2 max-sm:pl-1 max-sm:order-2 flex justify-center flex-col items-center eventsDate${event.id}`}>
-                        <p className="mb-3 max-lg:mb-5 text-3xl max-lg:text-base text-black font-zain eventsHeading">
-                          {event.date}
-                        </p>
-                        
-                      </div> */}
-                      <div className={`eventsDescp${event.id} p-[10%] max-lg:p-8`} >
-                        <p className="text-xl max-lg:text-s leading-snug text-gray-800 text-opacity-100">
-                          {event.description}
-                        </p>
-                      </div>
-                    </div>
-                  </div>}                            
+                    <div id="example">
+            {events.map((event) => (
+                <EventCard key={event.id} event={event} id={event.id} />
+            ))}
+            <motion.div className="progress" style={{ scaleX }} />
+            <StyleSheet />
+        </div>
+                  }                            
                   </div>
 
                 ))}
@@ -469,3 +517,57 @@ const Events = () => {
 };
 
 export default Events;
+
+function StyleSheet() {
+  return (
+      <style>{`
+       html {
+          scroll-snap-type: y mandatory;
+      }
+
+      .img-container {
+          height: 100vh;
+          scroll-snap-align: start;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+      }
+          .img-container h2 {
+          color: #4ff0b7;
+          margin: 0;
+          font-family: JetBrains Mono, monospace;
+          font-size: 50px;
+          font-weight: 700;
+          letter-spacing: -3px;
+          line-height: 1.2;
+          position: absolute;
+          display: inline-block;
+          top: calc(50% - 25px);
+          left: calc(50% + 120px);
+      }
+
+      @media (max-width: 500px) {
+          .img-container > div {
+              width: 150px;
+              height: 200px;
+          }
+
+          .img-container img {
+              width: 150px;
+              height: 200px;
+          }
+      }
+
+      .progress {
+          position: fixed;
+          left: 0;
+          right: 0;
+          height: 5px;
+          background: #4ff0b7;
+          bottom: 50px;
+          transform: scaleX(0);
+      }
+  `}</style>
+  )
+}

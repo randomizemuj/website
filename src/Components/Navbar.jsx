@@ -88,6 +88,12 @@ const Navbar = () => {
             </Link>
 
             <Link
+              to="/hackathon"
+              className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-xl"
+            >
+              Hackathon
+            </Link>
+            <Link
               to="/teams"
               className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-xl"
             >
@@ -153,6 +159,12 @@ const Navbar = () => {
               className="block text-white hover:text-gray-300 px-3 py-2 rounded-md"
             >
               The Fest
+            </a>
+            <a
+              href="/hackathon"
+              className="block text-white hover:text-gray-300 px-3 py-2 rounded-md"
+            >
+              Hackathon
             </a>
 
             <a

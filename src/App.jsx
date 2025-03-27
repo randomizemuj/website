@@ -10,6 +10,7 @@ import Quill from "./pages/QuillProject.jsx";
 import Odysseus from "./pages/OdysseusProject.jsx";
 import RandomizeWebsite from "./pages/RandomizeWebsiteProject.jsx";
 import TheFest from "./pages/TheFest.jsx";
+import Hackathon from "./pages/hackathon.jsx";
 import Pathaan from "./pages/Pathaan.jsx";
 import LaxmiChitFund from "./pages/LaxmiChitFund.jsx";
 import Gallery from "./pages/Gallery.jsx";
@@ -26,6 +27,7 @@ function App() {
             <Route path="projects" element={<Projects />} />
             <Route path="teams" element={<Teams />} />
             <Route path="thefest" element={<TheFest />} />
+            <Route path="hackathon" element={<Hackathon />} />
             <Route path="quill" element={<Quill />} />
             <Route path="laxmiChitFund" element={<LaxmiChitFund />} />
             <Route path="Pathaan" element={<Pathaan />} />
