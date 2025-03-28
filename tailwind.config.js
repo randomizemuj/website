@@ -7,6 +7,7 @@ export default {
         sans: ["Montserrat", "sans-serif"],
         inter: ["Inter", "sans-serif"], //The fest
         hacker: ["'Press Start 2P'", "cursive"],
+        doctorGlitch: ["Doctor Glitch", "sans-serif"],
       },
       screens: {
         // 'xs':'400px',

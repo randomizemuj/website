@@ -300,3 +300,11 @@ body{
   border: 2px solid #39ff14;
   box-shadow: 0px 0px 10px #39ff14;
 }
+
+.glitch-text {
+  font-family: "Doctor Glitch", sans-serif;
+}
+
+.hacker-color{
+  color: #D2F589;
+}

@@ -24,13 +24,13 @@ export default function Hackathon() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.5 }}
-            className="text-4xl md:text-6xl font-bold text-neon-green glitch-effect font-hacker"
+            className="text-4xl md:text-6xl font-bold glitch-text hacker-color"
           >
-            <Typewriter words={["HACKATHON 2.0"]} loop={1} cursor />
+            <Typewriter words={["HACKATHON 2.0"]} cursor cursorStyle="_" loop={1} cursor />
           </motion.h1>
-          <div className="mt-6 text-xs md:text-sm max-w-md glitch-effect">
+          <div className="mt-6 text-xs max-sm:text-[0.6rem] md:text-sm max-w-md glitch-effect hacker-color">
             <Typewriter
-              words={["Welcome to the second edition of Hackathon Randomize! Get ready for an exciting challenge where innovators, developers, and problem-solvers come together to tackle real-world problems in Full Stack Development and Machine Learning. With mentorship, collaboration, and creativity at its core, this hackathon promises an intense and rewarding experience."]}
+              words={["WELCOME TO THE SECOND EDITION OF HACKATHON RANDOMIZE. WHERE CODE BENDS, ALGORITHMS EVOLVE, AND INNOVATION BREAKS ALL LIMITS. THIS ISN’T JUST A CHALLENGE—IT’S A BATTLEFIELD FOR FULL STACK ARCHITECTS AND MACHINE LEARNING TACTICIANS. ENCRYPTION MEETS DISRUPTION, LOGIC COLLIDES WITH CREATIVITY. GUIDED BY MENTORS, POWERED BY COLLABORATION, FUELED BY PURE PROBLEM-SOLVING. NO RULES, JUST POSSIBILITIES. THE SYSTEM IS WAITING. EXECUTE."]}
               loop={1}
               cursor
               cursorStyle="_"
@@ -57,23 +57,34 @@ export default function Hackathon() {
         animate={scrollY > 200 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 1 }}
       >
-        <h2 className="text-2xl md:text-4xl font-bold font-hacker">EVENT DETAILS</h2>
-        <p className="mt-4 text-sm md:text-lg max-w-2xl text-center">Join the ultimate coding battle in a 24-hour challenge. Solve real-world problems and claim glory!</p>
+        <h2 className="text-2xl md:text-4xl font-bold font-hacker hacker-color">EVENT DETAILS</h2>
+        <p className="mt-4 text-sm md:text-lg max-w-2xl text-center hacker-color">Join the ultimate coding battle in a 24-hour challenge. Solve real-world problems and claim glory!</p>
+        <div className="flex flex-row">
+            <motion.a
+                href="/problem-statement.pdf"
+                download
+                className="mt-6 px-6 py-3 text-lg font-bold bg-[#D2F589] text-black rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:bg-neon-green"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                >
+                Download Problem Statement
+            </motion.a>
+            <motion.a
+                href="/forms.com"
+                download
+                className="mt-6 mx-10 px-6 py-3 text-lg font-bold bg-[#D2F589] text-black rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:bg-neon-green"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                >
+                Sign Up
+            </motion.a>
+        </div>
         
-        <motion.a
-          href="/path-to-problem-statement.pdf"
-          download
-          className="mt-6 px-6 py-3 text-lg font-bold bg-neon-green text-black rounded-lg shadow-lg transition-transform transform hover:scale-105"
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-        >
-          Download Problem Statement
-        </motion.a>
 
         {/* Accordion for Additional Details */}
         <button
           onClick={() => setIsAccordionOpen(!isAccordionOpen)}
-          className="mt-6 px-6 py-3 text-lg font-bold bg-gray-800 text-neon-green rounded-lg shadow-lg transition-transform transform hover:scale-105"
+          className="mt-6 px-6 py-3 text-lg font-bold bg-gray-800 hacker-color rounded-lg shadow-lg transition-transform transform hover:scale-105"
         >
           {isAccordionOpen ? "Hide More Details" : "View More Details"}
         </button>
@@ -83,7 +94,7 @@ export default function Hackathon() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             transition={{ duration: 0.5 }}
-            className="mt-4 p-6 w-full max-w-3xl bg-gray-900 text-sm md:text-base rounded-lg overflow-y-auto max-h-[50vh]"
+            className="mt-4 p-6 w-full max-w-3xl bg-gray-900 text-sm md:text-base rounded-lg overflow-y-auto max-h-[50vh] hacker-color"
           >
             <p>The Hackathon Randomize will take place on 7th February with the following schedule:</p>
             <p>🔹 2:30 PM – 4:00 PM: Registrations & team assignments</p>

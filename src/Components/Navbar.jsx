@@ -47,7 +47,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <Link
               to="/"
               className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-xl"
@@ -106,7 +106,7 @@ const Navbar = () => {
           </div>
           <button
             type="button"
-            className="md:hidden text-white hover:text-gray-300"
+            className="lg:hidden text-white hover:text-gray-300"
             onClick={() => setShowMobileMenu(!showMobileMenu)}
           >
             <svg
@@ -125,7 +125,7 @@ const Navbar = () => {
           </button>
         </div>
         <div
-          className={`md:hidden opacity-100 backdrop-blur-none bg-black	 ${showMobileMenu ? "" : "hidden"}`}
+          className={`lg:hidden opacity-100 backdrop-blur-none bg-black	 ${showMobileMenu ? "" : "hidden"}`}
         >
           <div className=" pt-2 pb-3 space-y-1">
             <span className="px-1.5"></span>
