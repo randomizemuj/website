@@ -551,7 +551,7 @@ function StyleSheet() {
           position: relative;
       }
           .img-container h2 {
-          color:rgb(212, 105, 28);
+          color:rgb(85, 195, 238);
           margin: 0;
           // font-family: JetBrains Mono, monospace;
           
@@ -584,7 +584,7 @@ function StyleSheet() {
           left: 0;
           right: 0;
           height: 5px;
-          background:rgb(212, 105, 28);
+          background:rgb(85, 195, 238);
           bottom: 50px;
           transform: scaleX(0);
       }
