@@ -23,7 +23,7 @@ const timeline = [
   {
     title: "Finalize Problem Statement",
     time: "10:00 PM - 12:00 AM",
-    description: "Teams finalize their chosen problem.",
+    description: "Teams get their chosen problem statement.",
     icon: <FaCodeBranch />
   },
   {
@@ -233,13 +233,13 @@ export default function Hackathon() {
     */}
 
       <div className="min-h-screen bg-black hacker-color p-6 font-mono">
-        <h1 className="sticky top-0 z-10 bg-black/90 backdrop-blur-md text-4xl text-center mb-4 border-b-2 border-green-500 pb-4">
-          Randomize Hackathon 2.0 Timeline
+        <h1 className=" z-10 bg-black/90 backdrop-blur-md text-5xl text-center mb-4 border-b-2 border-green-500 pb-4 special-elite-regular">
+          Timeline
         </h1>
 
         <div className="flex justify-center mb-10">
-          <button className="relative px-6 py-2 bg-gradient-to-br from-green-700 to-green-500 text-black font-bold border border-green-400 rounded-xl shadow hover:from-green-600 hover:to-green-400 transition">
-            <span className="animate-pulse">📥 Problem Statements - Available Soon..</span>
+          <button className="relative px-6 py-2 bg-gradient-to-br from-green-700 to-green-500 text-black font-bold border border-green-400 rounded-xl shadow hover:from-green-600 hover:to-green-400 transition" onClick={() => window.open('https://example.com', '_blank')}>
+            <span className="animate-pulse">📥 Problem Statements available soon...</span>
           </button>
         </div>
 
@@ -260,7 +260,7 @@ export default function Hackathon() {
         </div>
 
         <div className="max-w-4xl mx-auto mt-20 px-4 sm:px-6 md:px-8 lg:px-16 xl:px-24">
-          <h2 className="text-3xl font-bold hacker-color mb-4 border-b border-green-500 pb-2">
+          <h2 className="text-3xl font-bold hacker-color mb-4 border-b border-green-500 pb-2 special-elite-regular">
             Hackathon Rules & Guidelines
           </h2>
           <ul className="list-disc pl-6 space-y-2 hacker-color">
@@ -269,7 +269,7 @@ export default function Hackathon() {
             ))}
           </ul>
 
-          <h2 className="text-3xl font-bold hacker-color mt-12 mb-4 border-b border-green-500 pb-2">
+          <h2 className="text-3xl font-bold hacker-color mt-12 mb-4 border-b border-green-500 pb-2 special-elite-regular">
             Judging Criteria
           </h2>
           <ul className="list-disc pl-6 space-y-2 hacker-color">

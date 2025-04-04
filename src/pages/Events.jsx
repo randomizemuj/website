@@ -76,12 +76,28 @@ function EventCard({ event, id }) {
   const y = useParallax(scrollYProgress, 300);
 
 
-  const handleClick = () => {
+  const handleClick = (toko) => {
       console.log(`Clicked event with ID: ${event.id}`)
+      const currentCard = toko.currentTarget.id;
+    if ($(".eventsDescp" + currentCard).css("display") == "none") {
+      $(".eventsImage" + currentCard).slideToggle();
+      $(".eventsDate" + currentCard).slideToggle();
+      setTimeout(function () {
+        $(".eventsDescp" + currentCard).slideToggle();
+      }, 500);
+      console.log("Yes");
+    } else {
+      $(".eventsDescp" + currentCard).slideToggle();
+      setTimeout(function () {
+        $(".eventsImage" + currentCard).slideToggle();
+        $(".eventsDate" + currentCard).slideToggle();
+      }, 500);
+      console.log("No");
+    }
   }
 
   return (
-      <section className="img-container">
+      <section className="img-container snap-start">
           <div ref={ref}>
               <div
                   className="mb-8 flex justify-between flex-column flex-wrap gap-0 w-full mb-[30%] bg-white/5 backdrop-blur-md border border-white/20 rounded-[10%] shadow-lg p-4 event"
@@ -89,9 +105,7 @@ function EventCard({ event, id }) {
               >
                   <div className="order-1 w-full flex justify-center mb-[20%]">
                       <h1 className="text-gray-400 text-5xl font-bold max-md:text-3xl text-center">
-                          {event.date}
-                          <br />
-                          <br />
+                          
                           {event.title}
                       </h1>
                   </div>
@@ -101,7 +115,7 @@ function EventCard({ event, id }) {
                       onClick={handleClick}
                   >
                       <div
-                          className={`order-1 m-0 h-[100%] max-sm:order-1 eventsImage${event.id}`}
+                          className={`order-1 m-0  max-sm:order-1 eventsImage${event.id}`}
                       >
                           <img className="object-fill" src={event.image} />
                       </div>
@@ -116,11 +130,12 @@ function EventCard({ event, id }) {
               </div>
           </div>
           <motion.h2
+          className="max-md:text-5xl max-sm:text-2xl 5xl special-elite-regular"
               // Hide until scroll progress is measured
               initial={{ visibility: "hidden" }}
               animate={{ visibility: "visible" }}
               style={{ y }}
-          >{`#00${id}`}</motion.h2>
+          >{`${event.date}`}</motion.h2>
       </section>
   )
 }
@@ -192,7 +207,7 @@ const Events = () => {
   return (
     
     <section>
-      <div className="text-white py-8">
+      <div className="text-white max-md:py-8">
         {/*Background gradient */}
         <div
           className="absolute inset-0 -z-10 w-full h-full"
@@ -258,7 +273,7 @@ const Events = () => {
             </a> */}
           </div>
           
-          <div className="ml-0 lg:w-3/3">
+          <div className="ml-0 lg:w-full">{/* changed lg:w-3/3 */}
             <div className="container w-full h-full">
               <div className="relative wrap overflow-hidden p-10 h-full rounded-[40px]">
                 {!isSmallDevice ?(
@@ -316,6 +331,7 @@ const Events = () => {
                   />
                 </div>
                 {/*Gradient pattern ends */}{/*7*/}
+                
                 {events.map ((event, index) => (
                   <div>
                     {!isSmallDevice ? (
@@ -384,9 +400,10 @@ const Events = () => {
                     ): null)
                     ):  
                     <div id="example">
-            {events.map((event) => (
+                      
                 <EventCard key={event.id} event={event} id={event.id} />
-            ))}
+            
+            
             <motion.div className="progress" style={{ scaleX }} />
             <StyleSheet />
         </div>
@@ -433,7 +450,7 @@ const Events = () => {
                 {events.map ((event, index) => (
                   <div>
                     {
-                    !isSmallDevice? 
+                    !isSmallDevice ? (
                     (index>=7 ? (
                       (index%2==0 ? (
                       <div className="mb-8 flex justify-between flex-row-reverse items-center w-full">
@@ -496,7 +513,7 @@ const Events = () => {
                     </div>
                   </div>
                     ))
-                    ): null
+                    ): null)
                   ): null }                                  
                   </div>
 
@@ -526,7 +543,7 @@ function StyleSheet() {
       }
 
       .img-container {
-          height: 100vh;
+          height: auto;
           scroll-snap-align: start;
           display: flex;
           justify-content: center;
@@ -534,29 +551,32 @@ function StyleSheet() {
           position: relative;
       }
           .img-container h2 {
-          color: #4ff0b7;
+          color:rgb(212, 105, 28);
           margin: 0;
-          font-family: JetBrains Mono, monospace;
-          font-size: 50px;
+          // font-family: JetBrains Mono, monospace;
+          
           font-weight: 700;
           letter-spacing: -3px;
           line-height: 1.2;
           position: absolute;
           display: inline-block;
           top: calc(50% - 25px);
-          left: calc(50% + 120px);
+          left: calc(50% + 50px);
       }
 
       @media (max-width: 500px) {
           .img-container > div {
-              width: 150px;
-              height: 200px;
+              width: vw;
+              height: auto;
           }
 
           .img-container img {
               width: 150px;
               height: 200px;
           }
+
+          .img-container h2 {
+              
       }
 
       .progress {
@@ -564,7 +584,7 @@ function StyleSheet() {
           left: 0;
           right: 0;
           height: 5px;
-          background: #4ff0b7;
+          background:rgb(212, 105, 28);
           bottom: 50px;
           transform: scaleX(0);
       }

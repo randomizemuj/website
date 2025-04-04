@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 @font-face {
   font-family: "Kelsi";
   src: url("/Kelsi-fill.otf") format("opentype");
@@ -10,6 +10,12 @@
   font-family: "Doctor Glitch";
   src: url("/Doctor Glitch.otf") format("opentype");
   font-weight: normal;
+  font-style: normal;
+}
+
+.special-elite-regular {
+  font-family: "Special Elite", system-ui;
+  font-weight: 400;
   font-style: normal;
 }
 

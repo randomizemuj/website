@@ -80,12 +80,12 @@ const Navbar = () => {
             >
               Gallery
             </Link>
-            <Link
+            {/* <Link
               to="/thefest"
               className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-xl"
             >
               The Fest
-            </Link>
+            </Link> */}
 
             <Link
               to="/hackathon"
@@ -154,12 +154,12 @@ const Navbar = () => {
             >
               Gallery
             </a>
-            <a
+            {/* <a
               href="/thefest"
               className="block text-white hover:text-gray-300 px-3 py-2 rounded-md"
             >
               The Fest
-            </a>
+            </a> */}
             <a
               href="/hackathon"
               className="block text-white hover:text-gray-300 px-3 py-2 rounded-md"
