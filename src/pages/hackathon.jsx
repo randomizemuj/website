@@ -249,7 +249,7 @@ export default function Hackathon() {
               key={index}
               className="bg-green-950/30 backdrop-blur-md rounded-xl p-4 shadow-lg hover:shadow-green-700 transition border-l-4 border-green-500 pl-6 relative"
             >
-              <div className="absolute left-[-18px] top-4 hacker-color-400 text-lg">
+              <div className="absolute left-[-30px] top-4 hacker-color-400 text-lg">
                 {item.icon}
               </div>
               <h2 className="text-xl font-bold hacker-color">{item.title}</h2>
