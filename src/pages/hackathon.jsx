@@ -131,7 +131,7 @@ export default function Hackathon() {
             transition={{ duration: 1.5 }}
             className="text-4xl md:text-6xl font-bold glitch-text hacker-color"
           >
-            <Typewriter words={["HACKATHON 2.0"]} cursor cursorStyle="_" loop={1} cursor />
+            <Typewriter words={["HACKATHON 2.0"]} cursor cursorStyle="_" loop={1} />
           </motion.h1>
           <div className="mt-6 text-xs max-sm:text-[0.6rem] md:text-sm max-w-md glitch-effect hacker-color">
             <Typewriter
@@ -232,14 +232,14 @@ export default function Hackathon() {
     </motion.section>
     */}
 
-      <div className="min-h-screen bg-black text-green-400 p-6 font-mono">
+      <div className="min-h-screen bg-black hacker-color p-6 font-mono">
         <h1 className="sticky top-0 z-10 bg-black/90 backdrop-blur-md text-4xl text-center mb-4 border-b-2 border-green-500 pb-4">
           Randomize Hackathon 2.0 Timeline
         </h1>
 
         <div className="flex justify-center mb-10">
           <button className="relative px-6 py-2 bg-gradient-to-br from-green-700 to-green-500 text-black font-bold border border-green-400 rounded-xl shadow hover:from-green-600 hover:to-green-400 transition">
-            <span className="animate-pulse">📥 Registration Open</span>
+            <span className="animate-pulse">📥 Problem Statements - Available Soon..</span>
           </button>
         </div>
 
@@ -249,37 +249,37 @@ export default function Hackathon() {
               key={index}
               className="bg-green-950/30 backdrop-blur-md rounded-xl p-4 shadow-lg hover:shadow-green-700 transition border-l-4 border-green-500 pl-6 relative"
             >
-              <div className="absolute left-[-18px] top-4 text-green-400 text-lg">
+              <div className="absolute left-[-18px] top-4 hacker-color-400 text-lg">
                 {item.icon}
               </div>
-              <h2 className="text-xl font-bold text-green-300">{item.title}</h2>
-              <p className="text-sm text-green-200">{item.time}</p>
-              <p className="text-base text-green-400 mt-1">{item.description}</p>
+              <h2 className="text-xl font-bold hacker-color">{item.title}</h2>
+              <p className="text-sm hacker-color">{item.time}</p>
+              <p className="text-base hacker-color mt-1">{item.description}</p>
             </div>
           ))}
         </div>
 
         <div className="max-w-4xl mx-auto mt-20 px-4 sm:px-6 md:px-8 lg:px-16 xl:px-24">
-          <h2 className="text-3xl font-bold text-green-300 mb-4 border-b border-green-500 pb-2">
+          <h2 className="text-3xl font-bold hacker-color mb-4 border-b border-green-500 pb-2">
             Hackathon Rules & Guidelines
           </h2>
-          <ul className="list-disc pl-6 space-y-2 text-green-400">
+          <ul className="list-disc pl-6 space-y-2 hacker-color">
             {rules.map((rule, index) => (
               <li key={index}>{rule}</li>
             ))}
           </ul>
 
-          <h2 className="text-3xl font-bold text-green-300 mt-12 mb-4 border-b border-green-500 pb-2">
+          <h2 className="text-3xl font-bold hacker-color mt-12 mb-4 border-b border-green-500 pb-2">
             Judging Criteria
           </h2>
-          <ul className="list-disc pl-6 space-y-2 text-green-400">
+          <ul className="list-disc pl-6 space-y-2 hacker-color">
             {criteria.map((item, index) => (
               <li key={index}>{item}</li>
             ))}
           </ul>
         </div>
 
-        <footer className="text-center mt-20 text-sm text-green-500 border-t border-green-600 pt-4">
+        <footer className="text-center mt-20 text-sm hacker-color border-t border-green-600 pt-4">
           Made with 💻 by Randomize Team | © 2025
         </footer>
       </div>
