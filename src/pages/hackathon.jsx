@@ -146,7 +146,7 @@ export default function Hackathon() {
         </div>
 
         <motion.img
-          src="/HACKATHON.png"
+          src="https://res.cloudinary.com/daqdadrlq/image/upload/v1743781655/HACKATHON_xk6gnq.png"
           alt="Hackathon Poster"
           className="w-full md:w-[40%] max-h-[60vh] object-contain mt-10 md:mt-0"
           initial={{ opacity: 0, y: -50 }}
@@ -238,8 +238,8 @@ export default function Hackathon() {
         </h1>
 
         <div className="flex justify-center mb-10">
-          <button className="relative px-6 py-2 bg-gradient-to-br from-green-700 to-green-500 text-black font-bold border border-green-400 rounded-xl shadow hover:from-green-600 hover:to-green-400 transition" onClick={() => window.open('https://example.com', '_blank')}>
-            <span className="animate-pulse">📥 Problem Statements available soon...</span>
+          <button className="relative px-6 py-2 bg-gradient-to-br from-green-700 to-green-500 text-black font-bold border border-green-400 rounded-xl shadow hover:from-green-600 hover:to-green-400 transition" onClick={() => window.open('https://drive.google.com/file/d/1So_lQPYPoxrvqxomQAxTJTrHHRodWbEs/view', '_blank')}>
+            <span className="animate-pulse">📥 View Problem Statement!!</span>
           </button>
         </div>
 
