@@ -1,7 +1,7 @@
 # 🌐 Website Repository: Randomize()
 
 ## 📝 Overview
-This repository hosts the Randomize(); Website, currently in development using React and Tailwind CSS.
+This repository hosts the Randomize(); Website, currently in development using React and Tailwind CSS..
 
 ## 🚀 Getting Started
 To begin working with this repository, clone it to your local system and execute `npm install` in the terminal to install all the necessary project dependencies.
